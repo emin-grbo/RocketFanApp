@@ -1,11 +1,12 @@
 whitelist_rules:
   - closure_spacing
   - colon
+  - convenience_type
+  - empty_count
   - empty_enum_arguments
+  - empty_string
   - fatal_error_message
-  - force_cast
-  - force_try
-  - force_unwrapping
+  - first_where
   - implicitly_unwrapped_optional
   - legacy_cggeometry_functions
   - legacy_constant
