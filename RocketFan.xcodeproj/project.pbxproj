@@ -78,7 +78,9 @@
 				0EBCA1C622330CF600E8903F /* RocketFanUITests */,
 				0EBCA1A522330CF500E8903F /* Products */,
 			);
+			indentWidth = 4;
 			sourceTree = "<group>";
+			tabWidth = 4;
 		};
 		0EBCA1A522330CF500E8903F /* Products */ = {
 			isa = PBXGroup;
