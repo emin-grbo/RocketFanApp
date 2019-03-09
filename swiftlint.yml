@@ -16,19 +16,13 @@ whitelist_rules:
   - redundant_string_enum_value
   - redundant_void_return
   - return_arrow_whitespace
+  - sorted_imports
   - trailing_newline
   - type_name
   - unused_closure_parameter
   - unused_optional_binding
   - vertical_whitespace
   - void_return
-
-excluded:
-  - Carthage
-  - Pods
-
-colon:
-  apply_to_dictionaries: false
 
 indentation: 4
 
