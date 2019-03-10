@@ -58,10 +58,6 @@
 		0EBCA1C322330CF600E8903F /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
-		E17553DB223553D20033C136 /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
-		E17553DC223553D20033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E17553E8223553D20033C136 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
-		E17553EA223553D20033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +91,6 @@
 				0EBCA1A622330CF500E8903F /* RocketFan */,
 				0EBCA1BB22330CF600E8903F /* RocketFanTests */,
 				0EBCA1C622330CF600E8903F /* RocketFanUITests */,
-				E17553DA223553D20033C136 /* API */,
-				E17553E7223553D20033C136 /* APITests */,
 				0EBCA1A522330CF500E8903F /* Products */,
 			);
 			indentWidth = 4;
@@ -175,24 +169,6 @@
 			);
 			path = Config;
 			sourceTree = SOURCE_ROOT;
-		};
-		E17553DA223553D20033C136 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				E17553DB223553D20033C136 /* API.h */,
-				E17553DC223553D20033C136 /* Info.plist */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		E17553E7223553D20033C136 /* APITests */ = {
-			isa = PBXGroup;
-			children = (
-				E17553E8223553D20033C136 /* APITests.swift */,
-				E17553EA223553D20033C136 /* Info.plist */,
-			);
-			path = APITests;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
