@@ -18,8 +18,11 @@
 		E1755411223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E1755412223555BA0033C136 /* SpaceXAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E175541A223582770033C136 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1755419223582770033C136 /* Endpoint.swift */; };
+<<<<<<< HEAD
 		E175541F22359EE00033C136 /* Capsules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175541E22359EE00033C136 /* Capsules.swift */; };
 		E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175542122359F2F0033C136 /* CapsulesTests.swift */; };
+=======
+>>>>>>> 57418d94afe3535ac2b78d293ed6c55055cedb68
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,8 +98,11 @@
 		E175540B223555BA0033C136 /* SpaceXAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPITests.swift; sourceTree = "<group>"; };
 		E175540D223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1755419223582770033C136 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		E175541E22359EE00033C136 /* Capsules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsules.swift; sourceTree = "<group>"; };
 		E175542122359F2F0033C136 /* CapsulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesTests.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 57418d94afe3535ac2b78d293ed6c55055cedb68
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,11 +259,15 @@
 			isa = PBXGroup;
 			children = (
 				E1755419223582770033C136 /* Endpoint.swift */,
+<<<<<<< HEAD
 				E175541E22359EE00033C136 /* Capsules.swift */,
+=======
+>>>>>>> 57418d94afe3535ac2b78d293ed6c55055cedb68
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		E175542022359F0F0033C136 /* EndpointsTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -266,6 +276,8 @@
 			path = EndpointsTests;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 57418d94afe3535ac2b78d293ed6c55055cedb68
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -519,7 +531,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E175541A223582770033C136 /* Endpoint.swift in Sources */,
+<<<<<<< HEAD
 				E175541F22359EE00033C136 /* Capsules.swift in Sources */,
+=======
+>>>>>>> 57418d94afe3535ac2b78d293ed6c55055cedb68
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
