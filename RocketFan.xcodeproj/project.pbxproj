@@ -31,6 +31,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		E17553F5223553D20033C136 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0E2EA408223519D600A7D350 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		0E611C10223312BE00F85DAB /* RocketFanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
@@ -45,6 +58,10 @@
 		0EBCA1C322330CF600E8903F /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
+		E17553DB223553D20033C136 /* API.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		E17553DC223553D20033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E17553E8223553D20033C136 /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
+		E17553EA223553D20033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +95,8 @@
 				0EBCA1A622330CF500E8903F /* RocketFan */,
 				0EBCA1BB22330CF600E8903F /* RocketFanTests */,
 				0EBCA1C622330CF600E8903F /* RocketFanUITests */,
+				E17553DA223553D20033C136 /* API */,
+				E17553E7223553D20033C136 /* APITests */,
 				0EBCA1A522330CF500E8903F /* Products */,
 			);
 			indentWidth = 4;
@@ -157,6 +176,24 @@
 			path = Config;
 			sourceTree = SOURCE_ROOT;
 		};
+		E17553DA223553D20033C136 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E17553DB223553D20033C136 /* API.h */,
+				E17553DC223553D20033C136 /* Info.plist */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E17553E7223553D20033C136 /* APITests */ = {
+			isa = PBXGroup;
+			children = (
+				E17553E8223553D20033C136 /* APITests.swift */,
+				E17553EA223553D20033C136 /* Info.plist */,
+			);
+			path = APITests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -167,6 +204,7 @@
 				0EBCA1A022330CF500E8903F /* Sources */,
 				0EBCA1A122330CF500E8903F /* Frameworks */,
 				0EBCA1A222330CF500E8903F /* Resources */,
+				E17553F5223553D20033C136 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -456,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/RocketFan/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -473,6 +512,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "$(SRCROOT)/RocketFan/App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
