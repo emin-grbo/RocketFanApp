@@ -1,0 +1,9 @@
+// Code signing
+CODE_SIGN_IDENTITY = iPhone Developer;
+CODE_SIGN_STYLE = Automatic;
+
+// Add your development team
+DEVELOPMENT_TEAM = HKXMUS7LVK;
+
+// Customise the bundle identifier
+PRODUCT_BUNDLE_IDENTIFIER = org.rocketfan.rocketfanapp;
