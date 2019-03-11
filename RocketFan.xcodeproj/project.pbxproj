@@ -12,6 +12,8 @@
 		0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA1A722330CF500E8903F /* AppDelegate.swift */; };
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
+		E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE32236ABE800E1EDDB /* Cores.swift */; };
+		E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE52236AC2C00E1EDDB /* CoresTests.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E175540E223555BA0033C136 /* SpaceXAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E17553FE223555BA0033C136 /* SpaceXAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,6 +90,8 @@
 		0EBCA1C322330CF600E8903F /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
+		E1681FE32236ABE800E1EDDB /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
+		E1681FE52236AC2C00E1EDDB /* CoresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoresTests.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FE223555BA0033C136 /* SpaceXAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXAPI.h; sourceTree = "<group>"; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -254,6 +258,7 @@
 			children = (
 				E1755419223582770033C136 /* Endpoint.swift */,
 				E175541E22359EE00033C136 /* Capsules.swift */,
+				E1681FE32236ABE800E1EDDB /* Cores.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -262,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				E175542122359F2F0033C136 /* CapsulesTests.swift */,
+				E1681FE52236AC2C00E1EDDB /* CoresTests.swift */,
 			);
 			path = EndpointsTests;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 			files = (
 				E175541A223582770033C136 /* Endpoint.swift in Sources */,
 				E175541F22359EE00033C136 /* Capsules.swift in Sources */,
+				E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +536,7 @@
 			files = (
 				E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */,
 				E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */,
+				E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
