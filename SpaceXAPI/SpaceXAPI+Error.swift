@@ -1,7 +1,7 @@
 import Foundation
 
 enum SpaceXAPIError: Error {
-    case unknownReponse
+    case unknownResponse
     case serverReturnedCode(Int)
     case noDataReceived
 }
@@ -9,7 +9,7 @@ enum SpaceXAPIError: Error {
 extension SpaceXAPIError: LocalizedError {
     var errorDescription: String? {
         switch self {
-        case .unknownReponse:
+        case .unknownResponse:
             return NSLocalizedString("Server returned unknown response", comment: "Server returned unknown response")
 
         case .serverReturnedCode(let code):

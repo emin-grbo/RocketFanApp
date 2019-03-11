@@ -14,6 +14,7 @@
 		0E911FF22236EC7A00CBE217 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF12236EC7A00CBE217 /* TestHelpers.swift */; };
 		0E911FF42236ECC900CBE217 /* NetworkSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */; };
 		0E911FF62236EDA300CBE217 /* SpaceXAPI+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */; };
+		0E911FF82236F64A00CBE217 /* XCTestCase+assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF72236F64A00CBE217 /* XCTestCase+assert.swift */; };
 		0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA1A722330CF500E8903F /* AppDelegate.swift */; };
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
@@ -112,6 +113,7 @@
 		0E911FF12236EC7A00CBE217 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionProtocol.swift; sourceTree = "<group>"; };
 		0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceXAPI+Error.swift"; sourceTree = "<group>"; };
+		0E911FF72236F64A00CBE217 /* XCTestCase+assert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+assert.swift"; sourceTree = "<group>"; };
 		0EBCA1A422330CF500E8903F /* RocketFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1A722330CF500E8903F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBCA1AE22330CF600E8903F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0E911FF12236EC7A00CBE217 /* TestHelpers.swift */,
+				0E911FF72236F64A00CBE217 /* XCTestCase+assert.swift */,
 			);
 			path = TestHelpers;
 			sourceTree = "<group>";
@@ -644,6 +647,7 @@
 				E1681FF02236B8A600E1EDDB /* InfoTests.swift in Sources */,
 				E168200A2236CB5B00E1EDDB /* RocketsTests.swift in Sources */,
 				E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */,
+				0E911FF82236F64A00CBE217 /* XCTestCase+assert.swift in Sources */,
 				E1681FF42236BAF500E1EDDB /* LandingPadsTests.swift in Sources */,
 				E1681FFA2236BE3300E1EDDB /* LaunchesTests.swift in Sources */,
 				E16820022236C81E00E1EDDB /* MissionsTests.swift in Sources */,

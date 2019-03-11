@@ -21,7 +21,7 @@ final public class SpaceXAPI {
             }
 
             guard let httpResponse = urlResponse as? HTTPURLResponse else {
-                completion(Result.error(SpaceXAPIError.unknownReponse))
+                completion(Result.error(SpaceXAPIError.unknownResponse))
                 return
             }
 

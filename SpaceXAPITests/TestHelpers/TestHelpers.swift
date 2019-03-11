@@ -32,3 +32,8 @@ struct EndpointMock: Endpoint {
         return "/test"
     }
 }
+
+/// A stubbed error
+enum ErrorMock: Error {
+    case expected
+}
