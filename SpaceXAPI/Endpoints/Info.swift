@@ -11,6 +11,7 @@ extension Info: Endpoint {
         case .company:
             return "/info"
         case .api:
+            ///// API info requires no path, so returning an empty string is intentional
             return ""
         }
     }

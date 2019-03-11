@@ -300,10 +300,10 @@
 		E175541B223582BA0033C136 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				E1755419223582770033C136 /* Endpoint.swift */,
 				E175541E22359EE00033C136 /* Capsules.swift */,
 				E1681FE32236ABE800E1EDDB /* Cores.swift */,
 				E1681FE92236B04D00E1EDDB /* Dragons.swift */,
+				E1755419223582770033C136 /* Endpoint.swift */,
 				E1681FED2236B2F700E1EDDB /* History.swift */,
 				E1681FF12236B8DC00E1EDDB /* Info.swift */,
 				E1681FF52236BB4700E1EDDB /* LandingPads.swift */,
@@ -311,8 +311,8 @@
 				E1681FFF2236C31200E1EDDB /* LaunchPads.swift */,
 				E16820032236C86400E1EDDB /* Missions.swift */,
 				E16820072236C9FC00E1EDDB /* Payloads.swift */,
-				E168200B2236CB7900E1EDDB /* Rockets.swift */,
 				E168200F2236CDC100E1EDDB /* Roadster.swift */,
+				E168200B2236CB7900E1EDDB /* Rockets.swift */,
 				E16820132236CEB000E1EDDB /* Ships.swift */,
 			);
 			path = Endpoints;
@@ -331,8 +331,8 @@
 				E1681FFD2236C28300E1EDDB /* LaunchPadsTests.swift */,
 				E16820012236C81E00E1EDDB /* MissionsTests.swift */,
 				E16820052236C9C200E1EDDB /* PayloadsTests.swift */,
-				E16820092236CB5B00E1EDDB /* RocketsTests.swift */,
 				E168200D2236CD7400E1EDDB /* RoadsterTests.swift */,
+				E16820092236CB5B00E1EDDB /* RocketsTests.swift */,
 				E16820112236CE6D00E1EDDB /* ShipsTests.swift */,
 			);
 			path = EndpointsTests;

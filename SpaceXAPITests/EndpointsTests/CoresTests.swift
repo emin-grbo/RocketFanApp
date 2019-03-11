@@ -10,11 +10,11 @@ class CoresTests: XCTestCase {
     }
 
     func test_Cores_One_ReturnsPth() {
-        let identifider = "B1042"
+        let identifier = "B1042"
 
-        let path = Cores.one(identifider).path
+        let path = Cores.one(identifier).path
 
-        XCTAssertEqual(path, "/cores/\(identifider)")
+        XCTAssertEqual(path, "/cores/\(identifier)")
     }
 
     func test_Cores_Upcoming_ReturnsPath() {

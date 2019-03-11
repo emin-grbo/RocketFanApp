@@ -9,7 +9,7 @@ class InfoTests: XCTestCase {
         XCTAssertEqual(path, "/info")
     }
 
-    func test_Api_Returns_Path() {
+    func test_Api_Returns_EmptyPath() {
         let path = Info.api.path
 
         XCTAssertEqual(path, "")
