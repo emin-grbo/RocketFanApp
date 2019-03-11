@@ -18,6 +18,8 @@
 		E1681FEA2236B04D00E1EDDB /* Dragons.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE92236B04D00E1EDDB /* Dragons.swift */; };
 		E1681FEC2236B2BB00E1EDDB /* HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FEB2236B2BB00E1EDDB /* HistoryTests.swift */; };
 		E1681FEE2236B2F700E1EDDB /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FED2236B2F700E1EDDB /* History.swift */; };
+		E1681FF02236B8A600E1EDDB /* InfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FEF2236B8A600E1EDDB /* InfoTests.swift */; };
+		E1681FF22236B8DC00E1EDDB /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FF12236B8DC00E1EDDB /* Info.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E175540E223555BA0033C136 /* SpaceXAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E17553FE223555BA0033C136 /* SpaceXAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -100,6 +102,8 @@
 		E1681FE92236B04D00E1EDDB /* Dragons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragons.swift; sourceTree = "<group>"; };
 		E1681FEB2236B2BB00E1EDDB /* HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTests.swift; sourceTree = "<group>"; };
 		E1681FED2236B2F700E1EDDB /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		E1681FEF2236B8A600E1EDDB /* InfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTests.swift; sourceTree = "<group>"; };
+		E1681FF12236B8DC00E1EDDB /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FE223555BA0033C136 /* SpaceXAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXAPI.h; sourceTree = "<group>"; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -269,6 +273,7 @@
 				E1681FE32236ABE800E1EDDB /* Cores.swift */,
 				E1681FE92236B04D00E1EDDB /* Dragons.swift */,
 				E1681FED2236B2F700E1EDDB /* History.swift */,
+				E1681FF12236B8DC00E1EDDB /* Info.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -280,6 +285,7 @@
 				E1681FE52236AC2C00E1EDDB /* CoresTests.swift */,
 				E1681FE72236AFED00E1EDDB /* DragonsTests.swift */,
 				E1681FEB2236B2BB00E1EDDB /* HistoryTests.swift */,
+				E1681FEF2236B8A600E1EDDB /* InfoTests.swift */,
 			);
 			path = EndpointsTests;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 				E175541A223582770033C136 /* Endpoint.swift in Sources */,
 				E175541F22359EE00033C136 /* Capsules.swift in Sources */,
 				E1681FEA2236B04D00E1EDDB /* Dragons.swift in Sources */,
+				E1681FF22236B8DC00E1EDDB /* Info.swift in Sources */,
 				E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */,
 				E1681FEE2236B2F700E1EDDB /* History.swift in Sources */,
 			);
@@ -549,6 +556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1681FEC2236B2BB00E1EDDB /* HistoryTests.swift in Sources */,
+				E1681FF02236B8A600E1EDDB /* InfoTests.swift in Sources */,
 				E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */,
 				E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */,
 				E1681FE82236AFED00E1EDDB /* DragonsTests.swift in Sources */,
