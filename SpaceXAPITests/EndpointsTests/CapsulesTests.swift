@@ -11,6 +11,7 @@ class CapsulesTests: XCTestCase {
 
     func test_Capsules_One_ReturnsPath() {
         let identifier = "C223"
+        
         let path = Capsules.one(identifier).path
 
         XCTAssertEqual(path, "/capsules/\(identifier)")
