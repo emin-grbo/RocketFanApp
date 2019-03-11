@@ -34,6 +34,8 @@
 		E168200C2236CB7900E1EDDB /* Rockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E168200B2236CB7900E1EDDB /* Rockets.swift */; };
 		E168200E2236CD7400E1EDDB /* RoadsterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E168200D2236CD7400E1EDDB /* RoadsterTests.swift */; };
 		E16820102236CDC100E1EDDB /* Roadster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E168200F2236CDC100E1EDDB /* Roadster.swift */; };
+		E16820122236CE6D00E1EDDB /* ShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820112236CE6D00E1EDDB /* ShipsTests.swift */; };
+		E16820152236CEDB00E1EDDB /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820132236CEB000E1EDDB /* Ships.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E175540E223555BA0033C136 /* SpaceXAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E17553FE223555BA0033C136 /* SpaceXAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -132,6 +134,8 @@
 		E168200B2236CB7900E1EDDB /* Rockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rockets.swift; sourceTree = "<group>"; };
 		E168200D2236CD7400E1EDDB /* RoadsterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadsterTests.swift; sourceTree = "<group>"; };
 		E168200F2236CDC100E1EDDB /* Roadster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadster.swift; sourceTree = "<group>"; };
+		E16820112236CE6D00E1EDDB /* ShipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsTests.swift; sourceTree = "<group>"; };
+		E16820132236CEB000E1EDDB /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FE223555BA0033C136 /* SpaceXAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXAPI.h; sourceTree = "<group>"; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -309,6 +313,7 @@
 				E16820072236C9FC00E1EDDB /* Payloads.swift */,
 				E168200B2236CB7900E1EDDB /* Rockets.swift */,
 				E168200F2236CDC100E1EDDB /* Roadster.swift */,
+				E16820132236CEB000E1EDDB /* Ships.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -328,6 +333,7 @@
 				E16820052236C9C200E1EDDB /* PayloadsTests.swift */,
 				E16820092236CB5B00E1EDDB /* RocketsTests.swift */,
 				E168200D2236CD7400E1EDDB /* RoadsterTests.swift */,
+				E16820112236CE6D00E1EDDB /* ShipsTests.swift */,
 			);
 			path = EndpointsTests;
 			sourceTree = "<group>";
@@ -589,6 +595,7 @@
 				E16820042236C86400E1EDDB /* Missions.swift in Sources */,
 				E168200C2236CB7900E1EDDB /* Rockets.swift in Sources */,
 				E1681FF62236BB4700E1EDDB /* LandingPads.swift in Sources */,
+				E16820152236CEDB00E1EDDB /* Ships.swift in Sources */,
 				E1681FEA2236B04D00E1EDDB /* Dragons.swift in Sources */,
 				E1681FFC2236BE7D00E1EDDB /* Launches.swift in Sources */,
 				E1681FF22236B8DC00E1EDDB /* Info.swift in Sources */,
@@ -615,6 +622,7 @@
 				E16820022236C81E00E1EDDB /* MissionsTests.swift in Sources */,
 				E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */,
 				E1681FE82236AFED00E1EDDB /* DragonsTests.swift in Sources */,
+				E16820122236CE6D00E1EDDB /* ShipsTests.swift in Sources */,
 				E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */,
 				E16820062236C9C200E1EDDB /* PayloadsTests.swift in Sources */,
 			);
