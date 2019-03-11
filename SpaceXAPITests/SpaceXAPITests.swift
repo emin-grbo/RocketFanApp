@@ -1,26 +1,38 @@
+// swiftlint:disable implicitly_unwrapped_optional
 import XCTest
 @testable import SpaceXAPI
 
 class SpaceXAPITests: XCTestCase {
+    var api: SpaceXAPI!
+    var sessionMock = SessionMock()
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        api = SpaceXAPI(urlSession: sessionMock)
     }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func test_SpaceXAPI_BuildsURL() {
+        let endpoint = EndpointMock()
+
+        _ = api.get(endpoint) { _ in }
+
+        XCTAssertEqual(sessionMock.urlCalled, "https://api.spacexdata.com/v3/test")
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func test_SpaceXAPI_ReturnsTask() {
+        let taskMock = DataTaskMock()
+        sessionMock.task = taskMock
+
+        let task = api.get(EndpointMock()) { _ in }
+
+        XCTAssertEqual(task, taskMock)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+    func test_SpaceXAPI_ResumesTask() {
+        let taskMock = DataTaskMock()
+        sessionMock.task = taskMock
 
+        _ = api.get(EndpointMock()) { _ in }
+
+        XCTAssertTrue(taskMock.resumeWasCalled)
+    }
 }
