@@ -28,6 +28,10 @@
 		E16820002236C31200E1EDDB /* LaunchPads.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FFF2236C31200E1EDDB /* LaunchPads.swift */; };
 		E16820022236C81E00E1EDDB /* MissionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820012236C81E00E1EDDB /* MissionsTests.swift */; };
 		E16820042236C86400E1EDDB /* Missions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820032236C86400E1EDDB /* Missions.swift */; };
+		E16820062236C9C200E1EDDB /* PayloadsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820052236C9C200E1EDDB /* PayloadsTests.swift */; };
+		E16820082236C9FC00E1EDDB /* Payloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820072236C9FC00E1EDDB /* Payloads.swift */; };
+		E168200A2236CB5B00E1EDDB /* RocketsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820092236CB5B00E1EDDB /* RocketsTests.swift */; };
+		E168200C2236CB7900E1EDDB /* Rockets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E168200B2236CB7900E1EDDB /* Rockets.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E175540E223555BA0033C136 /* SpaceXAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E17553FE223555BA0033C136 /* SpaceXAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -120,6 +124,10 @@
 		E1681FFF2236C31200E1EDDB /* LaunchPads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchPads.swift; sourceTree = "<group>"; };
 		E16820012236C81E00E1EDDB /* MissionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionsTests.swift; sourceTree = "<group>"; };
 		E16820032236C86400E1EDDB /* Missions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Missions.swift; sourceTree = "<group>"; };
+		E16820052236C9C200E1EDDB /* PayloadsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadsTests.swift; sourceTree = "<group>"; };
+		E16820072236C9FC00E1EDDB /* Payloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payloads.swift; sourceTree = "<group>"; };
+		E16820092236CB5B00E1EDDB /* RocketsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketsTests.swift; sourceTree = "<group>"; };
+		E168200B2236CB7900E1EDDB /* Rockets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rockets.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FE223555BA0033C136 /* SpaceXAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXAPI.h; sourceTree = "<group>"; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -294,6 +302,8 @@
 				E1681FFB2236BE7D00E1EDDB /* Launches.swift */,
 				E1681FFF2236C31200E1EDDB /* LaunchPads.swift */,
 				E16820032236C86400E1EDDB /* Missions.swift */,
+				E16820072236C9FC00E1EDDB /* Payloads.swift */,
+				E168200B2236CB7900E1EDDB /* Rockets.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
@@ -310,6 +320,8 @@
 				E1681FF92236BE3300E1EDDB /* LaunchesTests.swift */,
 				E1681FFD2236C28300E1EDDB /* LaunchPadsTests.swift */,
 				E16820012236C81E00E1EDDB /* MissionsTests.swift */,
+				E16820052236C9C200E1EDDB /* PayloadsTests.swift */,
+				E16820092236CB5B00E1EDDB /* RocketsTests.swift */,
 			);
 			path = EndpointsTests;
 			sourceTree = "<group>";
@@ -569,6 +581,7 @@
 				E175541A223582770033C136 /* Endpoint.swift in Sources */,
 				E175541F22359EE00033C136 /* Capsules.swift in Sources */,
 				E16820042236C86400E1EDDB /* Missions.swift in Sources */,
+				E168200C2236CB7900E1EDDB /* Rockets.swift in Sources */,
 				E1681FF62236BB4700E1EDDB /* LandingPads.swift in Sources */,
 				E1681FEA2236B04D00E1EDDB /* Dragons.swift in Sources */,
 				E1681FFC2236BE7D00E1EDDB /* Launches.swift in Sources */,
@@ -576,6 +589,7 @@
 				E16820002236C31200E1EDDB /* LaunchPads.swift in Sources */,
 				E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */,
 				E1681FEE2236B2F700E1EDDB /* History.swift in Sources */,
+				E16820082236C9FC00E1EDDB /* Payloads.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +600,7 @@
 				E1681FEC2236B2BB00E1EDDB /* HistoryTests.swift in Sources */,
 				E1681FFE2236C28300E1EDDB /* LaunchPadsTests.swift in Sources */,
 				E1681FF02236B8A600E1EDDB /* InfoTests.swift in Sources */,
+				E168200A2236CB5B00E1EDDB /* RocketsTests.swift in Sources */,
 				E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */,
 				E1681FF42236BAF500E1EDDB /* LandingPadsTests.swift in Sources */,
 				E1681FFA2236BE3300E1EDDB /* LaunchesTests.swift in Sources */,
@@ -593,6 +608,7 @@
 				E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */,
 				E1681FE82236AFED00E1EDDB /* DragonsTests.swift in Sources */,
 				E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */,
+				E16820062236C9C200E1EDDB /* PayloadsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
