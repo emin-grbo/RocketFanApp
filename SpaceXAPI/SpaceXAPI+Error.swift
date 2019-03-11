@@ -3,7 +3,7 @@ import Foundation
 enum SpaceXAPIError: Error {
     case unknownResponse
     case serverReturnedCode(Int)
-    case noDataReceived
+    case emptyResponse
 }
 
 extension SpaceXAPIError: LocalizedError {
@@ -15,7 +15,7 @@ extension SpaceXAPIError: LocalizedError {
         case .serverReturnedCode(let code):
             return NSLocalizedString("Server returned HTTP code \(code)", comment: "Server returned code")
 
-        case .noDataReceived:
+        case .emptyResponse:
             return NSLocalizedString("No data returned by the server", comment: "Missing data error")
         }
     }

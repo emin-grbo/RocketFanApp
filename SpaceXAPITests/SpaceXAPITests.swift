@@ -27,7 +27,8 @@ class SpaceXAPITests: XCTestCase {
     func test_SpaceXAPI_BuildsURL() {
         _ = api.get(endpoint) { _ in }
 
-        XCTAssertEqual(sessionMock.urlCalled, "https://api.spacexdata.com/v3/test")
+        let expectedURL = URL(string: "https://api.spacexdata.com/v3/test")
+        XCTAssertEqual(sessionMock.calledURL, expectedURL)
     }
 
     func test_SpaceXAPI_ReturnsTask() {
@@ -85,7 +86,7 @@ class SpaceXAPITests: XCTestCase {
     }
 
     func test_SpaceXAPI_WhenGivenNoData_ReturnsNoDataError() {
-        let error = SpaceXAPIError.noDataReceived
+        let error = SpaceXAPIError.emptyResponse
         sessionMock.response = okResponse
         sessionMock.data = nil
 

@@ -31,7 +31,7 @@ final public class SpaceXAPI {
             }
 
             guard let data = data else {
-                completion(Result.error(SpaceXAPIError.noDataReceived))
+                completion(Result.error(SpaceXAPIError.emptyResponse))
                 return
             }
 

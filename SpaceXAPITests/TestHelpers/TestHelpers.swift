@@ -16,11 +16,11 @@ class SessionMock: NetworkSession {
     var error: Error?
     var task: URLSessionDataTask?
 
-    var urlCalled: String?
+    var calledURL: URL?
 
     func dataTask(with url: URL,
                   completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
-        urlCalled = url.absoluteString
+        calledURL = url
         completionHandler(data, response, error)
         return task ?? DataTaskMock()
     }
