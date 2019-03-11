@@ -1,13 +1,13 @@
 import Foundation
 
 enum Roadster {
-    case current
+    case location
 }
 
 extension Roadster: Endpoint {
     var path: String {
         switch self {
-        case .current:
+        case .location:
             return "/roadster"
         }
     }

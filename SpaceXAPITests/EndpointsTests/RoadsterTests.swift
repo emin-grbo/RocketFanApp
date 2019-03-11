@@ -4,7 +4,7 @@ import XCTest
 class RoadsterTests: XCTestCase {
 
     func test_Roadster_Current_ReturnsPath() {
-        let path = Roadster.current.path
+        let path = Roadster.location.path
 
         XCTAssertEqual(path, "/roadster")
     }
