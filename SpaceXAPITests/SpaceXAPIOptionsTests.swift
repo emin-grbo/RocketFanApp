@@ -48,4 +48,12 @@ class SpaceXAPIOptionsTests: XCTestCase {
         let expectedItem = URLQueryItem(name: "offset", value: String(offset))
         XCTAssertTrue(queryItems.contains(expectedItem), "\(queryItems) does not contain \(expectedItem)")
     }
+
+    func test_SpaceXAPIOptions_ReturnsCorrectNumberOfQueryItems() {
+        let options = SpaceXAPI.Options(filterOptions: ["flight_number"], limit: 1, offset: 1)
+
+        let queryItems = options.queryItems
+
+        XCTAssertEqual(queryItems.count, 3)
+    }
 }
