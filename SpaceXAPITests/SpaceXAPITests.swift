@@ -31,6 +31,14 @@ class SpaceXAPITests: XCTestCase {
         XCTAssertEqual(sessionMock.calledURL, expectedURL)
     }
 
+    func test_SpaceXAPI_BuildsURL_WithParameters() {
+        let parameters = ["params": "true"]
+        _ = api.get(endpoint, parameters: parameters) { _ in }
+
+        let expectedURL = URL(string: "https://api.spacexdata.com/v3/test?params=true")
+        XCTAssertEqual(sessionMock.calledURL, expectedURL)
+    }
+
     func test_SpaceXAPI_ReturnsTask() {
         let taskMock = DataTaskMock()
         sessionMock.task = taskMock
