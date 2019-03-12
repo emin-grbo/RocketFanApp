@@ -15,6 +15,8 @@
 		0E911FF42236ECC900CBE217 /* NetworkSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */; };
 		0E911FF62236EDA300CBE217 /* SpaceXAPI+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */; };
 		0E911FF82236F64A00CBE217 /* XCTestCase+assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF72236F64A00CBE217 /* XCTestCase+assert.swift */; };
+		0E911FFA2237BBD600CBE217 /* SpaceXAPI+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */; };
+		0E911FFC2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FFB2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift */; };
 		0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA1A722330CF500E8903F /* AppDelegate.swift */; };
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
@@ -114,6 +116,8 @@
 		0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionProtocol.swift; sourceTree = "<group>"; };
 		0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceXAPI+Error.swift"; sourceTree = "<group>"; };
 		0E911FF72236F64A00CBE217 /* XCTestCase+assert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+assert.swift"; sourceTree = "<group>"; };
+		0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceXAPI+Options.swift"; sourceTree = "<group>"; };
+		0E911FFB2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIOptionsTests.swift; sourceTree = "<group>"; };
 		0EBCA1A422330CF500E8903F /* RocketFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1A722330CF500E8903F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBCA1AE22330CF600E8903F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -308,6 +312,7 @@
 				E17553FE223555BA0033C136 /* SpaceXAPI.h */,
 				0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */,
 				0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */,
+				0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */,
 			);
 			path = SpaceXAPI;
 			sourceTree = "<group>";
@@ -317,6 +322,7 @@
 			children = (
 				E175542022359F0F0033C136 /* EndpointsTests */,
 				E175540D223555BA0033C136 /* Info.plist */,
+				0E911FFB2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift */,
 				E175540B223555BA0033C136 /* SpaceXAPITests.swift */,
 				0E911FF02236EC6000CBE217 /* TestHelpers */,
 			);
@@ -616,6 +622,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E911FFA2237BBD600CBE217 /* SpaceXAPI+Options.swift in Sources */,
 				E175541A223582770033C136 /* Endpoint.swift in Sources */,
 				E175541F22359EE00033C136 /* Capsules.swift in Sources */,
 				E16820042236C86400E1EDDB /* Missions.swift in Sources */,
@@ -644,6 +651,7 @@
 				E1681FEC2236B2BB00E1EDDB /* HistoryTests.swift in Sources */,
 				E168200E2236CD7400E1EDDB /* RoadsterTests.swift in Sources */,
 				E1681FFE2236C28300E1EDDB /* LaunchPadsTests.swift in Sources */,
+				0E911FFC2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift in Sources */,
 				E1681FF02236B8A600E1EDDB /* InfoTests.swift in Sources */,
 				E168200A2236CB5B00E1EDDB /* RocketsTests.swift in Sources */,
 				E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */,
