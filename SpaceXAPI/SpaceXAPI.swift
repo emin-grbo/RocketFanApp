@@ -9,10 +9,10 @@ final public class SpaceXAPI {
     }
 
     public func get(_ endpoint: Endpoint,
-                    parameters: [String: String]? = nil,
+                    options: Options? = nil,
                     completion: @escaping (Result<Data>) -> Void) -> URLSessionTask {
 
-        let url = buildURL(for: endpoint, using: parameters)
+        let url = buildURL(for: endpoint, using: options)
 
         let task = urlSession.dataTask(with: url) { data, urlResponse, error in
             if let error = error {
@@ -43,10 +43,14 @@ final public class SpaceXAPI {
         return task
     }
 
-    private func buildURL(for endpoint: Endpoint, using parameters: [String: String]?) -> URL {
+    private func buildURL(for endpoint: Endpoint, using options: Options?) -> URL {
         let url = baseURL.appendingPathComponent(endpoint.path)
+
+        guard let options = options else { return url }
+
         var components = URLComponents(url: url, resolvingAgainstBaseURL: false)
-        components?.queryItems = parameters?.map { URLQueryItem(name: $0, value: $1) }
+        components?.queryItems = options.queryItems
+
         return components?.url ?? url
     }
 }

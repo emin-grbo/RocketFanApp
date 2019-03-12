@@ -31,12 +31,14 @@ class SpaceXAPITests: XCTestCase {
         XCTAssertEqual(sessionMock.calledURL, expectedURL)
     }
 
-    func test_SpaceXAPI_BuildsURL_WithParameters() {
-        let parameters = ["params": "true"]
-        _ = api.get(endpoint, parameters: parameters) { _ in }
+    func test_SpaceXAPI_BuildsURL_WithOptions() {
+        let options = SpaceXAPI.Options(limit: 1, offset: 2)
 
-        let expectedURL = URL(string: "https://api.spacexdata.com/v3/test?params=true")
-        XCTAssertEqual(sessionMock.calledURL, expectedURL)
+        _ = api.get(endpoint, options: options) { _ in }
+
+        // Query item order isn't guaranteed, so don't try and match an absolute string
+        let components = URLComponents(url: sessionMock.calledURL!, resolvingAgainstBaseURL: false)!
+        XCTAssertEqual(components.queryItems, options.queryItems)
     }
 
     func test_SpaceXAPI_ReturnsTask() {
