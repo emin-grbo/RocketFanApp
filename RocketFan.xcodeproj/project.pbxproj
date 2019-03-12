@@ -46,7 +46,6 @@
 		E16820152236CEDB00E1EDDB /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820132236CEB000E1EDDB /* Ships.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
-		E175540E223555BA0033C136 /* SpaceXAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = E17553FE223555BA0033C136 /* SpaceXAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E1755411223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E1755412223555BA0033C136 /* SpaceXAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E175541A223582770033C136 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1755419223582770033C136 /* Endpoint.swift */; };
@@ -153,7 +152,6 @@
 		E16820112236CE6D00E1EDDB /* ShipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsTests.swift; sourceTree = "<group>"; };
 		E16820132236CEB000E1EDDB /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E17553FE223555BA0033C136 /* SpaceXAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpaceXAPI.h; sourceTree = "<group>"; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1755404223555BA0033C136 /* SpaceXAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E175540B223555BA0033C136 /* SpaceXAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPITests.swift; sourceTree = "<group>"; };
@@ -309,7 +307,6 @@
 				E17553FF223555BA0033C136 /* Info.plist */,
 				0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */,
 				0E911FEE2236EB5A00CBE217 /* Result.swift */,
-				E17553FE223555BA0033C136 /* SpaceXAPI.h */,
 				0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */,
 				0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */,
 				0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */,
@@ -377,7 +374,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E175540E223555BA0033C136 /* SpaceXAPI.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
