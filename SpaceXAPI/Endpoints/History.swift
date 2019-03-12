@@ -1,12 +1,12 @@
 import Foundation
 
-enum History {
+public enum History {
     case all
     case one(String)
 }
 
 extension History: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .all:
             return "/history"

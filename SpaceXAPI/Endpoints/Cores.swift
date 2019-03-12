@@ -1,6 +1,6 @@
 import Foundation
 
-enum Cores {
+public enum Cores {
     case all
     case one(String)
     case upcoming
@@ -8,7 +8,7 @@ enum Cores {
 }
 
 extension Cores: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .all:
             return "/cores"

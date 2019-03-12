@@ -1,6 +1,6 @@
 import Foundation
 
-enum Launches {
+public enum Launches {
     case all
     case one(String)
     case past
@@ -10,7 +10,7 @@ enum Launches {
 }
 
 extension Launches: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .all:
             return "/launches"

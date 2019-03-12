@@ -1,13 +1,13 @@
 import Foundation
 
-enum SpaceXAPIError: Error {
+public enum SpaceXAPIError: Error {
     case unknownResponse
     case serverReturnedCode(Int)
     case emptyResponse
 }
 
 extension SpaceXAPIError: LocalizedError {
-    var errorDescription: String? {
+    public var errorDescription: String? {
         switch self {
         case .unknownResponse:
             return NSLocalizedString("Server returned unknown response", comment: "Server returned unknown response")

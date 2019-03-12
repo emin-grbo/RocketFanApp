@@ -1,12 +1,12 @@
 import Foundation
 
-enum LandingPads {
+public enum LandingPads {
     case all
     case one(String)
 }
 
 extension LandingPads: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .all:
             return "/landpads"

@@ -1,12 +1,12 @@
 import Foundation
 
-enum Rockets {
+public enum Rockets {
     case all
     case one(String)
 }
 
 extension Rockets: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .all:
             return "/rockets"
