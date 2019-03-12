@@ -1,12 +1,12 @@
 import Foundation
 
-enum Info {
+public enum Info {
     case company
     case api
 }
 
 extension Info: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .company:
             return "/info"

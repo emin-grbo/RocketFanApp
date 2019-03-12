@@ -1,12 +1,12 @@
 import Foundation
 
-enum Payloads {
+public enum Payloads {
     case all
     case one(String)
 }
 
 extension Payloads: Endpoint {
-    var path: String {
+    public var path: String {
         switch self {
         case .all:
             return "/payloads"
