@@ -2,7 +2,9 @@ import XCTest
 @testable import RocketFan
 
 class CapsuleTests: XCTestCase {
-    func test_CanBeDecoded_FromJSON() {
+    var capsule: Capsule?
+
+    override func setUp() {
         guard let data = JSONLoader.load(.capsule) else {
             XCTFail("Missing file: Capsule.json")
             return
@@ -11,10 +13,22 @@ class CapsuleTests: XCTestCase {
         do {
 
             let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
-            _ = try decoder.decoded([Capsule].self, from: data)
+            let capsules = try decoder.decoded([Capsule].self, from: data)
+            capsule = capsules.first
 
         } catch {
             XCTFail("Decoding failed: \(error)")
         }
+    }
+
+    func test_RequiredValues_CanBeDecoded_FromJSON() {
+        XCTAssertNotNil(capsule)
+    }
+
+    func test_OptionalValues_CanBeDecoded_FromJSON_IfExist() {
+        XCTAssertEqual(capsule?.details, "Reentered after three weeks in orbit")
+
+        let expectedDate = Date(timeIntervalSince1970: 1291822980)
+        XCTAssertEqual(capsule?.originalLaunch, expectedDate)
     }
 }
