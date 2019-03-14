@@ -4,6 +4,7 @@ enum JSONLoader {
     enum File: String {
         case capsule
         case core
+        case history
     }
 
     static func load(_ file: File) -> Data? {
