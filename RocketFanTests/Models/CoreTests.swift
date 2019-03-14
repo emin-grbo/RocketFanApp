@@ -12,8 +12,7 @@ class CoreTests: XCTestCase {
 
         do {
 
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .secondsSince1970
+            let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             let cores = try decoder.decoded([Core].self, from: data)
             core = cores.first
 

@@ -10,8 +10,7 @@ class CapsuleTests: XCTestCase {
 
         do {
 
-            let decoder = JSONDecoder()
-            decoder.dateDecodingStrategy = .secondsSince1970
+            let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             _ = try decoder.decoded([Capsule].self, from: data)
 
         } catch {
