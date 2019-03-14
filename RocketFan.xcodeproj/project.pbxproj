@@ -51,6 +51,18 @@
 		E175541A223582770033C136 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1755419223582770033C136 /* Endpoint.swift */; };
 		E175541F22359EE00033C136 /* Capsules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175541E22359EE00033C136 /* Capsules.swift */; };
 		E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175542122359F2F0033C136 /* CapsulesTests.swift */; };
+		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
+		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
+		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
+		E1FFA023223A993B0056BA6B /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA018223A993A0056BA6B /* info.json */; };
+		E1FFA024223A993B0056BA6B /* core.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA019223A993A0056BA6B /* core.json */; };
+		E1FFA025223A993B0056BA6B /* ship.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01A223A993A0056BA6B /* ship.json */; };
+		E1FFA026223A993B0056BA6B /* history.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01B223A993A0056BA6B /* history.json */; };
+		E1FFA027223A993B0056BA6B /* launch.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01C223A993A0056BA6B /* launch.json */; };
+		E1FFA028223A993B0056BA6B /* landpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01D223A993A0056BA6B /* landpad.json */; };
+		E1FFA029223A993B0056BA6B /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01E223A993B0056BA6B /* rocket.json */; };
+		E1FFA02A223A993B0056BA6B /* launchpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01F223A993B0056BA6B /* launchpad.json */; };
+		E1FFA02B223A993B0056BA6B /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA020223A993B0056BA6B /* dragon.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +171,18 @@
 		E1755419223582770033C136 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		E175541E22359EE00033C136 /* Capsules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsules.swift; sourceTree = "<group>"; };
 		E175542122359F2F0033C136 /* CapsulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesTests.swift; sourceTree = "<group>"; };
+		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
+		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
+		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
+		E1FFA018223A993A0056BA6B /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
+		E1FFA019223A993A0056BA6B /* core.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = core.json; sourceTree = "<group>"; };
+		E1FFA01A223A993A0056BA6B /* ship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ship.json; sourceTree = "<group>"; };
+		E1FFA01B223A993A0056BA6B /* history.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = history.json; sourceTree = "<group>"; };
+		E1FFA01C223A993A0056BA6B /* launch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch.json; sourceTree = "<group>"; };
+		E1FFA01D223A993A0056BA6B /* landpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landpad.json; sourceTree = "<group>"; };
+		E1FFA01E223A993B0056BA6B /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
+		E1FFA01F223A993B0056BA6B /* launchpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchpad.json; sourceTree = "<group>"; };
+		E1FFA020223A993B0056BA6B /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -278,6 +302,7 @@
 		0EBCA1D622330D6C00E8903F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1FFA013223A97BF0056BA6B /* Data */,
 				0EBCA1AE22330CF600E8903F /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -365,6 +390,25 @@
 				E16820112236CE6D00E1EDDB /* ShipsTests.swift */,
 			);
 			path = EndpointsTests;
+			sourceTree = "<group>";
+		};
+		E1FFA013223A97BF0056BA6B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E1FFA014223A98FE0056BA6B /* capsule.json */,
+				E1FFA019223A993A0056BA6B /* core.json */,
+				E1FFA020223A993B0056BA6B /* dragon.json */,
+				E1FFA01B223A993A0056BA6B /* history.json */,
+				E1FFA016223A993A0056BA6B /* home.json */,
+				E1FFA018223A993A0056BA6B /* info.json */,
+				E1FFA01D223A993A0056BA6B /* landpad.json */,
+				E1FFA01C223A993A0056BA6B /* launch.json */,
+				E1FFA01F223A993B0056BA6B /* launchpad.json */,
+				E1FFA017223A993A0056BA6B /* mission.json */,
+				E1FFA01E223A993B0056BA6B /* rocket.json */,
+				E1FFA01A223A993A0056BA6B /* ship.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -534,7 +578,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */,
+				E1FFA015223A98FE0056BA6B /* capsule.json in Resources */,
+				E1FFA02B223A993B0056BA6B /* dragon.json in Resources */,
+				E1FFA021223A993B0056BA6B /* home.json in Resources */,
+				E1FFA02A223A993B0056BA6B /* launchpad.json in Resources */,
+				E1FFA022223A993B0056BA6B /* mission.json in Resources */,
 				0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */,
+				E1FFA028223A993B0056BA6B /* landpad.json in Resources */,
+				E1FFA025223A993B0056BA6B /* ship.json in Resources */,
+				E1FFA027223A993B0056BA6B /* launch.json in Resources */,
+				E1FFA024223A993B0056BA6B /* core.json in Resources */,
+				E1FFA026223A993B0056BA6B /* history.json in Resources */,
+				E1FFA023223A993B0056BA6B /* info.json in Resources */,
+				E1FFA029223A993B0056BA6B /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
