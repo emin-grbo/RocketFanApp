@@ -19,9 +19,3 @@ extension JSONEncoder: AnyEncoder {
         return try encode(value)
     }
 }
-
-extension Encodable {
-    func encoded(using encoder: AnyEncoder = JSONEncoder()) throws -> Data {
-        return try encoder.encode(self)
-    }
-}
