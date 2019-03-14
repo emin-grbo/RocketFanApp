@@ -1,6 +1,6 @@
 import Foundation
 
-struct MissionFragment: Codable {
+struct MissionFragment: Decodable {
     let name: String
     let flight: Int
 }

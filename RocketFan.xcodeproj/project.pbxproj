@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C10223312BE00F85DAB /* RocketFanTests.swift */; };
 		0E611C13223312C800F85DAB /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C12223312C800F85DAB /* RocketFanUITests.swift */; };
+		0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8AF222223AF0B200FB3369 /* MissionFragment.swift */; };
 		0E911FED2236EAAA00CBE217 /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */; };
 		0E911FEF2236EB5A00CBE217 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FEE2236EB5A00CBE217 /* Result.swift */; };
 		0E911FF22236EC7A00CBE217 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF12236EC7A00CBE217 /* TestHelpers.swift */; };
@@ -63,7 +64,6 @@
 		E1FFA029223A993B0056BA6B /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01E223A993B0056BA6B /* rocket.json */; };
 		E1FFA02A223A993B0056BA6B /* launchpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01F223A993B0056BA6B /* launchpad.json */; };
 		E1FFA02B223A993B0056BA6B /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA020223A993B0056BA6B /* dragon.json */; };
-		E1FFA02F223A9A510056BA6B /* JSONLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA02E223A9A510056BA6B /* JSONLoaderTests.swift */; };
 		E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA030223A9ADF0056BA6B /* JSONLoader.swift */; };
 		E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */; };
 		E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA036223AA39C0056BA6B /* Capsule.swift */; };
@@ -127,6 +127,7 @@
 		0E2EA408223519D600A7D350 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		0E611C10223312BE00F85DAB /* RocketFanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
 		0E611C12223312C800F85DAB /* RocketFanUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
+		0E8AF222223AF0B200FB3369 /* MissionFragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFragment.swift; sourceTree = "<group>"; };
 		0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
 		0E911FEE2236EB5A00CBE217 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0E911FF12236EC7A00CBE217 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
@@ -189,7 +190,6 @@
 		E1FFA01E223A993B0056BA6B /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
 		E1FFA01F223A993B0056BA6B /* launchpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchpad.json; sourceTree = "<group>"; };
 		E1FFA020223A993B0056BA6B /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
-		E1FFA02E223A9A510056BA6B /* JSONLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoaderTests.swift; sourceTree = "<group>"; };
 		E1FFA030223A9ADF0056BA6B /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTests.swift; sourceTree = "<group>"; };
 		E1FFA036223AA39C0056BA6B /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
@@ -292,7 +292,6 @@
 				0EBCA1BE22330CF600E8903F /* Info.plist */,
 				E1FFA033223AA31A0056BA6B /* Models */,
 				0E611C10223312BE00F85DAB /* RocketFanTests.swift */,
-				E1FFA02D223A9A1C0056BA6B /* UtilitiesTests */,
 			);
 			path = RocketFanTests;
 			sourceTree = "<group>";
@@ -436,18 +435,11 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		E1FFA02D223A9A1C0056BA6B /* UtilitiesTests */ = {
-			isa = PBXGroup;
-			children = (
-				E1FFA02E223A9A510056BA6B /* JSONLoaderTests.swift */,
-			);
-			path = UtilitiesTests;
-			sourceTree = "<group>";
-		};
 		E1FFA032223AA2F10056BA6B /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E1FFA036223AA39C0056BA6B /* Capsule.swift */,
+				0E8AF222223AF0B200FB3369 /* MissionFragment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -712,6 +704,7 @@
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
+				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
 				E1FFA03C223AA70E0056BA6B /* Data+ Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -720,7 +713,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1FFA02F223A9A510056BA6B /* JSONLoaderTests.swift in Sources */,
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
 				0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */,
 			);

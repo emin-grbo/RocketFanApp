@@ -1,6 +1,6 @@
 import Foundation
 
-struct Capsule: Codable {
+struct Capsule: Decodable {
     let id: String
     let serial: String
     let status: String
