@@ -22,19 +22,14 @@ class CoreTests: XCTestCase {
 
     }
 
-    func test_RequiredValuesCanBeDecoded_FromJSON() {
+    func test_RequiredValues_CanBeDecoded_FromJSON() {
         XCTAssertNotNil(core)
     }
 
-    func test_Block_CanBeDecoded_IfExists() {
+    func test_OptionalValues_CanBeDecoded_IfExists() {
         XCTAssertEqual(core?.block, 1)
-    }
-
-    func test_Details_CanBeDecoded_IfExists() {
         XCTAssertEqual(core?.details, "Stage Expended")
-    }
 
-    func test_LaunchDate_CanBeDecoded_IfExists() {
         let expectedDate = Date(timeIntervalSince1970: 1275677100)
         XCTAssertEqual(core?.originalLaunch, expectedDate)
     }
