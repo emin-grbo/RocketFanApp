@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E2B86C5223AF64A005686BB /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86C4223AF64A005686BB /* Core.swift */; };
+		0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86C6223AF66E005686BB /* CoreTests.swift */; };
 		0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C10223312BE00F85DAB /* RocketFanTests.swift */; };
 		0E611C13223312C800F85DAB /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C12223312C800F85DAB /* RocketFanUITests.swift */; };
 		0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8AF222223AF0B200FB3369 /* MissionFragment.swift */; };
@@ -124,6 +126,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E2B86C4223AF64A005686BB /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		0E2B86C6223AF66E005686BB /* CoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreTests.swift; sourceTree = "<group>"; };
 		0E2EA408223519D600A7D350 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		0E611C10223312BE00F85DAB /* RocketFanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
 		0E611C12223312C800F85DAB /* RocketFanUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
@@ -440,6 +444,7 @@
 			children = (
 				E1FFA036223AA39C0056BA6B /* Capsule.swift */,
 				0E8AF222223AF0B200FB3369 /* MissionFragment.swift */,
+				0E2B86C4223AF64A005686BB /* Core.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 			isa = PBXGroup;
 			children = (
 				E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */,
+				0E2B86C6223AF66E005686BB /* CoreTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -703,6 +709,7 @@
 				E1FFA03A223AA6320056BA6B /* Codable+Extensions.swift in Sources */,
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
+				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
 				E1FFA03C223AA70E0056BA6B /* Data+ Extensions.swift in Sources */,
@@ -714,6 +721,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
+				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
 				0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

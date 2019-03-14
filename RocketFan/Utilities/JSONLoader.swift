@@ -3,6 +3,7 @@ import Foundation
 enum JSONLoader {
     enum File: String {
         case capsule
+        case core
     }
 
     static func load(_ file: File) -> Data? {
