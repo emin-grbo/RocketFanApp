@@ -6,6 +6,7 @@ enum JSONLoader {
         case core
         case history
         case landingPad = "landpad"
+        case ship
     }
 
     static func load(_ file: File) -> Data? {
