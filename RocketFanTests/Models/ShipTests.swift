@@ -26,24 +26,37 @@ class ShipTests: XCTestCase {
 
     func test_OptionalValues_CanBeDecoded_FromJSON_IfExist() {
         XCTAssertEqual(ship?.model, "Marmac 304")
-        XCTAssertEqual(ship?.landings?.successful, 16)
-        XCTAssertEqual(ship?.landings?.attempted, 19)
 
         let shipTwo = ships?[4]
-        XCTAssertEqual(shipTwo?.weight?.lbs, 1120000)
-        XCTAssertEqual(shipTwo?.weight?.kg, 508023)
         XCTAssertEqual(shipTwo?.yearBuilt, 1995)
         XCTAssertEqual(shipTwo?.speedKn, 0)
         XCTAssertEqual(shipTwo?.status, "Moored")
-        XCTAssertEqual(shipTwo?.location?.latitude, 29.95037)
-        XCTAssertEqual(shipTwo?.location?.longitude, -90.05646)
 
         //swiftlint:disable line_length
         XCTAssertEqual(shipTwo?.url?.absoluteString, "https://www.marinetraffic.com/en/ais/details/ships/shipid:430027/vessel:HAWK")
         XCTAssertEqual(shipTwo?.imageUrl?.absoluteString, "https://i.imgur.com/hGWWupT.jpg")
 
-        let shipTHree = ships?[6]
-        XCTAssertEqual(shipTHree?.courseDeg, 79)
+        let shipThree = ships?[6]
+        XCTAssertEqual(shipThree?.courseDeg, 79)
+    }
+
+    func test_Landings_CanBeDecoded() {
+        XCTAssertEqual(ship?.landings?.successful, 16)
+        XCTAssertEqual(ship?.landings?.attempted, 19)
+    }
+
+    func test_Location_CanBeDecoded() {
+        let ship = ships?[4]
+
+        XCTAssertEqual(ship?.location?.latitude, 29.95037)
+        XCTAssertEqual(ship?.location?.longitude, -90.05646)
+    }
+
+    func test_Weight_CanBeDecoded() {
+        let ship = ships?[4]
+
+        XCTAssertEqual(ship?.weight?.lbs, 1120000)
+        XCTAssertEqual(ship?.weight?.kg, 508023)
     }
 
     func test_Identifiers_CanBeDecoded() {
