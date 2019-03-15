@@ -30,9 +30,6 @@ class ShipTests: XCTestCase {
         XCTAssertEqual(ship?.landings?.attempted, 19)
 
         let shipTwo = ships?[4]
-        XCTAssertEqual(shipTwo?.imo, 9103295)
-        XCTAssertEqual(shipTwo?.mmsi, 366943250)
-        XCTAssertEqual(shipTwo?.abs, 1033239)
         XCTAssertEqual(shipTwo?.weight?.lbs, 1120000)
         XCTAssertEqual(shipTwo?.weight?.kg, 508023)
         XCTAssertEqual(shipTwo?.yearBuilt, 1995)
@@ -47,5 +44,13 @@ class ShipTests: XCTestCase {
 
         let shipTHree = ships?[6]
         XCTAssertEqual(shipTHree?.courseDeg, 79)
+    }
+
+    func test_Identifiers_CanBeDecoded() {
+        let ship = ships?[4]
+
+        XCTAssertEqual(ship?.identifiers?.imo, 9103295)
+        XCTAssertEqual(ship?.identifiers?.mmsi, 366943250)
+        XCTAssertEqual(ship?.identifiers?.abs, 1033239)
     }
 }

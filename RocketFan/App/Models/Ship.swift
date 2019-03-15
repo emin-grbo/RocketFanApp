@@ -5,9 +5,7 @@ struct Ship: Decodable {
     let name: String
     let model: String?
     let isActive: Bool
-    let imo: Double?
-    let mmsi: Double?
-    let abs: Double?
+    let identifiers: Identifiers?
     let weight: Weight?
     let yearBuilt: Int?
     let homePort: String
@@ -54,9 +52,6 @@ extension Ship {
         name = try container.decode(String.self, forKey: .name)
         model = try container.decodeIfPresent(String.self, forKey: .model)
         isActive = try container.decode(Bool.self, forKey: .isActive)
-        imo = try container.decodeIfPresent(Double.self, forKey: .imo)
-        mmsi = try container.decodeIfPresent(Double.self, forKey: .mmsi)
-        abs = try container.decodeIfPresent(Double.self, forKey: .abs)
         yearBuilt = try container.decodeIfPresent(Int.self, forKey: .yearBuilt)
         homePort = try container.decode(String.self, forKey: .homePort)
         status = try container.decodeIfPresent(String.self, forKey: .status)
@@ -75,5 +70,31 @@ extension Ship {
         let attempted = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
         let successful = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)
         landings = Landings(attempted: attempted, successful: successful)
+
+        let imo = try container.decodeIfPresent(Int.self, forKey: .imo)
+        let mmsi = try container.decodeIfPresent(Int.self, forKey: .mmsi)
+        let abs = try container.decodeIfPresent(Int.self, forKey: .abs)
+        identifiers = Identifiers(abs: abs, imo: imo, mmsi: mmsi)
+    }
+}
+
+extension Ship {
+    struct Identifiers {
+        /// American Bureau of Shipping
+        let abs: Int
+
+        /// International Maritime Organisation
+        let imo: Int
+
+        /// Maritime Mobile Service Identity
+        let mmsi: Int
+
+        init?(abs: Int?, imo: Int?, mmsi: Int?) {
+            guard let abs = abs, let imo = imo, let mmsi = mmsi else { return nil }
+
+            self.abs = abs
+            self.imo = imo
+            self.mmsi = mmsi
+        }
     }
 }
