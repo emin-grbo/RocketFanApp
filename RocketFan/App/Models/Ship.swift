@@ -15,7 +15,7 @@ struct Ship: Decodable {
     let status: String?
     let speedKn: Double?
     let courseDeg: Int?
-    let location: Location
+    let location: Location?
     let successfulLandings: Int?
     let attemptedLandings: Int?
     let missions: [MissionFragment]
@@ -47,5 +47,31 @@ extension Ship {
         case url
         case imageUrl = "image"
         case roles
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        id = try container.decode(String.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        model = try container.decodeIfPresent(String.self, forKey: .model)
+        isActive = try container.decode(Bool.self, forKey: .isActive)
+        imo = try container.decodeIfPresent(Double.self, forKey: .imo)
+        mmsi = try container.decodeIfPresent(Double.self, forKey: .mmsi)
+        abs = try container.decodeIfPresent(Double.self, forKey: .abs)
+        weightLbs = try container.decodeIfPresent(Double.self, forKey: .weightLbs)
+        weightKg = try container.decodeIfPresent(Double.self, forKey: .weightKg)
+        yearBuilt = try container.decodeIfPresent(Int.self, forKey: .yearBuilt)
+        homePort = try container.decode(String.self, forKey: .homePort)
+        status = try container.decodeIfPresent(String.self, forKey: .status)
+        speedKn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
+        courseDeg = try container.decodeIfPresent(Int.self, forKey: .courseDeg)
+        location = try? container.decode(Location.self, forKey: .location)
+        successfulLandings = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)
+        attemptedLandings = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
+        missions = try container.decode([MissionFragment].self, forKey: .missions)
+        url = try container.decodeIfPresent(URL.self, forKey: .url)
+        imageUrl = try container.decodeIfPresent(URL.self, forKey: .imageUrl)
+        roles = try container.decode([String].self, forKey: .roles)
     }
 }
