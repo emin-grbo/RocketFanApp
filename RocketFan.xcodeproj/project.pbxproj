@@ -63,7 +63,6 @@
 		E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175542122359F2F0033C136 /* CapsulesTests.swift */; };
 		E1F34C4A223BEB7000F22086 /* ShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C49223BEB7000F22086 /* ShipTests.swift */; };
 		E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C4B223BEC3400F22086 /* Ship.swift */; };
-		E1F34C4E223BFA7400F22086 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C4D223BFA7400F22086 /* Position.swift */; };
 		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
 		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
 		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
@@ -201,7 +200,6 @@
 		E175542122359F2F0033C136 /* CapsulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesTests.swift; sourceTree = "<group>"; };
 		E1F34C49223BEB7000F22086 /* ShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipTests.swift; sourceTree = "<group>"; };
 		E1F34C4B223BEC3400F22086 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
-		E1F34C4D223BFA7400F22086 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
 		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
 		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
@@ -469,7 +467,6 @@
 				0E2B86CE223B06A6005686BB /* Links.swift */,
 				0E2B86D4223B1089005686BB /* Location.swift */,
 				0E8AF222223AF0B200FB3369 /* MissionFragment.swift */,
-				E1F34C4D223BFA7400F22086 /* Position.swift */,
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 			);
 			path = Models;
@@ -736,7 +733,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1F34C4E223BFA7400F22086 /* Position.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
 				E1FFA03A223AA6320056BA6B /* Codable+Extensions.swift in Sources */,
 				0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */,

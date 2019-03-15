@@ -10,12 +10,12 @@ struct Ship: Decodable {
     let abs: Double?
     let weightLbs: Double?
     let weightKg: Double?
-    let yearBuilt: Double?
+    let yearBuilt: Int?
     let homePort: String
     let status: String?
     let speedKn: Double?
     let courseDeg: Int?
-    let position: Position
+    let location: Location
     let successfulLandings: Int?
     let attemptedLandings: Int?
     let missions: [MissionFragment]
@@ -40,7 +40,7 @@ extension Ship {
         case status
         case speedKn = "speed_kn"
         case courseDeg = "course_deg"
-        case position
+        case location = "position"
         case successfulLandings = "successful_landings"
         case attemptedLandings = "attempted_landings"
         case missions

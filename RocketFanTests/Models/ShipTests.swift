@@ -38,8 +38,8 @@ class ShipTests: XCTestCase {
         XCTAssertEqual(shipTwo?.yearBuilt, 1995)
         XCTAssertEqual(shipTwo?.speedKn, 0)
         XCTAssertEqual(shipTwo?.status, "Moored")
-        XCTAssertEqual(shipTwo?.position.latitude, 29.95037)
-        XCTAssertEqual(shipTwo?.position.longitude, -90.05646)
+        XCTAssertEqual(shipTwo?.location.latitude, 29.95037)
+        XCTAssertEqual(shipTwo?.location.longitude, -90.05646)
 
         //swiftlint:disable line_length
         XCTAssertEqual(shipTwo?.url?.absoluteString, "https://www.marinetraffic.com/en/ais/details/ships/shipid:430027/vessel:HAWK")
