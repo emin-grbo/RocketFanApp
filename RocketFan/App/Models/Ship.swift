@@ -15,8 +15,7 @@ struct Ship: Decodable {
     let speedKn: Double?
     let courseDeg: Int?
     let location: Location?
-    let successfulLandings: Int?
-    let attemptedLandings: Int?
+    let landings: Landings?
     let missions: [MissionFragment]
     let url: URL?
     let imageUrl: URL?
@@ -64,8 +63,6 @@ extension Ship {
         speedKn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
         courseDeg = try container.decodeIfPresent(Int.self, forKey: .courseDeg)
         location = try? container.decode(Location.self, forKey: .location)
-        successfulLandings = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)
-        attemptedLandings = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
         missions = try container.decode([MissionFragment].self, forKey: .missions)
         url = try container.decodeIfPresent(URL.self, forKey: .url)
         imageUrl = try container.decodeIfPresent(URL.self, forKey: .imageUrl)
@@ -74,5 +71,9 @@ extension Ship {
         let lbs = try container.decodeIfPresent(Int.self, forKey: .weightLbs)
         let kg = try container.decodeIfPresent(Int.self, forKey: .weightKg)
         weight = Weight(kg: kg, lbs: lbs)
+
+        let attempted = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
+        let successful = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)
+        landings = Landings(attempted: attempted, successful: successful)
     }
 }

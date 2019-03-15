@@ -26,8 +26,8 @@ class ShipTests: XCTestCase {
 
     func test_OptionalValues_CanBeDecoded_FromJSON_IfExist() {
         XCTAssertEqual(ship?.model, "Marmac 304")
-        XCTAssertEqual(ship?.successfulLandings, 16)
-        XCTAssertEqual(ship?.attemptedLandings, 19)
+        XCTAssertEqual(ship?.landings?.successful, 16)
+        XCTAssertEqual(ship?.landings?.attempted, 19)
 
         let shipTwo = ships?[4]
         XCTAssertEqual(shipTwo?.imo, 9103295)
