@@ -18,3 +18,4 @@ identifier_name:
   excluded:
     - id
     - URL
+    - kg

@@ -8,8 +8,7 @@ struct Ship: Decodable {
     let imo: Double?
     let mmsi: Double?
     let abs: Double?
-    let weightLbs: Double?
-    let weightKg: Double?
+    let weight: Weight?
     let yearBuilt: Int?
     let homePort: String
     let status: String?
@@ -59,8 +58,6 @@ extension Ship {
         imo = try container.decodeIfPresent(Double.self, forKey: .imo)
         mmsi = try container.decodeIfPresent(Double.self, forKey: .mmsi)
         abs = try container.decodeIfPresent(Double.self, forKey: .abs)
-        weightLbs = try container.decodeIfPresent(Double.self, forKey: .weightLbs)
-        weightKg = try container.decodeIfPresent(Double.self, forKey: .weightKg)
         yearBuilt = try container.decodeIfPresent(Int.self, forKey: .yearBuilt)
         homePort = try container.decode(String.self, forKey: .homePort)
         status = try container.decodeIfPresent(String.self, forKey: .status)
@@ -73,5 +70,9 @@ extension Ship {
         url = try container.decodeIfPresent(URL.self, forKey: .url)
         imageUrl = try container.decodeIfPresent(URL.self, forKey: .imageUrl)
         roles = try container.decode([String].self, forKey: .roles)
+
+        let lbs = try container.decodeIfPresent(Int.self, forKey: .weightLbs)
+        let kg = try container.decodeIfPresent(Int.self, forKey: .weightKg)
+        weight = Weight(kg: kg, lbs: lbs)
     }
 }
