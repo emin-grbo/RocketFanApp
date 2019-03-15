@@ -1,67 +1,67 @@
 import Foundation
 
 struct Ship: Decodable {
+    let courseDeg: Int?
+    let homePort: String
     let id: String
-    let name: String
-    let model: String?
-    let isActive: Bool
     let identifiers: Identifiers?
+    let imageUrl: URL?
+    let isActive: Bool
+    let landings: Landings?
+    let location: Location?
+    let missions: [MissionFragment]
+    let model: String?
+    let name: String
+    let roles: [String]
+    let speedKn: Double?
+    let status: String?
+    let url: URL?
     let weight: Weight?
     let yearBuilt: Int?
-    let homePort: String
-    let status: String?
-    let speedKn: Double?
-    let courseDeg: Int?
-    let location: Location?
-    let landings: Landings?
-    let missions: [MissionFragment]
-    let url: URL?
-    let imageUrl: URL?
-    let roles: [String]
 }
 
 extension Ship {
     enum CodingKeys: String, CodingKey {
-        case id = "ship_id"
-        case name = "ship_name"
-        case model = "ship_model"
-        case isActive = "active"
-        case imo
-        case mmsi
         case abs
-        case weightLbs = "weight_lbs"
-        case weightKg = "weight_kg"
-        case yearBuilt = "year_built"
-        case homePort = "home_port"
-        case status
-        case speedKn = "speed_kn"
-        case courseDeg = "course_deg"
-        case location = "position"
-        case successfulLandings = "successful_landings"
         case attemptedLandings = "attempted_landings"
-        case missions
-        case url
+        case courseDeg = "course_deg"
+        case homePort = "home_port"
+        case id = "ship_id"
         case imageUrl = "image"
+        case imo
+        case isActive = "active"
+        case location = "position"
+        case missions
+        case mmsi
+        case model = "ship_model"
+        case name = "ship_name"
         case roles
+        case speedKn = "speed_kn"
+        case status
+        case successfulLandings = "successful_landings"
+        case url
+        case weightKg = "weight_kg"
+        case weightLbs = "weight_lbs"
+        case yearBuilt = "year_built"
     }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
 
-        id = try container.decode(String.self, forKey: .id)
-        name = try container.decode(String.self, forKey: .name)
-        model = try container.decodeIfPresent(String.self, forKey: .model)
-        isActive = try container.decode(Bool.self, forKey: .isActive)
-        yearBuilt = try container.decodeIfPresent(Int.self, forKey: .yearBuilt)
-        homePort = try container.decode(String.self, forKey: .homePort)
-        status = try container.decodeIfPresent(String.self, forKey: .status)
-        speedKn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
         courseDeg = try container.decodeIfPresent(Int.self, forKey: .courseDeg)
+        homePort = try container.decode(String.self, forKey: .homePort)
+        id = try container.decode(String.self, forKey: .id)
+        imageUrl = try container.decodeIfPresent(URL.self, forKey: .imageUrl)
+        isActive = try container.decode(Bool.self, forKey: .isActive)
         location = try? container.decode(Location.self, forKey: .location)
         missions = try container.decode([MissionFragment].self, forKey: .missions)
-        url = try container.decodeIfPresent(URL.self, forKey: .url)
-        imageUrl = try container.decodeIfPresent(URL.self, forKey: .imageUrl)
+        model = try container.decodeIfPresent(String.self, forKey: .model)
+        name = try container.decode(String.self, forKey: .name)
         roles = try container.decode([String].self, forKey: .roles)
+        speedKn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
+        status = try container.decodeIfPresent(String.self, forKey: .status)
+        url = try container.decodeIfPresent(URL.self, forKey: .url)
+        yearBuilt = try container.decodeIfPresent(Int.self, forKey: .yearBuilt)
 
         let lbs = try container.decodeIfPresent(Int.self, forKey: .weightLbs)
         let kg = try container.decodeIfPresent(Int.self, forKey: .weightKg)
