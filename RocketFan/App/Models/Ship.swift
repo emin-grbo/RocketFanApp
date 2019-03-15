@@ -8,7 +8,6 @@ struct Ship: Decodable {
     let imo: Double?
     let mmsi: Double?
     let abs: Double?
-    let `class`: Double?
     let weightLbs: Double?
     let weightKg: Double?
     let yearBuilt: Double?
@@ -34,7 +33,6 @@ extension Ship {
         case imo
         case mmsi
         case abs
-        case `class`
         case weightLbs = "weight_lbs"
         case weightKg = "weight_kg"
         case yearBuilt = "year_built"

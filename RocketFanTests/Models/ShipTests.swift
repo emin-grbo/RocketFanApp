@@ -33,7 +33,6 @@ class ShipTests: XCTestCase {
         XCTAssertEqual(shipTwo?.imo, 9103295)
         XCTAssertEqual(shipTwo?.mmsi, 366943250)
         XCTAssertEqual(shipTwo?.abs, 1033239)
-        XCTAssertEqual(shipTwo?.class, 9523438)
         XCTAssertEqual(shipTwo?.weightLbs, 1120000)
         XCTAssertEqual(shipTwo?.weightKg, 508023)
         XCTAssertEqual(shipTwo?.yearBuilt, 1995)
