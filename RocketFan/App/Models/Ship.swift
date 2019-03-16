@@ -15,7 +15,7 @@ struct Ship: Decodable {
     let model: String?
     let name: String
     let roles: [String]
-    let speedKn: Double?
+    let speed: Speed?
     let status: String?
     let url: URL?
     let weight: Weight?
@@ -60,10 +60,12 @@ extension Ship {
         model = try container.decodeIfPresent(String.self, forKey: .model)
         name = try container.decode(String.self, forKey: .name)
         roles = try container.decode([String].self, forKey: .roles)
-        speedKn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
         status = try container.decodeIfPresent(String.self, forKey: .status)
         url = try container.decodeIfPresent(URL.self, forKey: .url)
         yearBuilt = try container.decodeIfPresent(Int.self, forKey: .yearBuilt)
+
+        let kn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
+        speed = Speed(kn: kn)
 
         let lbs = try container.decodeIfPresent(Int.self, forKey: .weightLbs)
         let kg = try container.decodeIfPresent(Int.self, forKey: .weightKg)

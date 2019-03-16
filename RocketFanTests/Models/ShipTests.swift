@@ -29,7 +29,7 @@ class ShipTests: XCTestCase {
 
         let shipTwo = ships?[4]
         XCTAssertEqual(shipTwo?.yearBuilt, 1995)
-        XCTAssertEqual(shipTwo?.speedKn, 0)
+        XCTAssertEqual(shipTwo?.speed?.kn, 0)
         XCTAssertEqual(shipTwo?.status, "Moored")
 
         //swiftlint:disable line_length
