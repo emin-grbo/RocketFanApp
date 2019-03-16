@@ -72,10 +72,12 @@
 		E1F34C5C223D22D000F22086 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5B223D22D000F22086 /* Speed.swift */; };
 		E1F34C5E223D278300F22086 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5D223D278300F22086 /* Distance.swift */; };
 		E1F34C60223D4B2200F22086 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5F223D4B2200F22086 /* Units.swift */; };
+		E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C61223D53D500F22086 /* CompanyTests.swift */; };
+		E1F34C64223D565700F22086 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C63223D565700F22086 /* Company.swift */; };
+		E1F34C66223D7F8200F22086 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F34C65223D7F8200F22086 /* company.json */; };
 		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
 		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
 		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
-		E1FFA023223A993B0056BA6B /* info.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA018223A993A0056BA6B /* info.json */; };
 		E1FFA024223A993B0056BA6B /* core.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA019223A993A0056BA6B /* core.json */; };
 		E1FFA025223A993B0056BA6B /* ship.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01A223A993A0056BA6B /* ship.json */; };
 		E1FFA026223A993B0056BA6B /* history.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01B223A993A0056BA6B /* history.json */; };
@@ -218,10 +220,12 @@
 		E1F34C5B223D22D000F22086 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 		E1F34C5D223D278300F22086 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		E1F34C5F223D4B2200F22086 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
+		E1F34C61223D53D500F22086 /* CompanyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTests.swift; sourceTree = "<group>"; };
+		E1F34C63223D565700F22086 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		E1F34C65223D7F8200F22086 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
 		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
 		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
-		E1FFA018223A993A0056BA6B /* info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = info.json; sourceTree = "<group>"; };
 		E1FFA019223A993A0056BA6B /* core.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = core.json; sourceTree = "<group>"; };
 		E1FFA01A223A993A0056BA6B /* ship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ship.json; sourceTree = "<group>"; };
 		E1FFA01B223A993A0056BA6B /* history.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = history.json; sourceTree = "<group>"; };
@@ -452,11 +456,11 @@
 			isa = PBXGroup;
 			children = (
 				E1FFA014223A98FE0056BA6B /* capsule.json */,
+				E1F34C65223D7F8200F22086 /* company.json */,
 				E1FFA019223A993A0056BA6B /* core.json */,
 				E1FFA020223A993B0056BA6B /* dragon.json */,
 				E1FFA01B223A993A0056BA6B /* history.json */,
 				E1FFA016223A993A0056BA6B /* home.json */,
-				E1FFA018223A993A0056BA6B /* info.json */,
 				E1FFA01D223A993A0056BA6B /* landpad.json */,
 				E1FFA01C223A993A0056BA6B /* launch.json */,
 				E1FFA01F223A993B0056BA6B /* launchpad.json */,
@@ -493,6 +497,7 @@
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 				E1F34C5B223D22D000F22086 /* Speed.swift */,
 				E1F34C5F223D4B2200F22086 /* Units.swift */,
+				E1F34C63223D565700F22086 /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 			isa = PBXGroup;
 			children = (
 				E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */,
+				E1F34C61223D53D500F22086 /* CompanyTests.swift */,
 				0E2B86C6223AF66E005686BB /* CoreTests.swift */,
 				0E2B86CC223B030A005686BB /* HistoryTests.swift */,
 				0E2B86D2223B0E30005686BB /* LandingPadTests.swift */,
@@ -688,6 +694,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */,
+				E1F34C66223D7F8200F22086 /* company.json in Resources */,
 				E1FFA015223A98FE0056BA6B /* capsule.json in Resources */,
 				E1FFA02B223A993B0056BA6B /* dragon.json in Resources */,
 				E1FFA021223A993B0056BA6B /* home.json in Resources */,
@@ -700,7 +707,6 @@
 				E1FFA027223A993B0056BA6B /* launch.json in Resources */,
 				E1FFA024223A993B0056BA6B /* core.json in Resources */,
 				E1FFA026223A993B0056BA6B /* history.json in Resources */,
-				E1FFA023223A993B0056BA6B /* info.json in Resources */,
 				E1FFA029223A993B0056BA6B /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -764,6 +770,7 @@
 				0EBF1B27223C480100194F5D /* Landings.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
 				E1FFA03A223AA6320056BA6B /* Codable+Extensions.swift in Sources */,
+				E1F34C64223D565700F22086 /* Company.swift in Sources */,
 				E1F34C5C223D22D000F22086 /* Speed.swift in Sources */,
 				0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */,
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
@@ -789,6 +796,7 @@
 			files = (
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
+				E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,

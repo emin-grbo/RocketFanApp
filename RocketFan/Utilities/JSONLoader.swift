@@ -3,6 +3,7 @@ import Foundation
 enum JSONLoader {
     enum File: String {
         case capsule
+        case company
         case core
         case history
         case landingPad = "landpad"
