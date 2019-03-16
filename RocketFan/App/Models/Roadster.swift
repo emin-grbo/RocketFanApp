@@ -1,6 +1,8 @@
 import Foundation
 
 struct Roadster: Decodable {
+    typealias Mass = Units
+
     let astronomicalUnits: AstronomicalUnits
     let daysInSpace: Double
     let details: String
@@ -9,7 +11,7 @@ struct Roadster: Decodable {
     let epochJd: Double
     let inclination: Double
     let launchDate: Date
-    let launchMass: LaunchMass
+    let launchMass: Mass
     let links: Links
     let name: String
     let noradId: Int
@@ -33,7 +35,7 @@ struct Roadster: Decodable {
 
         let kg = try container.decode(Int.self, forKey: .launchMassKg)
         let lbs = try container.decode(Int.self, forKey: .launchMassLbs)
-        launchMass = LaunchMass(kg: kg, lbs: lbs)
+        launchMass = Mass(kg: kg, lbs: lbs)!
 
         let apoapsis = try container.decode(Double.self, forKey: .apoapsis)
         let periapsis = try container.decode(Double.self, forKey: .periapsis)
@@ -86,19 +88,6 @@ extension Roadster {
         case wikipedia
     }
 }
-
-extension Roadster {
-    struct LaunchMass {
-        let kg: Int
-        let lbs: Int
-
-        init(kg: Int, lbs: Int) {
-            self.kg = kg
-            self.lbs = lbs
-        }
-    }
-}
-
 extension Roadster {
     struct AstronomicalUnits {
         let apoapsis: Double

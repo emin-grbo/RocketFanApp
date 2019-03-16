@@ -1,6 +1,8 @@
 import Foundation
 
 struct Ship: Decodable {
+    typealias Weight = Units
+
     let courseDeg: Int?
     let homePort: String
     let id: String

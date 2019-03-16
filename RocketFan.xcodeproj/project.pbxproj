@@ -30,7 +30,6 @@
 		0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA1A722330CF500E8903F /* AppDelegate.swift */; };
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
-		0EBF1B25223C45B200194F5D /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B24223C45B200194F5D /* Weight.swift */; };
 		0EBF1B27223C480100194F5D /* Landings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landings.swift */; };
 		E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE32236ABE800E1EDDB /* Cores.swift */; };
 		E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE52236AC2C00E1EDDB /* CoresTests.swift */; };
@@ -72,6 +71,7 @@
 		E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C59223D0B3D00F22086 /* Roadster.swift */; };
 		E1F34C5C223D22D000F22086 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5B223D22D000F22086 /* Speed.swift */; };
 		E1F34C5E223D278300F22086 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5D223D278300F22086 /* Distance.swift */; };
+		E1F34C60223D4B2200F22086 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5F223D4B2200F22086 /* Units.swift */; };
 		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
 		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
 		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
@@ -174,7 +174,6 @@
 		0EBCA1BE22330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EBCA1C322330CF600E8903F /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EBF1B24223C45B200194F5D /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		0EBF1B26223C480100194F5D /* Landings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landings.swift; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
 		E1681FE32236ABE800E1EDDB /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
@@ -218,6 +217,7 @@
 		E1F34C59223D0B3D00F22086 /* Roadster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadster.swift; sourceTree = "<group>"; };
 		E1F34C5B223D22D000F22086 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
 		E1F34C5D223D278300F22086 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
+		E1F34C5F223D4B2200F22086 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
 		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
@@ -492,7 +492,7 @@
 				E1F34C59223D0B3D00F22086 /* Roadster.swift */,
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 				E1F34C5B223D22D000F22086 /* Speed.swift */,
-				0EBF1B24223C45B200194F5D /* Weight.swift */,
+				E1F34C5F223D4B2200F22086 /* Units.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -768,12 +768,12 @@
 				0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */,
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				0E2B86C9223AFF6C005686BB /* JSONDecoder+Extensions.swift in Sources */,
-				0EBF1B25223C45B200194F5D /* Weight.swift in Sources */,
 				E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
 				E1F34C5E223D278300F22086 /* Distance.swift in Sources */,
 				E1F34C54223CE05C00F22086 /* Mission.swift in Sources */,
+				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
