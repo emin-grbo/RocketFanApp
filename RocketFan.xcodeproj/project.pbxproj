@@ -484,6 +484,7 @@
 			isa = PBXGroup;
 			children = (
 				E1FFA036223AA39C0056BA6B /* Capsule.swift */,
+				E1F34C63223D565700F22086 /* Company.swift */,
 				0E2B86C4223AF64A005686BB /* Core.swift */,
 				E1F34C5D223D278300F22086 /* Distance.swift */,
 				0E2B86CA223B02F9005686BB /* History.swift */,
@@ -497,7 +498,6 @@
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 				E1F34C5B223D22D000F22086 /* Speed.swift */,
 				E1F34C5F223D4B2200F22086 /* Units.swift */,
-				E1F34C63223D565700F22086 /* Company.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
