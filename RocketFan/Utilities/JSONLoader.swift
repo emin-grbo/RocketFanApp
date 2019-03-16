@@ -2,6 +2,7 @@ import Foundation
 
 enum JSONLoader {
     enum File: String {
+        case apiinfo = "apiinfo"
         case capsule
         case company
         case core

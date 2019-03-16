@@ -75,6 +75,9 @@
 		E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C61223D53D500F22086 /* CompanyTests.swift */; };
 		E1F34C64223D565700F22086 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C63223D565700F22086 /* Company.swift */; };
 		E1F34C66223D7F8200F22086 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F34C65223D7F8200F22086 /* company.json */; };
+		E1F34C68223D8CA300F22086 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F34C67223D8CA200F22086 /* apiinfo.json */; };
+		E1F34C6A223D8CB900F22086 /* ApiInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C69223D8CB900F22086 /* ApiInfoTests.swift */; };
+		E1F34C6C223D8DE600F22086 /* ApiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C6B223D8DE600F22086 /* ApiInfo.swift */; };
 		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
 		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
 		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
@@ -223,6 +226,9 @@
 		E1F34C61223D53D500F22086 /* CompanyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTests.swift; sourceTree = "<group>"; };
 		E1F34C63223D565700F22086 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		E1F34C65223D7F8200F22086 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
+		E1F34C67223D8CA200F22086 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
+		E1F34C69223D8CB900F22086 /* ApiInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInfoTests.swift; sourceTree = "<group>"; };
+		E1F34C6B223D8DE600F22086 /* ApiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInfo.swift; sourceTree = "<group>"; };
 		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
 		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
@@ -455,6 +461,7 @@
 		E1FFA013223A97BF0056BA6B /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				E1F34C67223D8CA200F22086 /* apiinfo.json */,
 				E1FFA014223A98FE0056BA6B /* capsule.json */,
 				E1F34C65223D7F8200F22086 /* company.json */,
 				E1FFA019223A993A0056BA6B /* core.json */,
@@ -487,6 +494,7 @@
 				E1F34C63223D565700F22086 /* Company.swift */,
 				0E2B86C4223AF64A005686BB /* Core.swift */,
 				E1F34C5D223D278300F22086 /* Distance.swift */,
+				E1F34C6B223D8DE600F22086 /* ApiInfo.swift */,
 				0E2B86CA223B02F9005686BB /* History.swift */,
 				0E2B86D0223B0E1E005686BB /* LandingPad.swift */,
 				0EBF1B26223C480100194F5D /* Landings.swift */,
@@ -505,6 +513,7 @@
 		E1FFA033223AA31A0056BA6B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E1F34C69223D8CB900F22086 /* ApiInfoTests.swift */,
 				E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */,
 				E1F34C61223D53D500F22086 /* CompanyTests.swift */,
 				0E2B86C6223AF66E005686BB /* CoreTests.swift */,
@@ -703,6 +712,7 @@
 				0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */,
 				E1FFA028223A993B0056BA6B /* landpad.json in Resources */,
 				E1F34C58223D0B0500F22086 /* roadster.json in Resources */,
+				E1F34C68223D8CA300F22086 /* apiinfo.json in Resources */,
 				E1FFA025223A993B0056BA6B /* ship.json in Resources */,
 				E1FFA027223A993B0056BA6B /* launch.json in Resources */,
 				E1FFA024223A993B0056BA6B /* core.json in Resources */,
@@ -783,6 +793,7 @@
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
+				E1F34C6C223D8DE600F22086 /* ApiInfo.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
 				0E2B86D5223B1089005686BB /* Location.swift in Sources */,
@@ -798,6 +809,7 @@
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
+				E1F34C6A223D8CB900F22086 /* ApiInfoTests.swift in Sources */,
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
 				E1F34C56223CF43100F22086 /* RoadsterTests.swift in Sources */,
