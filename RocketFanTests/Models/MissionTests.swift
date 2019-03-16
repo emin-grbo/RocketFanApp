@@ -1,33 +1,38 @@
-//
-//  MissionTests.swift
-//  RocketFanTests
-//
-//  Created by Robert Clegg on 2019/03/16.
-//  Copyright © 2019 RocketFanOrg. All rights reserved.
-//
-
 import XCTest
+@testable import RocketFan
 
 class MissionTests: XCTestCase {
+    var mission: Mission?
+    var missions: [Mission]?
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+        guard let data = JSONLoader.load(.mission) else {
+            XCTFail("Missing file: Mission.json")
+            return
+        }
 
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
+        do {
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
+            missions = try data.decoded() as [Mission]
+            mission = missions?.first
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        } catch {
+            XCTFail("Decoding failed: \(error)")
         }
     }
 
+    func test_RequiredValues_CanBeDecoded_FromJSON() {
+        XCTAssertNotNil(mission)
+    }
+
+    func test_LinksModel_CanBeDecoded() {
+        let twitter = mission?.links.twitter
+        XCTAssertEqual(twitter?.absoluteString, "https://twitter.com/IridiumBoss?lang=en")
+
+        let wikipedia = mission?.links.wikipedia
+        XCTAssertEqual(wikipedia?.absoluteString, "https://en.wikipedia.org/wiki/Iridium_satellite_constellation")
+
+        let website = mission?.links.website
+        XCTAssertEqual(website?.absoluteString, "https://www.iridiumnext.com/")
+    }
 }

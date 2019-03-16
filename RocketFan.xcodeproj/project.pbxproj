@@ -65,6 +65,8 @@
 		E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175542122359F2F0033C136 /* CapsulesTests.swift */; };
 		E1F34C4A223BEB7000F22086 /* ShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C49223BEB7000F22086 /* ShipTests.swift */; };
 		E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C4B223BEC3400F22086 /* Ship.swift */; };
+		E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C51223CDFE600F22086 /* MissionTests.swift */; };
+		E1F34C54223CE05C00F22086 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C53223CE05C00F22086 /* Mission.swift */; };
 		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
 		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
 		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
@@ -204,6 +206,8 @@
 		E175542122359F2F0033C136 /* CapsulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesTests.swift; sourceTree = "<group>"; };
 		E1F34C49223BEB7000F22086 /* ShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipTests.swift; sourceTree = "<group>"; };
 		E1F34C4B223BEC3400F22086 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
+		E1F34C51223CDFE600F22086 /* MissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTests.swift; sourceTree = "<group>"; };
+		E1F34C53223CE05C00F22086 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
 		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
@@ -471,6 +475,7 @@
 				0EBF1B26223C480100194F5D /* Landings.swift */,
 				0E2B86CE223B06A6005686BB /* Links.swift */,
 				0E2B86D4223B1089005686BB /* Location.swift */,
+				E1F34C53223CE05C00F22086 /* Mission.swift */,
 				0E8AF222223AF0B200FB3369 /* MissionFragment.swift */,
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 				0EBF1B24223C45B200194F5D /* Weight.swift */,
@@ -485,6 +490,7 @@
 				0E2B86C6223AF66E005686BB /* CoreTests.swift */,
 				0E2B86CC223B030A005686BB /* HistoryTests.swift */,
 				0E2B86D2223B0E30005686BB /* LandingPadTests.swift */,
+				E1F34C51223CDFE600F22086 /* MissionTests.swift */,
 				E1F34C49223BEB7000F22086 /* ShipTests.swift */,
 			);
 			path = Models;
@@ -749,6 +755,7 @@
 				E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
+				E1F34C54223CE05C00F22086 /* Mission.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
@@ -762,6 +769,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
+				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
