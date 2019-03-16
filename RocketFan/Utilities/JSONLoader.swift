@@ -6,6 +6,7 @@ enum JSONLoader {
         case core
         case history
         case landingPad = "landpad"
+        case mission
         case ship
     }
 
