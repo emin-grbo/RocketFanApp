@@ -1,6 +1,5 @@
 import Foundation
 
-//swiftlint:disable identifier_name
 struct Speed {
     let kn: Double?
     let kph: Double?
