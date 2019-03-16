@@ -2,34 +2,34 @@ import Foundation
 
 struct Company: Decodable {
     let employeeCount: Int
-    let yearFounded: Int
     let founder: String
+    let headquarters: Headquarters
     let launchSiteCount: Int
+    let links: Links
     let name: String
     let officers: Officers
+    let summary: String
     let testSiteCount: Int
     let valuation: Double
-    let links: Links
-    let headquarters: Headquarters
-    let summary: String
+    let yearFounded: Int
 }
 
 extension Company {
     enum CodingKeys: String, CodingKey {
-        case employeeCount = "employees"
-        case yearFounded = "founded"
-        case founder
         case ceo
         case coo
         case cto
         case ctoPropulsion = "cto_propulsion"
+        case employeeCount = "employees"
+        case founder
+        case headquarters
         case launchSiteCount = "launch_sites"
+        case links
         case name
+        case summary
         case testSiteCount = "test_sites"
         case valuation
-        case links
-        case headquarters
-        case summary
+        case yearFounded = "founded"
     }
 
     init(from decoder: Decoder) throws {
