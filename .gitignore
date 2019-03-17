@@ -79,3 +79,17 @@ iOSInjectionProject/
 
 # RocketFan Specific
 Config/User.xcconfig
+Scripts/.appinfoLastRun
+Scripts/.capsuleLastRun
+Scripts/.companyLastRun
+Scripts/.coresLastRun
+Scripts/.dragonLastRun
+Scripts/.historyLastRun
+Scripts/.landingPadLastRun
+Scripts/.landpadLastRun
+Scripts/.launchLastRun
+Scripts/.launchpadLastRun
+Scripts/.missionLastRun
+Scripts/.roadsterLastRun
+Scripts/.rocketLastRun
+Scripts/.shipLastRun
