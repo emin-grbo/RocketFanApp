@@ -14,7 +14,7 @@ class HistoryTests: XCTestCase {
 
             let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             let histories = try decoder.decoded([History].self, from: data)
-            history = histories.first
+            history = histories[11]
 
         } catch {
             XCTFail("Decoding failed: \(error)")
@@ -26,20 +26,20 @@ class HistoryTests: XCTestCase {
     }
 
     func test_OptionalValues_CanBeDecoded_IfExists() {
-        XCTAssertEqual(history?.flightNumber, 41)
+        XCTAssertEqual(history?.flightNumber, 19)
     }
 
     func test_LinksModel_CanBeDecoded() {
         let links = history?.links
 
         // swiftlint:disable:next line_length
-        let article = "https://spaceflightnow.com/2017/06/03/reused-dragon-cargo-capsule-launched-on-journey-to-space-station/"
+        let article = "https://spaceflightnow.com/2015/01/10/dragon-successfully-launched-rocket-recovery-demo-crash-lands/"
         XCTAssertEqual(links?.article?.absoluteString, article)
 
-        let reddit = "https://www.reddit.com/r/spacex/comments/6ektkt/welcome_to_the_rspacex_crs11_official_launch/"
+        let reddit = "http://www.reddit.com/r/spacex/comments/2rrdha"
         XCTAssertEqual(links?.reddit?.absoluteString, reddit)
 
-        let wiki = "https://en.wikipedia.org/wiki/SpaceX_CRS-11"
+        let wiki = "https://en.wikipedia.org/wiki/SpaceX_CRS-5"
         XCTAssertEqual(links?.wikipedia?.absoluteString, wiki)
     }
 }

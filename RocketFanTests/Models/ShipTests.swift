@@ -25,45 +25,48 @@ class ShipTests: XCTestCase {
     }
 
     func test_OptionalValues_CanBeDecoded_FromJSON_IfExist() {
-        XCTAssertEqual(ship?.model, "Marmac 304")
+        let shipWithModel = ships?[11]
+        XCTAssertEqual(shipWithModel?.model, "Marmac 300")
 
         let shipTwo = ships?[4]
-        XCTAssertEqual(shipTwo?.yearBuilt, 1995)
+        XCTAssertEqual(shipTwo?.yearBuilt, 1974)
         XCTAssertEqual(shipTwo?.speed?.kn, 0)
-        XCTAssertEqual(shipTwo?.status, "Moored")
+        XCTAssertEqual(shipTwo?.status, "Stopped")
 
         //swiftlint:disable line_length
-        XCTAssertEqual(shipTwo?.url?.absoluteString, "https://www.marinetraffic.com/en/ais/details/ships/shipid:430027/vessel:HAWK")
-        XCTAssertEqual(shipTwo?.imageUrl?.absoluteString, "https://i.imgur.com/hGWWupT.jpg")
+        XCTAssertEqual(shipTwo?.url?.absoluteString, "https://www.marinetraffic.com/en/ais/details/ships/shipid:428415/vessel:BETTY%20R%20GAMBARELLA")
+        XCTAssertEqual(shipTwo?.imageUrl?.absoluteString, "https://i.imgur.com/ngYgFnn.jpg")
 
-        let shipThree = ships?[6]
-        XCTAssertEqual(shipThree?.courseDeg, 79)
+        let shipThree = ships?[5]
+        XCTAssertEqual(shipThree?.courseDeg, 263)
     }
 
     func test_Landings_CanBeDecoded() {
-        XCTAssertEqual(ship?.landings?.successful, 16)
-        XCTAssertEqual(ship?.landings?.attempted, 19)
+        let shipWithLandings = ships?[11]
+
+        XCTAssertEqual(shipWithLandings?.landings?.successful, 0)
+        XCTAssertEqual(shipWithLandings?.landings?.attempted, 2)
     }
 
     func test_Location_CanBeDecoded() {
         let ship = ships?[4]
 
-        XCTAssertEqual(ship?.location?.latitude, 29.95037)
-        XCTAssertEqual(ship?.location?.longitude, -90.05646)
+        XCTAssertEqual(ship?.location?.latitude, 33.77139)
+        XCTAssertEqual(ship?.location?.longitude, -118.2123)
     }
 
     func test_Weight_CanBeDecoded() {
         let ship = ships?[4]
 
-        XCTAssertEqual(ship?.weight?.lbs, 1120000)
-        XCTAssertEqual(ship?.weight?.kg, 508023)
+        XCTAssertEqual(ship?.weight?.lbs, 446000)
+        XCTAssertEqual(ship?.weight?.kg, 202302)
     }
 
     func test_Identifiers_CanBeDecoded() {
         let ship = ships?[4]
 
-        XCTAssertEqual(ship?.identifiers?.imo, 9103295)
-        XCTAssertEqual(ship?.identifiers?.mmsi, 366943250)
-        XCTAssertEqual(ship?.identifiers?.abs, 1033239)
+        XCTAssertEqual(ship?.identifiers?.imo, 7517478)
+        XCTAssertEqual(ship?.identifiers?.mmsi, 368000890)
+        XCTAssertEqual(ship?.identifiers?.abs, 562590)
     }
 }

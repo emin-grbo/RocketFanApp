@@ -6,7 +6,7 @@ class CapsuleTests: XCTestCase {
 
     override func setUp() {
         guard let data = JSONLoader.load(.capsule) else {
-            XCTFail("Missing file: Capsule.json")
+            XCTFail("Missing file: capsule.json")
             return
         }
 

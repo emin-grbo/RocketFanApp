@@ -31,6 +31,13 @@
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
 		0EBF1B27223C480100194F5D /* Landings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landings.swift */; };
+		E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C08223E5166000E3E85 /* apiinfo.json */; };
+		E13B0C0B223E529F000E3E85 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0A223E529F000E3E85 /* company.json */; };
+		E13B0C0D223E5538000E3E85 /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0C223E5538000E3E85 /* dragon.json */; };
+		E13B0C0F223E595B000E3E85 /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0E223E595B000E3E85 /* capsule.json */; };
+		E13B0C11223E629A000E3E85 /* launchpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C10223E629A000E3E85 /* launchpad.json */; };
+		E13B0C15223E6529000E3E85 /* landpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C14223E6529000E3E85 /* landpad.json */; };
+		E13B0C17223E6684000E3E85 /* launche.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C16223E6684000E3E85 /* launche.json */; };
 		E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE32236ABE800E1EDDB /* Cores.swift */; };
 		E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE52236AC2C00E1EDDB /* CoresTests.swift */; };
 		E1681FE82236AFED00E1EDDB /* DragonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE72236AFED00E1EDDB /* DragonsTests.swift */; };
@@ -74,21 +81,13 @@
 		E1F34C60223D4B2200F22086 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5F223D4B2200F22086 /* Units.swift */; };
 		E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C61223D53D500F22086 /* CompanyTests.swift */; };
 		E1F34C64223D565700F22086 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C63223D565700F22086 /* Company.swift */; };
-		E1F34C66223D7F8200F22086 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F34C65223D7F8200F22086 /* company.json */; };
-		E1F34C68223D8CA300F22086 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F34C67223D8CA200F22086 /* apiinfo.json */; };
 		E1F34C6A223D8CB900F22086 /* ApiInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C69223D8CB900F22086 /* ApiInfoTests.swift */; };
 		E1F34C6C223D8DE600F22086 /* ApiInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C6B223D8DE600F22086 /* ApiInfo.swift */; };
-		E1FFA015223A98FE0056BA6B /* capsule.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA014223A98FE0056BA6B /* capsule.json */; };
-		E1FFA021223A993B0056BA6B /* home.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA016223A993A0056BA6B /* home.json */; };
 		E1FFA022223A993B0056BA6B /* mission.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA017223A993A0056BA6B /* mission.json */; };
 		E1FFA024223A993B0056BA6B /* core.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA019223A993A0056BA6B /* core.json */; };
 		E1FFA025223A993B0056BA6B /* ship.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01A223A993A0056BA6B /* ship.json */; };
 		E1FFA026223A993B0056BA6B /* history.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01B223A993A0056BA6B /* history.json */; };
-		E1FFA027223A993B0056BA6B /* launch.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01C223A993A0056BA6B /* launch.json */; };
-		E1FFA028223A993B0056BA6B /* landpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01D223A993A0056BA6B /* landpad.json */; };
 		E1FFA029223A993B0056BA6B /* rocket.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01E223A993B0056BA6B /* rocket.json */; };
-		E1FFA02A223A993B0056BA6B /* launchpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA01F223A993B0056BA6B /* launchpad.json */; };
-		E1FFA02B223A993B0056BA6B /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E1FFA020223A993B0056BA6B /* dragon.json */; };
 		E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA030223A9ADF0056BA6B /* JSONLoader.swift */; };
 		E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */; };
 		E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA036223AA39C0056BA6B /* Capsule.swift */; };
@@ -181,6 +180,13 @@
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EBF1B26223C480100194F5D /* Landings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landings.swift; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
+		E13B0C08223E5166000E3E85 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
+		E13B0C0A223E529F000E3E85 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
+		E13B0C0C223E5538000E3E85 /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
+		E13B0C0E223E595B000E3E85 /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
+		E13B0C10223E629A000E3E85 /* launchpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchpad.json; sourceTree = "<group>"; };
+		E13B0C14223E6529000E3E85 /* landpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landpad.json; sourceTree = "<group>"; };
+		E13B0C16223E6684000E3E85 /* launche.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launche.json; sourceTree = "<group>"; };
 		E1681FE32236ABE800E1EDDB /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
 		E1681FE52236AC2C00E1EDDB /* CoresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoresTests.swift; sourceTree = "<group>"; };
 		E1681FE72236AFED00E1EDDB /* DragonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsTests.swift; sourceTree = "<group>"; };
@@ -225,21 +231,13 @@
 		E1F34C5F223D4B2200F22086 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		E1F34C61223D53D500F22086 /* CompanyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTests.swift; sourceTree = "<group>"; };
 		E1F34C63223D565700F22086 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
-		E1F34C65223D7F8200F22086 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
-		E1F34C67223D8CA200F22086 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
 		E1F34C69223D8CB900F22086 /* ApiInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInfoTests.swift; sourceTree = "<group>"; };
 		E1F34C6B223D8DE600F22086 /* ApiInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiInfo.swift; sourceTree = "<group>"; };
-		E1FFA014223A98FE0056BA6B /* capsule.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capsule.json; sourceTree = "<group>"; };
-		E1FFA016223A993A0056BA6B /* home.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home.json; sourceTree = "<group>"; };
 		E1FFA017223A993A0056BA6B /* mission.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = mission.json; sourceTree = "<group>"; };
 		E1FFA019223A993A0056BA6B /* core.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = core.json; sourceTree = "<group>"; };
 		E1FFA01A223A993A0056BA6B /* ship.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ship.json; sourceTree = "<group>"; };
 		E1FFA01B223A993A0056BA6B /* history.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = history.json; sourceTree = "<group>"; };
-		E1FFA01C223A993A0056BA6B /* launch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launch.json; sourceTree = "<group>"; };
-		E1FFA01D223A993A0056BA6B /* landpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landpad.json; sourceTree = "<group>"; };
 		E1FFA01E223A993B0056BA6B /* rocket.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = rocket.json; sourceTree = "<group>"; };
-		E1FFA01F223A993B0056BA6B /* launchpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchpad.json; sourceTree = "<group>"; };
-		E1FFA020223A993B0056BA6B /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
 		E1FFA030223A9ADF0056BA6B /* JSONLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONLoader.swift; sourceTree = "<group>"; };
 		E1FFA034223AA37E0056BA6B /* CapsuleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsuleTests.swift; sourceTree = "<group>"; };
 		E1FFA036223AA39C0056BA6B /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
@@ -461,16 +459,15 @@
 		E1FFA013223A97BF0056BA6B /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				E1F34C67223D8CA200F22086 /* apiinfo.json */,
-				E1FFA014223A98FE0056BA6B /* capsule.json */,
-				E1F34C65223D7F8200F22086 /* company.json */,
+				E13B0C08223E5166000E3E85 /* apiinfo.json */,
+				E13B0C0E223E595B000E3E85 /* capsule.json */,
+				E13B0C0A223E529F000E3E85 /* company.json */,
 				E1FFA019223A993A0056BA6B /* core.json */,
-				E1FFA020223A993B0056BA6B /* dragon.json */,
+				E13B0C0C223E5538000E3E85 /* dragon.json */,
 				E1FFA01B223A993A0056BA6B /* history.json */,
-				E1FFA016223A993A0056BA6B /* home.json */,
-				E1FFA01D223A993A0056BA6B /* landpad.json */,
-				E1FFA01C223A993A0056BA6B /* launch.json */,
-				E1FFA01F223A993B0056BA6B /* launchpad.json */,
+				E13B0C14223E6529000E3E85 /* landpad.json */,
+				E13B0C16223E6684000E3E85 /* launche.json */,
+				E13B0C10223E629A000E3E85 /* launchpad.json */,
 				E1FFA017223A993A0056BA6B /* mission.json */,
 				E1F34C57223D0B0500F22086 /* roadster.json */,
 				E1FFA01E223A993B0056BA6B /* rocket.json */,
@@ -553,6 +550,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EBCA1CC22330CF600E8903F /* Build configuration list for PBXNativeTarget "RocketFan" */;
 			buildPhases = (
+				E13B0C07223E4BF5000E3E85 /* ShellScript */,
 				0EBCA1A022330CF500E8903F /* Sources */,
 				0EBCA1A122330CF500E8903F /* Frameworks */,
 				0EBCA1A222330CF500E8903F /* Resources */,
@@ -702,21 +700,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E13B0C17223E6684000E3E85 /* launche.json in Resources */,
 				0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */,
-				E1F34C66223D7F8200F22086 /* company.json in Resources */,
-				E1FFA015223A98FE0056BA6B /* capsule.json in Resources */,
-				E1FFA02B223A993B0056BA6B /* dragon.json in Resources */,
-				E1FFA021223A993B0056BA6B /* home.json in Resources */,
-				E1FFA02A223A993B0056BA6B /* launchpad.json in Resources */,
 				E1FFA022223A993B0056BA6B /* mission.json in Resources */,
 				0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */,
-				E1FFA028223A993B0056BA6B /* landpad.json in Resources */,
 				E1F34C58223D0B0500F22086 /* roadster.json in Resources */,
-				E1F34C68223D8CA300F22086 /* apiinfo.json in Resources */,
+				E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */,
 				E1FFA025223A993B0056BA6B /* ship.json in Resources */,
-				E1FFA027223A993B0056BA6B /* launch.json in Resources */,
+				E13B0C0B223E529F000E3E85 /* company.json in Resources */,
 				E1FFA024223A993B0056BA6B /* core.json in Resources */,
 				E1FFA026223A993B0056BA6B /* history.json in Resources */,
+				E13B0C11223E629A000E3E85 /* launchpad.json in Resources */,
+				E13B0C0D223E5538000E3E85 /* dragon.json in Resources */,
+				E13B0C15223E6529000E3E85 /* landpad.json in Resources */,
+				E13B0C0F223E595B000E3E85 /* capsule.json in Resources */,
 				E1FFA029223A993B0056BA6B /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -769,6 +766,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Only run SwiftLint if installed\nif which swiftlint >/dev/null; then\n  swiftlint\nfi\n";
+		};
+		E13B0C07223E4BF5000E3E85 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Download JSON enpoint files\nmarathon run Scripts/DownloadCapsulesJSON\nmarathon run Scripts/DownloadAppInfoJSON\nmarathon run Scripts/DownloadCompanyJSON\nmarathon run Scripts/DownloadCoreJSON\nmarathon run Scripts/DownloadDragonJSON\nmarathon run Scripts/DownloadHistoryJSON\nmarathon run Scripts/DownloadLandingPadJSON\nmarathon run Scripts/DownloadLaunchPadJSON\nmarathon run Scripts/DownloadMissionJSON\nmarathon run Scripts/DownloadRoadsterJSON\nmarathon run Scripts/DownloadRocketJSON\nmarathon run Scripts/DownloadShipJSON\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
