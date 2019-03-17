@@ -550,7 +550,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EBCA1CC22330CF600E8903F /* Build configuration list for PBXNativeTarget "RocketFan" */;
 			buildPhases = (
-				E13B0C07223E4BF5000E3E85 /* ShellScript */,
+				E13B0C07223E4BF5000E3E85 /* Download Model JSON Files from API */,
 				0EBCA1A022330CF500E8903F /* Sources */,
 				0EBCA1A122330CF500E8903F /* Frameworks */,
 				0EBCA1A222330CF500E8903F /* Resources */,
@@ -767,7 +767,7 @@
 			shellPath = /bin/sh;
 			shellScript = "# Only run SwiftLint if installed\nif which swiftlint >/dev/null; then\n  swiftlint\nfi\n";
 		};
-		E13B0C07223E4BF5000E3E85 /* ShellScript */ = {
+		E13B0C07223E4BF5000E3E85 /* Download Model JSON Files from API */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -776,6 +776,7 @@
 			);
 			inputPaths = (
 			);
+			name = "Download Model JSON Files from API";
 			outputFileListPaths = (
 			);
 			outputPaths = (
