@@ -15,6 +15,7 @@ struct Dragon: Decodable {
     let isActive: Bool
     let launchPayloadMass: Units
     let launchPayloadVolume: Units
+    let links: Links
     let name: String
     let orbitDurationYear: Int
     let pressurizedCapsulePayloadVolume: Units
@@ -24,7 +25,6 @@ struct Dragon: Decodable {
     let thrusters: [Thruster]
     let trunk: Trunk
     let type: String
-    let links: Links
 }
 
 extension Dragon {
