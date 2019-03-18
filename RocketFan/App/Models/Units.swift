@@ -1,14 +1,14 @@
 import Foundation
 
-/// Describe a structure of metric and imperial units. Used to describe both Mass and Weight
-struct Units {
-    let kg: Int
-    let lbs: Int
+/// Describe a structure of metric and imperial units.
+struct Units: Decodable {
+    let metric: Double
+    let imperial: Double
 
-    init?(kg: Int?, lbs: Int?) {
-        guard let kg = kg, let lbs = lbs else { return nil }
+    init?(metric: Double?, imperial: Double?) {
+        guard let metric = metric, let imperial = imperial else { return nil }
 
-        self.kg = kg
-        self.lbs = lbs
+        self.metric = metric
+        self.imperial = imperial
     }
 }

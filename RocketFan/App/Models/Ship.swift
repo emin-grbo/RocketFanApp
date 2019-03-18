@@ -67,9 +67,9 @@ extension Ship {
         let kn = try container.decodeIfPresent(Double.self, forKey: .speedKn)
         speed = Speed(kn: kn)
 
-        let lbs = try container.decodeIfPresent(Int.self, forKey: .weightLbs)
-        let kg = try container.decodeIfPresent(Int.self, forKey: .weightKg)
-        weight = Weight(kg: kg, lbs: lbs)
+        let lbs = try container.decodeIfPresent(Double.self, forKey: .weightLbs)
+        let kg = try container.decodeIfPresent(Double.self, forKey: .weightKg)
+        weight = Weight(metric: kg, imperial: lbs)
 
         let attempted = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
         let successful = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)

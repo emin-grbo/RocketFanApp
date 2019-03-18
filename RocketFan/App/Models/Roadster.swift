@@ -33,9 +33,9 @@ struct Roadster: Decodable {
         orbitType = try container.decode(String.self, forKey: .orbitType)
         details = try container.decode(String.self, forKey: .details)
 
-        let kg = try container.decode(Int.self, forKey: .launchMassKg)
-        let lbs = try container.decode(Int.self, forKey: .launchMassLbs)
-        launchMass = Mass(kg: kg, lbs: lbs)!
+        let kg = try container.decode(Double.self, forKey: .launchMassKg)
+        let lbs = try container.decode(Double.self, forKey: .launchMassLbs)
+        launchMass = Mass(metric: kg, imperial: lbs)!
 
         let apoapsis = try container.decode(Double.self, forKey: .apoapsis)
         let periapsis = try container.decode(Double.self, forKey: .periapsis)

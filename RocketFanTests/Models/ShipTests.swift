@@ -58,8 +58,8 @@ class ShipTests: XCTestCase {
     func test_Weight_CanBeDecoded() {
         let ship = ships?[4]
 
-        XCTAssertEqual(ship?.weight?.lbs, 446000)
-        XCTAssertEqual(ship?.weight?.kg, 202302)
+        XCTAssertEqual(ship?.weight?.imperial, 446000)
+        XCTAssertEqual(ship?.weight?.metric, 202302)
     }
 
     func test_Identifiers_CanBeDecoded() {
