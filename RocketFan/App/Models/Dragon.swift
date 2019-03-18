@@ -24,7 +24,7 @@ struct Dragon: Decodable {
     let thrusters: [Thruster]
     let trunk: Trunk
     let type: String
-    let wikipedia: URL
+    let links: Links
 }
 
 extension Dragon {
@@ -76,7 +76,6 @@ extension Dragon {
         thrusters = try container.decode([Thruster].self, forKey: .thrusters)
         trunk = try container.decode(Trunk.self, forKey: .trunk)
         type = try container.decode(String.self, forKey: .type)
-        wikipedia = try container.decode(URL.self, forKey: .wikipedia)
 
         let massKG = try container.decode(Double.self, forKey: .dryMassKG)
         let massLB = try container.decode(Double.self, forKey: .dryMassLB)
@@ -86,6 +85,9 @@ extension Dragon {
         formatter.dateFormat = "yyyy-MM-dd"
         let date = try container.decode(String.self, forKey: .firstFlight)
         firstFlight = formatter.date(from: date)
+
+        let wikipedia = try container.decode(URL.self, forKey: .wikipedia)
+        links = Links(wikipedia: wikipedia)
 
         let capsuleContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .pressurizedCapsule)
         pressurizedCapsulePayloadVolume = try capsuleContainer.decodeVolumeUnits(for: .payloadVolume)
