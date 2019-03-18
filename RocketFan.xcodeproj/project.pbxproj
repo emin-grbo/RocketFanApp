@@ -550,7 +550,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EBCA1CC22330CF600E8903F /* Build configuration list for PBXNativeTarget "RocketFan" */;
 			buildPhases = (
-				E13B0C07223E4BF5000E3E85 /* Download Model JSON Files from API */,
 				0EBCA1A022330CF500E8903F /* Sources */,
 				0EBCA1A122330CF500E8903F /* Frameworks */,
 				0EBCA1A222330CF500E8903F /* Resources */,
@@ -766,24 +765,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Only run SwiftLint if installed\nif which swiftlint >/dev/null; then\n  swiftlint\nfi\n";
-		};
-		E13B0C07223E4BF5000E3E85 /* Download Model JSON Files from API */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Download Model JSON Files from API";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Download JSON enpoint files\nmarathon run Scripts/DownloadCapsulesJSON\nmarathon run Scripts/DownloadAppInfoJSON\nmarathon run Scripts/DownloadCompanyJSON\nmarathon run Scripts/DownloadCoreJSON\nmarathon run Scripts/DownloadDragonJSON\nmarathon run Scripts/DownloadHistoryJSON\nmarathon run Scripts/DownloadLandingPadJSON\nmarathon run Scripts/DownloadLaunchPadJSON\nmarathon run Scripts/DownloadMissionJSON\nmarathon run Scripts/DownloadRoadsterJSON\nmarathon run Scripts/DownloadRocketJSON\nmarathon run Scripts/DownloadShipJSON\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
