@@ -22,7 +22,7 @@ let json = try Data(contentsOf: url)
 
 //Writing file...
 let resourceFolder = try Folder.current.subfolder(atPath: "RocketFan/Resources/Data")
-try resourceFolder.createFile(named: "launche.json", contents: json)
+try resourceFolder.createFile(named: "launches.json", contents: json)
 
 //Save lastRun
 let lastRunFile = try scriptsFolder.createFile(named: ".launchLastRun")
