@@ -1,7 +1,7 @@
 import Foundation
 
 public extension SpaceXAPI {
-    public struct Options {
+     struct Options {
         public var queryItems: [URLQueryItem] {
             var parameters: [String: String] = [:]
 

@@ -33,6 +33,7 @@
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
 		0EBF1B27223C480100194F5D /* Landings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landings.swift */; };
+		0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */; };
 		E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C08223E5166000E3E85 /* apiinfo.json */; };
 		E13B0C0B223E529F000E3E85 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0A223E529F000E3E85 /* company.json */; };
 		E13B0C0D223E5538000E3E85 /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0C223E5538000E3E85 /* dragon.json */; };
@@ -40,7 +41,6 @@
 		E13B0C11223E629A000E3E85 /* launchpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C10223E629A000E3E85 /* launchpad.json */; };
 		E13B0C15223E6529000E3E85 /* landpad.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C14223E6529000E3E85 /* landpad.json */; };
 		E13B0C17223E6684000E3E85 /* launche.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C16223E6684000E3E85 /* launche.json */; };
-		0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */; };
 		E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE32236ABE800E1EDDB /* Cores.swift */; };
 		E1681FE62236AC2C00E1EDDB /* CoresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE52236AC2C00E1EDDB /* CoresTests.swift */; };
 		E1681FE82236AFED00E1EDDB /* DragonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE72236AFED00E1EDDB /* DragonsTests.swift */; };
@@ -72,6 +72,9 @@
 		E175541A223582770033C136 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1755419223582770033C136 /* Endpoint.swift */; };
 		E175541F22359EE00033C136 /* Capsules.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175541E22359EE00033C136 /* Capsules.swift */; };
 		E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175542122359F2F0033C136 /* CapsulesTests.swift */; };
+		E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAB223FF55800F77820 /* PayloadTests.swift */; };
+		E186CCAF223FF5D400F77820 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAE223FF5D400F77820 /* Payload.swift */; };
+		E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A7BA223FF4E3002A74D8 /* payload.json */; };
 		E1F34C4A223BEB7000F22086 /* ShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C49223BEB7000F22086 /* ShipTests.swift */; };
 		E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C4B223BEC3400F22086 /* Ship.swift */; };
 		E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C51223CDFE600F22086 /* MissionTests.swift */; };
@@ -185,6 +188,7 @@
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EBF1B26223C480100194F5D /* Landings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landings.swift; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
+		0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extensions.swift"; sourceTree = "<group>"; };
 		E13B0C08223E5166000E3E85 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
 		E13B0C0A223E529F000E3E85 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
 		E13B0C0C223E5538000E3E85 /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
@@ -192,7 +196,6 @@
 		E13B0C10223E629A000E3E85 /* launchpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launchpad.json; sourceTree = "<group>"; };
 		E13B0C14223E6529000E3E85 /* landpad.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landpad.json; sourceTree = "<group>"; };
 		E13B0C16223E6684000E3E85 /* launche.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = launche.json; sourceTree = "<group>"; };
-		0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extensions.swift"; sourceTree = "<group>"; };
 		E1681FE32236ABE800E1EDDB /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
 		E1681FE52236AC2C00E1EDDB /* CoresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoresTests.swift; sourceTree = "<group>"; };
 		E1681FE72236AFED00E1EDDB /* DragonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonsTests.swift; sourceTree = "<group>"; };
@@ -225,6 +228,9 @@
 		E1755419223582770033C136 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		E175541E22359EE00033C136 /* Capsules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsules.swift; sourceTree = "<group>"; };
 		E175542122359F2F0033C136 /* CapsulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesTests.swift; sourceTree = "<group>"; };
+		E186CCAB223FF55800F77820 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
+		E186CCAE223FF5D400F77820 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
+		E1B1A7BA223FF4E3002A74D8 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
 		E1F34C49223BEB7000F22086 /* ShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipTests.swift; sourceTree = "<group>"; };
 		E1F34C4B223BEC3400F22086 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		E1F34C51223CDFE600F22086 /* MissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTests.swift; sourceTree = "<group>"; };
@@ -475,6 +481,7 @@
 				E13B0C16223E6684000E3E85 /* launche.json */,
 				E13B0C10223E629A000E3E85 /* launchpad.json */,
 				E1FFA017223A993A0056BA6B /* mission.json */,
+				E1B1A7BA223FF4E3002A74D8 /* payload.json */,
 				E1F34C57223D0B0500F22086 /* roadster.json */,
 				E1FFA01E223A993B0056BA6B /* rocket.json */,
 				E1FFA01A223A993A0056BA6B /* ship.json */,
@@ -506,6 +513,7 @@
 				0E2B86D4223B1089005686BB /* Location.swift */,
 				E1F34C53223CE05C00F22086 /* Mission.swift */,
 				0E8AF222223AF0B200FB3369 /* MissionFragment.swift */,
+				E186CCAE223FF5D400F77820 /* Payload.swift */,
 				E1F34C59223D0B3D00F22086 /* Roadster.swift */,
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 				E1F34C5B223D22D000F22086 /* Speed.swift */,
@@ -525,6 +533,7 @@
 				0E2B86CC223B030A005686BB /* HistoryTests.swift */,
 				0E2B86D2223B0E30005686BB /* LandingPadTests.swift */,
 				E1F34C51223CDFE600F22086 /* MissionTests.swift */,
+				E186CCAB223FF55800F77820 /* PayloadTests.swift */,
 				E1F34C55223CF43100F22086 /* RoadsterTests.swift */,
 				E1F34C49223BEB7000F22086 /* ShipTests.swift */,
 			);
@@ -660,23 +669,25 @@
 				TargetAttributes = {
 					0EBCA1A322330CF500E8903F = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 					0EBCA1B722330CF600E8903F = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0EBCA1A322330CF500E8903F;
 					};
 					0EBCA1C222330CF600E8903F = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0EBCA1A322330CF500E8903F;
 					};
 					E17553FB223555BA0033C136 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1010;
+						LastSwiftMigration = 1020;
 					};
 					E1755403223555BA0033C136 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = 0EBCA1A322330CF500E8903F;
 					};
 				};
@@ -722,6 +733,7 @@
 				E13B0C0D223E5538000E3E85 /* dragon.json in Resources */,
 				E13B0C15223E6529000E3E85 /* landpad.json in Resources */,
 				E13B0C0F223E595B000E3E85 /* capsule.json in Resources */,
+				E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */,
 				E1FFA029223A993B0056BA6B /* rocket.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -800,6 +812,7 @@
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
 				E1F34C6C223D8DE600F22086 /* ApiInfo.swift in Sources */,
+				E186CCAF223FF5D400F77820 /* Payload.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
 				0E2B86D5223B1089005686BB /* Location.swift in Sources */,
@@ -818,6 +831,7 @@
 				E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
 				E1F34C6A223D8CB900F22086 /* ApiInfoTests.swift in Sources */,
+				E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */,
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
 				E1F34C56223CF43100F22086 /* RoadsterTests.swift in Sources */,

@@ -88,6 +88,7 @@ extension Roadster {
         case wikipedia
     }
 }
+
 extension Roadster {
     struct AstronomicalUnits {
         let apoapsis: Double

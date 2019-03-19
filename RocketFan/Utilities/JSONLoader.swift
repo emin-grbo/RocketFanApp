@@ -10,6 +10,7 @@ enum JSONLoader {
         case history
         case landingPad = "landpad"
         case mission
+        case payload
         case roadster
         case ship
     }
