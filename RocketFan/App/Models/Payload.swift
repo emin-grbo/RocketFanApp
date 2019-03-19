@@ -18,6 +18,7 @@ struct Payload: Decodable {
 extension Payload {
     enum CodingKeys: String, CodingKey {
         case customers
+        case epoch
         case id = "payload_id"
         case manufacturer
         case nationality
@@ -54,6 +55,7 @@ extension Payload {
         let apoapsisKm: Double?
         let argOfPericenter: Double?
         let eccentricity: Double?
+        let epoch: Date?
         let inclinationDeg: Double?
         let lifespanYears: Double?
         let meanAnomaly: Double?
@@ -69,6 +71,7 @@ extension Payload {
             case apoapsisKm = "apoapsis_km"
             case argOfPericenter = "arg_of_pericenter"
             case eccentricity
+            case epoch
             case inclinationDeg = "inclination_deg"
             case lifespanYears = "lifespan_years"
             case meanAnomaly = "mean_anomaly"
@@ -79,6 +82,29 @@ extension Payload {
             case referenceSystem = "reference_system"
             case regime
             case semiMajorAxisKm = "semi_major_axis_km"
+        }
+
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+
+            apoapsisKm = try? container.decode(Double.self, forKey: .apoapsisKm)
+            argOfPericenter = try? container.decode(Double.self, forKey: .argOfPericenter)
+            eccentricity = try? container.decode(Double.self, forKey: .eccentricity)
+            inclinationDeg = try? container.decode(Double.self, forKey: .inclinationDeg)
+            lifespanYears = try? container.decode(Double.self, forKey: .lifespanYears)
+            meanAnomaly = try? container.decode(Double.self, forKey: .meanAnomaly)
+            meanMotion = try? container.decode(Double.self, forKey: .meanMotion)
+            periapsisKm = try? container.decode(Double.self, forKey: .periapsisKm)
+            periodMin = try? container.decode(Double.self, forKey: .periodMin)
+            raan = try? container.decode(Double.self, forKey: .raan)
+            referenceSystem = try? container.decode(String.self, forKey: .referenceSystem)
+            regime = try? container.decode(String.self, forKey: .regime)
+            semiMajorAxisKm = try? container.decode(Double.self, forKey: .semiMajorAxisKm)
+
+            let date = try container.decodeIfPresent(String.self, forKey: .epoch) ?? ""
+            let isoFormatter = ISO8601DateFormatter()
+            isoFormatter.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+            epoch = isoFormatter.date(from: date)
         }
     }
 }
