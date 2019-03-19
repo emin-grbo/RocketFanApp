@@ -46,6 +46,6 @@ class PayloadTests: XCTestCase {
         XCTAssertEqual(params?.apoapsisKm, 35795.167)
         XCTAssertEqual(params?.argOfPericenter, 284.584)
         XCTAssertEqual(params?.meanAnomaly, 151.6653)
-        XCTAssertNotNil(payload?.orbitParams.epoch)
+        XCTAssertNotNil(params?.epoch)
     }
 }
