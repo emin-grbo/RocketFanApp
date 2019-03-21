@@ -75,6 +75,8 @@
 		E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAB223FF55800F77820 /* PayloadTests.swift */; };
 		E186CCAF223FF5D400F77820 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAE223FF5D400F77820 /* Payload.swift */; };
 		E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A7BA223FF4E3002A74D8 /* payload.json */; };
+		E1BA53C32242DC1A00601E5C /* RocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA53C22242DC1A00601E5C /* RocketTests.swift */; };
+		E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BA53C42242DC3E00601E5C /* Rocket.swift */; };
 		E1F34C4A223BEB7000F22086 /* ShipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C49223BEB7000F22086 /* ShipTests.swift */; };
 		E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C4B223BEC3400F22086 /* Ship.swift */; };
 		E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C51223CDFE600F22086 /* MissionTests.swift */; };
@@ -231,6 +233,8 @@
 		E186CCAB223FF55800F77820 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
 		E186CCAE223FF5D400F77820 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		E1B1A7BA223FF4E3002A74D8 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
+		E1BA53C22242DC1A00601E5C /* RocketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketTests.swift; sourceTree = "<group>"; };
+		E1BA53C42242DC3E00601E5C /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		E1F34C49223BEB7000F22086 /* ShipTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipTests.swift; sourceTree = "<group>"; };
 		E1F34C4B223BEC3400F22086 /* Ship.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ship.swift; sourceTree = "<group>"; };
 		E1F34C51223CDFE600F22086 /* MissionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionTests.swift; sourceTree = "<group>"; };
@@ -515,6 +519,7 @@
 				0E8AF222223AF0B200FB3369 /* MissionFragment.swift */,
 				E186CCAE223FF5D400F77820 /* Payload.swift */,
 				E1F34C59223D0B3D00F22086 /* Roadster.swift */,
+				E1BA53C42242DC3E00601E5C /* Rocket.swift */,
 				E1F34C4B223BEC3400F22086 /* Ship.swift */,
 				E1F34C5B223D22D000F22086 /* Speed.swift */,
 				E1F34C5F223D4B2200F22086 /* Units.swift */,
@@ -535,6 +540,7 @@
 				E1F34C51223CDFE600F22086 /* MissionTests.swift */,
 				E186CCAB223FF55800F77820 /* PayloadTests.swift */,
 				E1F34C55223CF43100F22086 /* RoadsterTests.swift */,
+				E1BA53C22242DC1A00601E5C /* RocketTests.swift */,
 				E1F34C49223BEB7000F22086 /* ShipTests.swift */,
 			);
 			path = Models;
@@ -807,6 +813,7 @@
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
 				E1F34C5E223D278300F22086 /* Distance.swift in Sources */,
+				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,
 				E1F34C54223CE05C00F22086 /* Mission.swift in Sources */,
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
@@ -825,6 +832,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1BA53C32242DC1A00601E5C /* RocketTests.swift in Sources */,
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */,
