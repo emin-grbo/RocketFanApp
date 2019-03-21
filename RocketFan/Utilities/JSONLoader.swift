@@ -12,6 +12,7 @@ enum JSONLoader {
         case mission
         case payload
         case roadster
+        case rocket
         case ship
     }
 
