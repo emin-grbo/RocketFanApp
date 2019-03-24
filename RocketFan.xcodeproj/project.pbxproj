@@ -33,6 +33,8 @@
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
 		0EBF1B27223C480100194F5D /* Landings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landings.swift */; };
+		0EBF2F9E22416758002742B8 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2F9D22416758002742B8 /* Launch.swift */; };
+		0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2F9F22416768002742B8 /* LaunchTests.swift */; };
 		0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */; };
 		E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C08223E5166000E3E85 /* apiinfo.json */; };
 		E13B0C0B223E529F000E3E85 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0A223E529F000E3E85 /* company.json */; };
@@ -189,6 +191,8 @@
 		0EBCA1C322330CF600E8903F /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EBF1B26223C480100194F5D /* Landings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landings.swift; sourceTree = "<group>"; };
+		0EBF2F9D22416758002742B8 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		0EBF2F9F22416768002742B8 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
 		0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extensions.swift"; sourceTree = "<group>"; };
 		E13B0C08223E5166000E3E85 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
@@ -513,6 +517,7 @@
 				0E2B86CA223B02F9005686BB /* History.swift */,
 				0E2B86D0223B0E1E005686BB /* LandingPad.swift */,
 				0EBF1B26223C480100194F5D /* Landings.swift */,
+				0EBF2F9D22416758002742B8 /* Launch.swift */,
 				0E2B86CE223B06A6005686BB /* Links.swift */,
 				0E2B86D4223B1089005686BB /* Location.swift */,
 				E1F34C53223CE05C00F22086 /* Mission.swift */,
@@ -537,6 +542,7 @@
 				0E7B8CB6223D9D7F0036670F /* DragonTests.swift */,
 				0E2B86CC223B030A005686BB /* HistoryTests.swift */,
 				0E2B86D2223B0E30005686BB /* LandingPadTests.swift */,
+				0EBF2F9F22416768002742B8 /* LaunchTests.swift */,
 				E1F34C51223CDFE600F22086 /* MissionTests.swift */,
 				E186CCAB223FF55800F77820 /* PayloadTests.swift */,
 				E1F34C55223CF43100F22086 /* RoadsterTests.swift */,
@@ -819,6 +825,7 @@
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
 				E1F34C6C223D8DE600F22086 /* ApiInfo.swift in Sources */,
+				0EBF2F9E22416758002742B8 /* Launch.swift in Sources */,
 				E186CCAF223FF5D400F77820 /* Payload.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
@@ -842,6 +849,7 @@
 				E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */,
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
+				0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */,
 				E1F34C56223CF43100F22086 /* RoadsterTests.swift in Sources */,
 				0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */,
 				E1F34C4A223BEB7000F22086 /* ShipTests.swift in Sources */,
