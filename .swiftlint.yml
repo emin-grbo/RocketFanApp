@@ -14,6 +14,9 @@ type_body_length:
   warning: 300
   error: 400
 
+nesting:
+  type_level: 3
+
 identifier_name:
   excluded:
     - id

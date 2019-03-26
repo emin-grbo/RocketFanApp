@@ -1,5 +1,3 @@
-// swiftlint:disable nesting
-
 import Foundation
 
 struct Payload: Decodable {
