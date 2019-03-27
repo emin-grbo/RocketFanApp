@@ -14,7 +14,7 @@ class CoreTests: XCTestCase {
 
             let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             let cores = try decoder.decoded([Core].self, from: data)
-            core = cores[5]
+            core = cores.first(where: { $0.serial == "B0003" })
 
         } catch {
             XCTFail("Decoding failed: \(error)")

@@ -1,15 +1,13 @@
 import Foundation
 
 struct Core: Decodable {
-    let asdsAttempts: Int
-    let asdsLandings: Int
     let block: Int?
     let details: String?
+    let droneShip: Landing
+    let launchSite: Landing
     let missions: [MissionFragment]
     let originalLaunch: Date?
     let reuseCount: Int
-    let rtlsAttempts: Int
-    let rtlsLandings: Int
     let serial: String
     let status: String
     let waterLanding: Bool
@@ -29,5 +27,33 @@ extension Core {
         case serial = "core_serial"
         case status
         case waterLanding = "water_landing"
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+
+        block = try container.decodeIfPresent(Int.self, forKey: .block)
+        details = try container.decodeIfPresent(String.self, forKey: .details)
+        missions = try container.decode([MissionFragment].self, forKey: .missions)
+        originalLaunch = try container.decodeIfPresent(Date.self, forKey: .originalLaunch)
+        reuseCount = try container.decode(Int.self, forKey: .reuseCount)
+        serial = try container.decode(String.self, forKey: .serial)
+        status = try container.decode(String.self, forKey: .status)
+        waterLanding = try container.decode(Bool.self, forKey: .waterLanding)
+
+        var attempts = try container.decode(Int.self, forKey: .asdsAttempts)
+        var successes = try container.decode(Int.self, forKey: .asdsLandings)
+        droneShip = Landing(attempts: attempts, successes: successes)
+
+        attempts = try container.decode(Int.self, forKey: .rtlsAttempts)
+        successes = try container.decode(Int.self, forKey: .rtlsLandings)
+        launchSite = Landing(attempts: attempts, successes: successes)
+    }
+}
+
+extension Core {
+    struct Landing {
+        var attempts: Int
+        var successes: Int
     }
 }
