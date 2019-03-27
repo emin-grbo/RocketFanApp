@@ -32,7 +32,7 @@
 		0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA1A722330CF500E8903F /* AppDelegate.swift */; };
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
-		0EBF1B27223C480100194F5D /* Landings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landings.swift */; };
+		0EBF1B27223C480100194F5D /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landing.swift */; };
 		0EBF2F9E22416758002742B8 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2F9D22416758002742B8 /* Launch.swift */; };
 		0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2F9F22416768002742B8 /* LaunchTests.swift */; };
 		0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */; };
@@ -190,7 +190,7 @@
 		0EBCA1BE22330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0EBCA1C322330CF600E8903F /* RocketFanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBCA1C922330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0EBF1B26223C480100194F5D /* Landings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landings.swift; sourceTree = "<group>"; };
+		0EBF1B26223C480100194F5D /* Landing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landing.swift; sourceTree = "<group>"; };
 		0EBF2F9D22416758002742B8 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		0EBF2F9F22416768002742B8 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
@@ -516,7 +516,7 @@
 				0E7B8CB4223D9D670036670F /* Dragon.swift */,
 				0E2B86CA223B02F9005686BB /* History.swift */,
 				0E2B86D0223B0E1E005686BB /* LandingPad.swift */,
-				0EBF1B26223C480100194F5D /* Landings.swift */,
+				0EBF1B26223C480100194F5D /* Landing.swift */,
 				0EBF2F9D22416758002742B8 /* Launch.swift */,
 				0E2B86CE223B06A6005686BB /* Links.swift */,
 				0E2B86D4223B1089005686BB /* Location.swift */,
@@ -806,7 +806,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EBF1B27223C480100194F5D /* Landings.swift in Sources */,
+				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
 				0E7B8CB5223D9D670036670F /* Dragon.swift in Sources */,
 				E1FFA03A223AA6320056BA6B /* Codable+Extensions.swift in Sources */,

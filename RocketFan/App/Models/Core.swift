@@ -3,8 +3,8 @@ import Foundation
 struct Core: Decodable {
     let block: Int?
     let details: String?
-    let droneShip: Landing
-    let launchSite: Landing
+    let droneShipLanding: Landing
+    let launchSiteLanding: Landing
     let missions: [MissionFragment]
     let originalLaunch: Date?
     let reuseCount: Int
@@ -43,17 +43,10 @@ extension Core {
 
         var attempts = try container.decode(Int.self, forKey: .asdsAttempts)
         var successes = try container.decode(Int.self, forKey: .asdsLandings)
-        droneShip = Landing(attempts: attempts, successes: successes)
+        droneShipLanding = Landing(attempts: attempts, successes: successes)!
 
         attempts = try container.decode(Int.self, forKey: .rtlsAttempts)
         successes = try container.decode(Int.self, forKey: .rtlsLandings)
-        launchSite = Landing(attempts: attempts, successes: successes)
-    }
-}
-
-extension Core {
-    struct Landing {
-        var attempts: Int
-        var successes: Int
+        launchSiteLanding = Landing(attempts: attempts, successes: successes)!
     }
 }
