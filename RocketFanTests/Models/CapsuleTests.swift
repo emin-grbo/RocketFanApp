@@ -14,7 +14,7 @@ class CapsuleTests: XCTestCase {
 
             let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             let capsules = try decoder.decoded([Capsule].self, from: data)
-            capsule = capsules.first
+            capsule = capsules.first(where: { $0.serial == "C101" })
 
         } catch {
             XCTFail("Decoding failed: \(error)")
