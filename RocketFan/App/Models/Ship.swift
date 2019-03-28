@@ -9,7 +9,7 @@ struct Ship: Decodable {
     let identifiers: Identifiers?
     let imageUrl: URL?
     let isActive: Bool
-    let landings: Landings?
+    let landing: Landing?
     let location: Location?
     let missions: [MissionFragment]
     let model: String?
@@ -71,9 +71,9 @@ extension Ship {
         let kg = try container.decodeIfPresent(Double.self, forKey: .weightKg)
         weight = Weight(metric: kg, imperial: lbs)
 
-        let attempted = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
-        let successful = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)
-        landings = Landings(attempted: attempted, successful: successful)
+        let attempts = try container.decodeIfPresent(Int.self, forKey: .attemptedLandings)
+        let successes = try container.decodeIfPresent(Int.self, forKey: .successfulLandings)
+        landing = Landing(attempts: attempts, successes: successes)
 
         let imo = try container.decodeIfPresent(Int.self, forKey: .imo)
         let mmsi = try container.decodeIfPresent(Int.self, forKey: .mmsi)

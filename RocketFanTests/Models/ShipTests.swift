@@ -44,8 +44,8 @@ class ShipTests: XCTestCase {
     func test_Landings_CanBeDecoded() {
         let shipWithLandings = ships?[11]
 
-        XCTAssertEqual(shipWithLandings?.landings?.successful, 0)
-        XCTAssertEqual(shipWithLandings?.landings?.attempted, 2)
+        XCTAssertEqual(shipWithLandings?.landing?.successes, 0)
+        XCTAssertEqual(shipWithLandings?.landing?.attempts, 2)
     }
 
     func test_Location_CanBeDecoded() {
