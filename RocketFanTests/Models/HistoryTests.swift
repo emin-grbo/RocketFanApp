@@ -14,7 +14,7 @@ class HistoryTests: XCTestCase {
 
             let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             let histories = try decoder.decoded([History].self, from: data)
-            history = histories[11]
+            history = histories.first(where: { $0.id == 12 })
 
         } catch {
             XCTFail("Decoding failed: \(error)")
