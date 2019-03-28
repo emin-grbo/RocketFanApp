@@ -14,7 +14,7 @@ class MissionTests: XCTestCase {
         do {
 
             missions = try data.decoded() as [Mission]
-            mission = missions?.first
+            mission = missions?.first(where: { $0.id == "F3364BF" })
 
         } catch {
             XCTFail("Decoding failed: \(error)")
