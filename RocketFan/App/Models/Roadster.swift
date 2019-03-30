@@ -1,6 +1,7 @@
 import Foundation
 
 struct Roadster: Decodable {
+    /// Sspecified in kg and lb
     typealias Mass = Units
 
     let astronomicalUnits: AstronomicalUnits
