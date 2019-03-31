@@ -4,18 +4,29 @@ struct Roadster: Decodable {
     let astronomicalUnits: AstronomicalUnits
     let daysInSpace: Double
     let details: String
-    let distance: Distance
+
+    /// Specified in KM and Miles
+    let distanceFromEarth: Units
+
+    /// Specified in KM and Miles
+    let distanceFromMars: Units
+
     let eccentricity: Double
     let epochJd: Double
     let inclination: Double
     let launchDate: Date
-    let launchMass: Units /// Specified in kg and lbs
+
+    /// Specified in Kg and Lbs
+    let launchMass: Units
+
     let links: Links
     let name: String
     let noradId: Int
     let orbitType: String
     let periapsisOrg: Double
-    let speed: Units /// Specified in kph and mph
+
+    /// Specified in Kph and Mph
+    let speed: Units
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -50,10 +61,8 @@ struct Roadster: Decodable {
         let earthMi = try container.decode(Double.self, forKey: .earthMi)
         let marsMi = try container.decode(Double.self, forKey: .marsMi)
         let marsKm = try container.decode(Double.self, forKey: .marsKm)
-        distance = Distance(fromEarthKm: earthKm,
-                            fromEarthMi: earthMi,
-                            fromMarsKm: marsKm,
-                            fromMarsMi: marsMi)!
+        distanceFromEarth = Units(metric: earthKm, imperial: earthMi)!
+        distanceFromMars = Units(metric: marsMi, imperial: marsKm)!
 
         let wikipedia = try container.decode(URL.self, forKey: .wikipedia)
         links = Links(wikipedia: wikipedia)
