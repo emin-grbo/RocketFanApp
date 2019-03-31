@@ -4,11 +4,14 @@ struct Payload: Decodable {
     let customers: [String]
     let id: String
     let manufacturer: String?
+
+    /// Specified in kg and lbs
     let mass: Units?
+
     let nationality: String?
     let noradIds: [Int]
     let orbit: String
-    let orbitParams: OrbitParams
+    let orbitParameters: OrbitParameters
     let payloadType: String
     let reused: Bool
 }
@@ -22,7 +25,7 @@ extension Payload {
         case nationality
         case noradIds = "norad_id"
         case orbit
-        case orbitParams = "orbit_params"
+        case orbitParameters = "orbit_params"
         case payloadMassKg = "payload_mass_kg"
         case payloadMassLbs = "payload_mass_lbs"
         case payloadType = "payload_type"
@@ -40,7 +43,7 @@ extension Payload {
         noradIds = try container.decode(Array.self, forKey: .noradIds)
         customers = try container.decode(Array.self, forKey: .customers)
         reused = try container.decode(Bool.self, forKey: .reused)
-        orbitParams = try container.decode(OrbitParams.self, forKey: .orbitParams)
+        orbitParameters = try container.decode(OrbitParameters.self, forKey: .orbitParameters)
 
         let massKG = try? container.decode(Double.self, forKey: .payloadMassKg)
         let massLBS = try? container.decode(Double.self, forKey: .payloadMassLbs)
@@ -49,7 +52,7 @@ extension Payload {
 }
 
 extension Payload {
-    struct OrbitParams: Decodable {
+    struct OrbitParameters: Decodable {
         let apoapsisKm: Double?
         let argOfPericenter: Double?
         let eccentricity: Double?
