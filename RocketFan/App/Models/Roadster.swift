@@ -1,9 +1,6 @@
 import Foundation
 
 struct Roadster: Decodable {
-    /// Sspecified in kg and lb
-    typealias Mass = Units
-
     let astronomicalUnits: AstronomicalUnits
     let daysInSpace: Double
     let details: String
@@ -12,13 +9,13 @@ struct Roadster: Decodable {
     let epochJd: Double
     let inclination: Double
     let launchDate: Date
-    let launchMass: Mass
+    let launchMass: Units /// Specified in kg and lbs
     let links: Links
     let name: String
     let noradId: Int
     let orbitType: String
     let periapsisOrg: Double
-    let speed: Speed
+    let speed: Units /// Specified in kph and mph
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
@@ -36,7 +33,7 @@ struct Roadster: Decodable {
 
         let kg = try container.decode(Double.self, forKey: .launchMassKg)
         let lbs = try container.decode(Double.self, forKey: .launchMassLbs)
-        launchMass = Mass(metric: kg, imperial: lbs)!
+        launchMass = Units(metric: kg, imperial: lbs)!
 
         let apoapsis = try container.decode(Double.self, forKey: .apoapsis)
         let periapsis = try container.decode(Double.self, forKey: .periapsis)
@@ -47,7 +44,7 @@ struct Roadster: Decodable {
 
         let kph = try container.decode(Double.self, forKey: .kph)
         let mph = try container.decode(Double.self, forKey: .mph)
-        speed = Speed(kph: kph, mph: mph)!
+        speed = Units(metric: kph, imperial: mph)!
 
         let earthKm = try container.decode(Double.self, forKey: .earthKm)
         let earthMi = try container.decode(Double.self, forKey: .earthMi)
