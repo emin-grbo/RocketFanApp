@@ -3,70 +3,112 @@ import XCTest
 
 class ShipTests: XCTestCase {
     var ship: Ship?
-    var ships: [Ship]?
 
     override func setUp() {
+        ship = try? jsonData.decoded() as Ship
+    }
+
+    func test_CanBeDecoded_FromProductionJSON() {
         guard let data = JSONLoader.load(.ship) else {
             XCTFail("Missing file: Ship.json")
             return
         }
 
         do {
-            ships = try data.decoded() as [Ship]
-            ship = ships?.first
-
+            let ships = try data.decoded() as [Ship]
+            ship = ships.first
         } catch {
             XCTFail("Decoding failed: \(error)")
         }
-    }
 
-    func test_RequiredValues_CanBeDecoded_FromJSON() {
         XCTAssertNotNil(ship)
     }
 
-    func test_OptionalValues_CanBeDecoded_FromJSON_IfExist() {
-        let shipWithModel = ships?[11]
-        XCTAssertEqual(shipWithModel?.model, "Marmac 300")
+    func test_CanDecodeRequiredParameters_FromFixedJSON() {
+        do {
+            ship = try jsonData.decoded()
+        } catch {
+            XCTFail("Decoding failed: \(error)")
+        }
 
-        let shipTwo = ships?[4]
-        XCTAssertEqual(shipTwo?.yearBuilt, 1974)
-        XCTAssertEqual(shipTwo?.speed?.kn, 0)
-        XCTAssertEqual(shipTwo?.status, "Stopped")
+        XCTAssertEqual(ship?.homePort, "Port of Los Angeles")
+        XCTAssertEqual(ship?.id, "FOO")
+        XCTAssertEqual(ship?.isActive, true)
+        XCTAssertEqual(ship?.name, "Foo Bar")
+        XCTAssertEqual(ship?.roles, ["ASDS Barge"])
+        XCTAssertEqual(ship?.type, "Barge")
+        XCTAssertEqual(ship?.weight?.imperial, 5.0)
+        XCTAssertEqual(ship?.weight?.metric, 6.0)
+        XCTAssertEqual(ship?.yearBuilt, 2000)
 
-        //swiftlint:disable line_length
-        XCTAssertEqual(shipTwo?.url?.absoluteString, "https://www.marinetraffic.com/en/ais/details/ships/shipid:428415/vessel:BETTY%20R%20GAMBARELLA")
-        XCTAssertEqual(shipTwo?.imageUrl?.absoluteString, "https://i.imgur.com/ngYgFnn.jpg")
-
-        let shipThree = ships?[5]
-        XCTAssertEqual(shipThree?.courseDeg, 263)
+        let missions = [MissionFragment(name: "COTS 1", flight: 7)]
+        XCTAssertEqual(ship?.missions, missions)
     }
 
-    func test_Landings_CanBeDecoded() {
-        let shipWithLandings = ships?[11]
+    func test_CanDecodeOptionalParameters_FromFixedJSON() {
+        do {
+            ship = try jsonData.decoded()
+        } catch {
+            XCTFail("Decoding failed: \(error)")
+        }
 
-        XCTAssertEqual(shipWithLandings?.landing?.successes, 0)
-        XCTAssertEqual(shipWithLandings?.landing?.attempts, 2)
+        XCTAssertEqual(ship?.course, 90)
+        XCTAssertEqual(ship?.identifiers?.abs, 3)
+        XCTAssertEqual(ship?.identifiers?.imo, 1)
+        XCTAssertEqual(ship?.identifiers?.mmsi, 2)
+        XCTAssertEqual(ship?.imageUrl?.absoluteString, "https://i.imgur.com/woCxpkj.jpg")
+        XCTAssertEqual(ship?.landing?.attempts, 12)
+        XCTAssertEqual(ship?.landing?.successes, 10)
+        XCTAssertEqual(ship?.location?.latitude, 30.18666)
+        XCTAssertEqual(ship?.location?.longitude, -91.01443)
+        XCTAssertEqual(ship?.model, "Qux")
+        XCTAssertEqual(ship?.speed, 5.0)
+        XCTAssertEqual(ship?.status, "Underway Using Engine")
+        XCTAssertEqual(ship?.url?.absoluteString, "https://google.com")
+        XCTAssertEqual(ship?.weight?.imperial, 5.0)
+        XCTAssertEqual(ship?.weight?.metric, 6.0)
+        XCTAssertEqual(ship?.yearBuilt, 2000)
     }
+}
 
-    func test_Location_CanBeDecoded() {
-        let ship = ships?[4]
-
-        XCTAssertEqual(ship?.location?.latitude, 33.77139)
-        XCTAssertEqual(ship?.location?.longitude, -118.2123)
-    }
-
-    func test_Weight_CanBeDecoded() {
-        let ship = ships?[4]
-
-        XCTAssertEqual(ship?.weight?.imperial, 446000)
-        XCTAssertEqual(ship?.weight?.metric, 202302)
-    }
-
-    func test_Identifiers_CanBeDecoded() {
-        let ship = ships?[4]
-
-        XCTAssertEqual(ship?.identifiers?.imo, 7517478)
-        XCTAssertEqual(ship?.identifiers?.mmsi, 368000890)
-        XCTAssertEqual(ship?.identifiers?.abs, 562590)
+extension ShipTests {
+    var jsonData: Data {
+        return """
+        {
+          "ship_id": "FOO",
+          "ship_name": "Foo Bar",
+          "ship_model": "Qux",
+          "ship_type": "Barge",
+          "roles": [
+            "ASDS Barge"
+          ],
+          "active": true,
+          "imo": 1,
+          "mmsi": 2,
+          "abs": 3,
+          "class": 4,
+          "weight_lbs": 5,
+          "weight_kg": 6,
+          "year_built": 2000,
+          "home_port": "Port of Los Angeles",
+          "status": "Underway Using Engine",
+          "speed_kn": 5,
+          "course_deg": 90,
+          "position": {
+            "latitude": 30.18666,
+            "longitude": -91.01443
+          },
+          "successful_landings": 10,
+          "attempted_landings": 12,
+          "missions": [
+            {
+              "name": "COTS 1",
+              "flight": 7
+            }
+          ],
+          "url": "https://google.com",
+          "image": "https://i.imgur.com/woCxpkj.jpg"
+        }
+        """.data(using: .utf8)!
     }
 }
