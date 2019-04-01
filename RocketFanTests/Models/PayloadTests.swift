@@ -32,7 +32,7 @@ class PayloadTests: XCTestCase {
     }
 
     func test_OrbitParams_CanBeDecoded_FromJSON_IfExist() {
-        let params = payload?.orbitParams
+        let params = payload?.orbitParameters
         XCTAssertEqual(params?.referenceSystem, "geocentric")
         XCTAssertEqual(params?.regime, "geostationary")
         XCTAssertEqual(params?.eccentricity, 0.0001895)
