@@ -38,7 +38,7 @@ class SpaceXAPITests: XCTestCase {
 
         // Query item order isn't guaranteed, so don't try and match an absolute string
         let components = URLComponents(url: sessionMock.calledURL!, resolvingAgainstBaseURL: false)!
-        XCTAssertEqual(components.queryItems, options.queryItems)
+        XCTAssertEqual(Set(components.queryItems ?? []), Set(options.queryItems))
     }
 
     func test_SpaceXAPI_ReturnsTask() {
