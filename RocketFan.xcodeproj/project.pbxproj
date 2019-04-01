@@ -87,7 +87,6 @@
 		E1F34C58223D0B0500F22086 /* roadster.json in Resources */ = {isa = PBXBuildFile; fileRef = E1F34C57223D0B0500F22086 /* roadster.json */; };
 		E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C59223D0B3D00F22086 /* Roadster.swift */; };
 		E1F34C5C223D22D000F22086 /* Speed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5B223D22D000F22086 /* Speed.swift */; };
-		E1F34C5E223D278300F22086 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5D223D278300F22086 /* Distance.swift */; };
 		E1F34C60223D4B2200F22086 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C5F223D4B2200F22086 /* Units.swift */; };
 		E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C61223D53D500F22086 /* CompanyTests.swift */; };
 		E1F34C64223D565700F22086 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F34C63223D565700F22086 /* Company.swift */; };
@@ -247,7 +246,6 @@
 		E1F34C57223D0B0500F22086 /* roadster.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = roadster.json; sourceTree = "<group>"; };
 		E1F34C59223D0B3D00F22086 /* Roadster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadster.swift; sourceTree = "<group>"; };
 		E1F34C5B223D22D000F22086 /* Speed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speed.swift; sourceTree = "<group>"; };
-		E1F34C5D223D278300F22086 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		E1F34C5F223D4B2200F22086 /* Units.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
 		E1F34C61223D53D500F22086 /* CompanyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTests.swift; sourceTree = "<group>"; };
 		E1F34C63223D565700F22086 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
@@ -512,11 +510,10 @@
 				E1FFA036223AA39C0056BA6B /* Capsule.swift */,
 				E1F34C63223D565700F22086 /* Company.swift */,
 				0E2B86C4223AF64A005686BB /* Core.swift */,
-				E1F34C5D223D278300F22086 /* Distance.swift */,
 				0E7B8CB4223D9D670036670F /* Dragon.swift */,
 				0E2B86CA223B02F9005686BB /* History.swift */,
-				0E2B86D0223B0E1E005686BB /* LandingPad.swift */,
 				0EBF1B26223C480100194F5D /* Landing.swift */,
+				0E2B86D0223B0E1E005686BB /* LandingPad.swift */,
 				0EBF2F9D22416758002742B8 /* Launch.swift */,
 				0E2B86CE223B06A6005686BB /* Links.swift */,
 				0E2B86D4223B1089005686BB /* Location.swift */,
@@ -818,7 +815,6 @@
 				E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
-				E1F34C5E223D278300F22086 /* Distance.swift in Sources */,
 				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,
 				E1F34C54223CE05C00F22086 /* Mission.swift in Sources */,
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
