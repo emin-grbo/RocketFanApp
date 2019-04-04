@@ -6,22 +6,31 @@ struct Rocket: Decodable {
     let costPerLaunch: Double
     let country: String
     let description: String
+
+    /// Specified in meters or feet
     let diameter: Units
+
     let engine: Engine
     let firstFlight: Date
     let firstStage: Stage
+
+    /// Specified in meters or feet
     let height: Units
+
     let id: String
     let images: [URL]
     let isActive: Bool
     let landingLegs: LandingLegs
     let links: Links
+
+    /// Specified in kg or lbs
     let mass: Units
-    let stageCount: Int
+
     let name: String
     let payloadWeights: [PayloadWeight]
     let secondStage: Stage
-    let successRatePct: Double
+    let stageCount: Int
+    let successRatePercentage: Double
     let type: String
 }
 
@@ -58,7 +67,7 @@ extension Rocket {
         stageCount = try container.decode(Int.self, forKey: .stageCount)
         boosters = try container.decode(Int.self, forKey: .boosters)
         costPerLaunch = try container.decode(Double.self, forKey: .costPerLaunch)
-        successRatePct = try container.decode(Double.self, forKey: .successRatePct)
+        successRatePercentage = try container.decode(Double.self, forKey: .successRatePct)
         isActive = try container.decode(Bool.self, forKey: .isActive)
         country = try container.decode(String.self, forKey: .country)
         company = try container.decode(String.self, forKey: .company)
