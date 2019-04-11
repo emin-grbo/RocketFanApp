@@ -93,3 +93,4 @@ Scripts/.missionLastRun
 Scripts/.roadsterLastRun
 Scripts/.rocketLastRun
 Scripts/.shipLastRun
+RocketFanTests/Utilities/SettingsTests.swift.plist
