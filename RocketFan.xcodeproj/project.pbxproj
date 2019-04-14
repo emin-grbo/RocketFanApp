@@ -24,7 +24,6 @@
 		0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B8CB6223D9D7F0036670F /* DragonTests.swift */; };
 		0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8AF222223AF0B200FB3369 /* MissionFragment.swift */; };
 		0E911FED2236EAAA00CBE217 /* SpaceXAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */; };
-		0E911FEF2236EB5A00CBE217 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FEE2236EB5A00CBE217 /* Result.swift */; };
 		0E911FF22236EC7A00CBE217 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF12236EC7A00CBE217 /* TestHelpers.swift */; };
 		0E911FF42236ECC900CBE217 /* NetworkSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */; };
 		0E911FF62236EDA300CBE217 /* SpaceXAPI+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */; };
@@ -177,7 +176,6 @@
 		0E7B8CB6223D9D7F0036670F /* DragonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonTests.swift; sourceTree = "<group>"; };
 		0E8AF222223AF0B200FB3369 /* MissionFragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFragment.swift; sourceTree = "<group>"; };
 		0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPI.swift; sourceTree = "<group>"; };
-		0E911FEE2236EB5A00CBE217 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0E911FF12236EC7A00CBE217 /* TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelpers.swift; sourceTree = "<group>"; };
 		0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionProtocol.swift; sourceTree = "<group>"; };
 		0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceXAPI+Error.swift"; sourceTree = "<group>"; };
@@ -426,7 +424,6 @@
 				E175541B223582BA0033C136 /* Endpoints */,
 				E17553FF223555BA0033C136 /* Info.plist */,
 				0E911FF32236ECC900CBE217 /* NetworkSessionProtocol.swift */,
-				0E911FEE2236EB5A00CBE217 /* Result.swift */,
 				0E911FEC2236EAAA00CBE217 /* SpaceXAPI.swift */,
 				0E911FF52236EDA300CBE217 /* SpaceXAPI+Error.swift */,
 				0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */,
@@ -888,7 +885,6 @@
 				E168200C2236CB7900E1EDDB /* Rockets.swift in Sources */,
 				0E911FED2236EAAA00CBE217 /* SpaceXAPI.swift in Sources */,
 				E1681FF62236BB4700E1EDDB /* LandingPads.swift in Sources */,
-				0E911FEF2236EB5A00CBE217 /* Result.swift in Sources */,
 				E16820152236CEDB00E1EDDB /* Ships.swift in Sources */,
 				E1681FEA2236B04D00E1EDDB /* Dragons.swift in Sources */,
 				E1681FFC2236BE7D00E1EDDB /* Launches.swift in Sources */,

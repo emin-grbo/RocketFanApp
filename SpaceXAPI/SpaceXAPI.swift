@@ -10,28 +10,28 @@ final public class SpaceXAPI {
 
     public func get(_ endpoint: Endpoint,
                     options: Options? = nil,
-                    completion: @escaping (Result<Data>) -> Void) -> URLSessionTask {
+                    completion: @escaping (Result<Data, Error>) -> Void) -> URLSessionTask {
 
         let url = buildURL(for: endpoint, using: options)
 
         let task = urlSession.dataTask(with: url) { data, urlResponse, error in
             if let error = error {
-                completion(Result.error(error))
+                completion(Result.failure(error))
                 return
             }
 
             guard let httpResponse = urlResponse as? HTTPURLResponse else {
-                completion(Result.error(SpaceXAPIError.unknownResponse))
+                completion(Result.failure(SpaceXAPIError.unknownResponse))
                 return
             }
 
             guard (200 ..< 300).contains(httpResponse.statusCode) else {
-                completion(Result.error(SpaceXAPIError.serverReturnedCode(httpResponse.statusCode)))
+                completion(Result.failure(SpaceXAPIError.serverReturnedCode(httpResponse.statusCode)))
                 return
             }
 
             guard let data = data else {
-                completion(Result.error(SpaceXAPIError.emptyResponse))
+                completion(Result.failure(SpaceXAPIError.emptyResponse))
                 return
             }
 
