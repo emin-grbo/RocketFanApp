@@ -63,7 +63,7 @@ class SpaceXAPITests: XCTestCase {
         let expectedError = ErrorMock.expected
         sessionMock.error = expectedError
 
-        var returnedResult: Result<Data>?
+        var returnedResult: Result<Data, Error>?
         _ = api.get(endpoint) { result in
             returnedResult = result
         }
@@ -75,7 +75,7 @@ class SpaceXAPITests: XCTestCase {
         let expectedError = SpaceXAPIError.unknownResponse
         sessionMock.response = nil
 
-        var returnedResult: Result<Data>?
+        var returnedResult: Result<Data, Error>?
         _ = api.get(endpoint) { result in
             returnedResult = result
         }
@@ -87,7 +87,7 @@ class SpaceXAPITests: XCTestCase {
         let error = SpaceXAPIError.serverReturnedCode(404)
         sessionMock.response = badResponse
 
-        var returnedResult: Result<Data>?
+        var returnedResult: Result<Data, Error>?
         _ = api.get(endpoint) { result in
             returnedResult = result
         }
@@ -100,7 +100,7 @@ class SpaceXAPITests: XCTestCase {
         sessionMock.response = okResponse
         sessionMock.data = nil
 
-        var returnedResult: Result<Data>?
+        var returnedResult: Result<Data, Error>?
         _ = api.get(endpoint) { result in
             returnedResult = result
         }
@@ -113,7 +113,7 @@ class SpaceXAPITests: XCTestCase {
         sessionMock.response = okResponse
         sessionMock.data = data
 
-        var returnedResult: Result<Data>?
+        var returnedResult: Result<Data, Error>?
         _ = api.get(endpoint) { result in
             returnedResult = result
         }

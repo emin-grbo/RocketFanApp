@@ -8,14 +8,14 @@ extension XCTestCase {
     /// - Parameters:
     ///   - result: The Result case to check
     ///   - expectedData: The expected data
-    func assert<T: Equatable>(_ result: Result<T>?,
+    func assert<T: Equatable>(_ result: Result<T, Error>?,
                               containsData expectedData: T,
                               in file: StaticString = #file,
                               line: UInt = #line) {
         switch result {
         case .success(let data)?:
             XCTAssertEqual(data, expectedData, file: file, line: line)
-        case .error?:
+        case .failure?:
             XCTFail("Error was thrown", file: file, line: line)
         case nil:
             XCTFail("Result was nil", file: file, line: line)
@@ -27,12 +27,12 @@ extension XCTestCase {
     /// - Parameters:
     ///   - result: The Result case to check
     ///   - expectedError: The expected Error
-    func assert<T>(_ result: Result<T>?,
+    func assert<T>(_ result: Result<T, Error>?,
                    containsError expectedError: Error,
                    in file: StaticString = #file,
                    line: UInt = #line) {
         switch result {
-        case .error(let error)?:
+        case .failure(let error)?:
             XCTAssertEqual(
                 error.localizedDescription,
                 expectedError.localizedDescription,
