@@ -14,7 +14,7 @@ class LandingPadTests: XCTestCase {
 
             let decoder = JSONDecoder(dateDecodingStrategy: .secondsSince1970)
             let landingPads = try decoder.decoded([LandingPad].self, from: data)
-            landingPad = landingPads.first
+            landingPad = landingPads.first(where: { $0.id == "LZ-1" })
 
         } catch {
             XCTFail("Decoding failed: \(error)")
