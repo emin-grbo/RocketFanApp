@@ -5,6 +5,7 @@ class LoadingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        activityIndivator.stopAnimating()
+        view.backgroundColor = .clear
+        activityIndivator.startAnimating()
     }
 }

@@ -4,7 +4,7 @@ import SpaceXAPI
 struct LaunchesRepository {
     private let api: SpaceXAPI
 
-    init(api: SpaceXAPI) {
+    init(with api: SpaceXAPI) {
         self.api = api
     }
 }

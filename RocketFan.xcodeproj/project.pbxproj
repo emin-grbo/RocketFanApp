@@ -87,6 +87,8 @@
 		E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */; };
 		E18600E02276352300B0C856 /* APIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DF2276352300B0C856 /* APIFactory.swift */; };
 		E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E12276365400B0C856 /* LaunchesRepository.swift */; };
+		E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */; };
+		E18600E62276378F00B0C856 /* LaunchesViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */; };
 		E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAB223FF55800F77820 /* PayloadTests.swift */; };
 		E186CCAF223FF5D400F77820 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAE223FF5D400F77820 /* Payload.swift */; };
 		E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A7BA223FF4E3002A74D8 /* payload.json */; };
@@ -259,6 +261,8 @@
 		E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesCoordinator.swift; sourceTree = "<group>"; };
 		E18600DF2276352300B0C856 /* APIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFactory.swift; sourceTree = "<group>"; };
 		E18600E12276365400B0C856 /* LaunchesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRepository.swift; sourceTree = "<group>"; };
+		E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDependencyContainer.swift; sourceTree = "<group>"; };
+		E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewControllerFactory.swift; sourceTree = "<group>"; };
 		E186CCAB223FF55800F77820 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
 		E186CCAE223FF5D400F77820 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		E1B1A7BA223FF4E3002A74D8 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
@@ -586,7 +590,9 @@
 			isa = PBXGroup;
 			children = (
 				E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */,
+				E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */,
 				E18600E12276365400B0C856 /* LaunchesRepository.swift */,
+				E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -958,6 +964,8 @@
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
 				0E2B86D5223B1089005686BB /* Location.swift in Sources */,
+				E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */,
+				E18600E62276378F00B0C856 /* LaunchesViewControllerFactory.swift in Sources */,
 				E1FFA03C223AA70E0056BA6B /* Data+Extensions.swift in Sources */,
 				0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */,
 			);

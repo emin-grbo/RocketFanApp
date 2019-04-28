@@ -2,6 +2,7 @@ import UIKit
 
 class LaunchesCoordinator {
     let navigationController: UINavigationController
+    private let dependencyContainer = LaunchesDependencyContainer()
 
     init(navigationController: UINavigationController = UINavigationController()) {
         self.navigationController = navigationController
@@ -12,6 +13,6 @@ class LaunchesCoordinator {
 
 extension LaunchesCoordinator {
     private func launchesViewController() -> LaunchesViewController {
-        return LaunchesViewController()
+        return dependencyContainer.makeLaunchesViewController()
     }
 }
