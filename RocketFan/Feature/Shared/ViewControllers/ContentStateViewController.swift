@@ -18,7 +18,7 @@ private extension ContentStateViewController {
     func viewController(for state: State) -> UIViewController {
         switch state {
         case .loading:
-            return UIViewController()
+            return LoadingViewController()
         case .failed( _):
             fatalError("ErrorViewController needs to be implemented")
         case .render(let viewController):
