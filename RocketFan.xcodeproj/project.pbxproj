@@ -84,6 +84,7 @@
 		E175542222359F2F0033C136 /* CapsulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175542122359F2F0033C136 /* CapsulesTests.swift */; };
 		E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */; };
 		E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DA2276308400B0C856 /* MainTabBarController.swift */; };
+		E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */; };
 		E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAB223FF55800F77820 /* PayloadTests.swift */; };
 		E186CCAF223FF5D400F77820 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAE223FF5D400F77820 /* Payload.swift */; };
 		E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A7BA223FF4E3002A74D8 /* payload.json */; };
@@ -253,6 +254,7 @@
 		E175542122359F2F0033C136 /* CapsulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapsulesTests.swift; sourceTree = "<group>"; };
 		E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
 		E18600DA2276308400B0C856 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesCoordinator.swift; sourceTree = "<group>"; };
 		E186CCAB223FF55800F77820 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
 		E186CCAE223FF5D400F77820 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		E1B1A7BA223FF4E3002A74D8 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
@@ -479,6 +481,7 @@
 			isa = PBXGroup;
 			children = (
 				E17B0F1A2270EBA0002B550A /* All */,
+				E18600DC227631DF00B0C856 /* Shared */,
 			);
 			path = Launches;
 			sourceTree = "<group>";
@@ -572,6 +575,14 @@
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
 			);
 			path = All;
+			sourceTree = "<group>";
+		};
+		E18600DC227631DF00B0C856 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 		E1FFA013223A97BF0056BA6B /* Data */ = {
@@ -921,6 +932,7 @@
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				0E2B86C9223AFF6C005686BB /* JSONDecoder+Extensions.swift in Sources */,
 				E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */,
+				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
