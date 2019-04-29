@@ -97,6 +97,7 @@
 		E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E12276365400B0C856 /* LaunchesRepository.swift */; };
 		E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */; };
 		E18600E62276378F00B0C856 /* LaunchesViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */; };
+		E18600EA2277408600B0C856 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E92277408600B0C856 /* UIView+Extensions.swift */; };
 		E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAB223FF55800F77820 /* PayloadTests.swift */; };
 		E186CCAF223FF5D400F77820 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAE223FF5D400F77820 /* Payload.swift */; };
 		E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A7BA223FF4E3002A74D8 /* payload.json */; };
@@ -279,6 +280,7 @@
 		E18600E12276365400B0C856 /* LaunchesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRepository.swift; sourceTree = "<group>"; };
 		E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDependencyContainer.swift; sourceTree = "<group>"; };
 		E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewControllerFactory.swift; sourceTree = "<group>"; };
+		E18600E92277408600B0C856 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		E186CCAB223FF55800F77820 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
 		E186CCAE223FF5D400F77820 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		E1B1A7BA223FF4E3002A74D8 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
@@ -746,6 +748,7 @@
 				0E2B86C8223AFF6C005686BB /* JSONDecoder+Extensions.swift */,
 				0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */,
 				E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */,
+				E18600E92277408600B0C856 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -1016,6 +1019,7 @@
 				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */,
+				E18600EA2277408600B0C856 /* UIView+Extensions.swift in Sources */,
 				E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
 				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,

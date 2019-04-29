@@ -5,10 +5,20 @@ class ContentStateViewController: UIViewController {
     private var state: State?
     private var shownViewController: UIViewController?
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        if state == nil {
+            transition(to: .loading)
+        }
+    }
+
     func transition(to newState: State) {
         shownViewController?.remove()
+
         let controller = viewController(for: newState)
         add(controller)
+
         shownViewController = controller
         state = newState
     }
