@@ -85,7 +85,6 @@
 		E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */; };
 		E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DA2276308400B0C856 /* MainTabBarController.swift */; };
 		E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */; };
-		E18600E02276352300B0C856 /* APIFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600DF2276352300B0C856 /* APIFactory.swift */; };
 		E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E12276365400B0C856 /* LaunchesRepository.swift */; };
 		E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */; };
 		E18600E62276378F00B0C856 /* LaunchesViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */; };
@@ -259,7 +258,6 @@
 		E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewController.swift; sourceTree = "<group>"; };
 		E18600DA2276308400B0C856 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesCoordinator.swift; sourceTree = "<group>"; };
-		E18600DF2276352300B0C856 /* APIFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIFactory.swift; sourceTree = "<group>"; };
 		E18600E12276365400B0C856 /* LaunchesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRepository.swift; sourceTree = "<group>"; };
 		E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDependencyContainer.swift; sourceTree = "<group>"; };
 		E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -497,7 +495,6 @@
 		E13BA252226061410068DF72 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				E18600DF2276352300B0C856 /* APIFactory.swift */,
 				E13BA253226061A20068DF72 /* Navigator.swift */,
 				E13BA255226061C80068DF72 /* ViewControllerFactory.swift */,
 			);
@@ -947,7 +944,6 @@
 				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */,
-				E18600E02276352300B0C856 /* APIFactory.swift in Sources */,
 				E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
 				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,
