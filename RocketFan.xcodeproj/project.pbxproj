@@ -22,6 +22,8 @@
 		0E611C13223312C800F85DAB /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C12223312C800F85DAB /* RocketFanUITests.swift */; };
 		0E69A6DD2292B55F008DAFB6 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6DC2292B55F008DAFB6 /* DateFormatter+Extensions.swift */; };
 		0E69A6E02292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6DF2292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift */; };
+		0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */; };
+		0E69A6DB229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6DA229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift */; };
 		0E7B8CB5223D9D670036670F /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B8CB4223D9D670036670F /* Dragon.swift */; };
 		0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B8CB6223D9D7F0036670F /* DragonTests.swift */; };
 		0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8AF222223AF0B200FB3369 /* MissionFragment.swift */; };
@@ -194,6 +196,8 @@
 		0E611C12223312C800F85DAB /* RocketFanUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
 		0E69A6DC2292B55F008DAFB6 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
 		0E69A6DF2292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
+		0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
+		0E69A6DA229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		0E7B8CB4223D9D670036670F /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
 		0E7B8CB6223D9D7F0036670F /* DragonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonTests.swift; sourceTree = "<group>"; };
 		0E8AF222223AF0B200FB3369 /* MissionFragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFragment.swift; sourceTree = "<group>"; };
@@ -419,6 +423,7 @@
 			isa = PBXGroup;
 			children = (
 				0E69A6DE2292BEC3008DAFB6 /* Extensions */,
+				0EC36A52228CB6A9009B4059 /* Feature */,
 				0EBCA1BE22330CF600E8903F /* Info.plist */,
 				E1FFA033223AA31A0056BA6B /* Models */,
 				0E611C10223312BE00F85DAB /* RocketFanTests.swift */,
@@ -464,6 +469,22 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		0EC36A52228CB6A9009B4059 /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				0EC36A53228CB6AE009B4059 /* Launches */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		0EC36A53228CB6AE009B4059 /* Launches */ = {
+			isa = PBXGroup;
+			children = (
+				0E69A6DA229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift */,
+			);
+			path = Launches;
+			sourceTree = "<group>";
+		};
 		0ED556962235130E0039BC44 /* Config */ = {
 			isa = PBXGroup;
 			children = (
@@ -476,6 +497,7 @@
 		0EEADB78228861DC00E40712 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */,
 				0EEADB7D228866ED00E40712 /* YouTubeViewController.swift */,
 				0EEADB7E228866ED00E40712 /* YouTubeViewController.xib */,
 			);
@@ -999,6 +1021,7 @@
 				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,
 				E1F34C54223CE05C00F22086 /* Mission.swift in Sources */,
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
+				0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */,
 				E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				0E69A6DD2292B55F008DAFB6 /* DateFormatter+Extensions.swift in Sources */,
@@ -1026,6 +1049,7 @@
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				0E2A2993225E764000A12243 /* SettingsTests.swift in Sources */,
+				0E69A6DB229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift in Sources */,
 				0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */,
 				E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
