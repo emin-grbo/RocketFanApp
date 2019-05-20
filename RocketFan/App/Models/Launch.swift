@@ -16,7 +16,7 @@ struct Launch: Decodable {
     let site: Site
     let staticFireDate: Date?
     let tentativeMaxPrecision: String
-    let timeline: [String: Int]?
+    let timeline: [String: Int?]?
 }
 
 extension Launch {
@@ -58,7 +58,7 @@ extension Launch {
         site = try container.decode(Site.self, forKey: .site)
         staticFireDate = try container.decodeIfPresent(Date.self, forKey: .staticFireDate)
         tentativeMaxPrecision = try container.decode(String.self, forKey: .tentativeMaxPrecision)
-        timeline = try container.decodeIfPresent([String: Int].self, forKey: .timeline)
+        timeline = try container.decodeIfPresent([String: Int?].self, forKey: .timeline)
 
         let telemetry = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .telemetry)
         flightClub = try telemetry.decodeIfPresent(URL.self, forKey: .flightClub)
