@@ -20,6 +20,8 @@
 		0E2B86D5223B1089005686BB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86D4223B1089005686BB /* Location.swift */; };
 		0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C10223312BE00F85DAB /* RocketFanTests.swift */; };
 		0E611C13223312C800F85DAB /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C12223312C800F85DAB /* RocketFanUITests.swift */; };
+		0E69A6DD2292B55F008DAFB6 /* DateFormatter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6DC2292B55F008DAFB6 /* DateFormatter+Extensions.swift */; };
+		0E69A6E02292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6DF2292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift */; };
 		0E7B8CB5223D9D670036670F /* Dragon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B8CB4223D9D670036670F /* Dragon.swift */; };
 		0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E7B8CB6223D9D7F0036670F /* DragonTests.swift */; };
 		0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8AF222223AF0B200FB3369 /* MissionFragment.swift */; };
@@ -190,6 +192,8 @@
 		0E2EA408223519D600A7D350 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
 		0E611C10223312BE00F85DAB /* RocketFanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
 		0E611C12223312C800F85DAB /* RocketFanUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
+		0E69A6DC2292B55F008DAFB6 /* DateFormatter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Extensions.swift"; sourceTree = "<group>"; };
+		0E69A6DF2292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensionsTests.swift; sourceTree = "<group>"; };
 		0E7B8CB4223D9D670036670F /* Dragon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dragon.swift; sourceTree = "<group>"; };
 		0E7B8CB6223D9D7F0036670F /* DragonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DragonTests.swift; sourceTree = "<group>"; };
 		0E8AF222223AF0B200FB3369 /* MissionFragment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionFragment.swift; sourceTree = "<group>"; };
@@ -351,6 +355,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		0E69A6DE2292BEC3008DAFB6 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0E69A6DF2292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0E911FF02236EC6000CBE217 /* TestHelpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -406,6 +418,7 @@
 		0EBCA1BB22330CF600E8903F /* RocketFanTests */ = {
 			isa = PBXGroup;
 			children = (
+				0E69A6DE2292BEC3008DAFB6 /* Extensions */,
 				0EBCA1BE22330CF600E8903F /* Info.plist */,
 				E1FFA033223AA31A0056BA6B /* Models */,
 				0E611C10223312BE00F85DAB /* RocketFanTests.swift */,
@@ -707,6 +720,7 @@
 			children = (
 				E1FFA039223AA6320056BA6B /* Codable+Extensions.swift */,
 				E1FFA03B223AA70E0056BA6B /* Data+Extensions.swift */,
+				0E69A6DC2292B55F008DAFB6 /* DateFormatter+Extensions.swift */,
 				0E2B86C8223AFF6C005686BB /* JSONDecoder+Extensions.swift */,
 				0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */,
 				E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */,
@@ -987,6 +1001,7 @@
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
+				0E69A6DD2292B55F008DAFB6 /* DateFormatter+Extensions.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
 				E1F34C6C223D8DE600F22086 /* ApiInfo.swift in Sources */,
 				E11C1D48227029E4004C3972 /* UIViewController+Extensions.swift in Sources */,
@@ -1017,6 +1032,7 @@
 				E1F34C6A223D8CB900F22086 /* ApiInfoTests.swift in Sources */,
 				E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */,
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
+				0E69A6E02292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
 				0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */,
 				E1F34C56223CF43100F22086 /* RoadsterTests.swift in Sources */,
