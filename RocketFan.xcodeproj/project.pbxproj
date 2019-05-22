@@ -85,6 +85,9 @@
 		E16820102236CDC100E1EDDB /* Roadster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E168200F2236CDC100E1EDDB /* Roadster.swift */; };
 		E16820122236CE6D00E1EDDB /* ShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820112236CE6D00E1EDDB /* ShipsTests.swift */; };
 		E16820152236CEDB00E1EDDB /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820132236CEB000E1EDDB /* Ships.swift */; };
+		E173194922959CFD0006EB2D /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194722959CFD0006EB2D /* LaunchTableViewController.swift */; };
+		E173194A22959CFD0006EB2D /* LaunchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E173194822959CFD0006EB2D /* LaunchTableViewController.xib */; };
+		E173194C22959D530006EB2D /* LaunchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E1755411223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
@@ -268,6 +271,9 @@
 		E168200F2236CDC100E1EDDB /* Roadster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadster.swift; sourceTree = "<group>"; };
 		E16820112236CE6D00E1EDDB /* ShipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsTests.swift; sourceTree = "<group>"; };
 		E16820132236CEB000E1EDDB /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
+		E173194722959CFD0006EB2D /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
+		E173194822959CFD0006EB2D /* LaunchTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchTableViewController.xib; sourceTree = "<group>"; };
+		E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewDataSource.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1755404223555BA0033C136 /* SpaceXAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -659,6 +665,9 @@
 				0EEBE92D227B715400B79771 /* LaunchCell.swift */,
 				0EEBE92C227B715400B79771 /* LaunchCell.xib */,
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
+				E173194722959CFD0006EB2D /* LaunchTableViewController.swift */,
+				E173194822959CFD0006EB2D /* LaunchTableViewController.xib */,
+				E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */,
 			);
 			path = All;
 			sourceTree = "<group>";
@@ -940,6 +949,7 @@
 				E1F34C58223D0B0500F22086 /* roadster.json in Resources */,
 				E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */,
 				E1FFA025223A993B0056BA6B /* ship.json in Resources */,
+				E173194A22959CFD0006EB2D /* LaunchTableViewController.xib in Resources */,
 				0EEBE92E227B715400B79771 /* LaunchCell.xib in Resources */,
 				E13B0C0B223E529F000E3E85 /* company.json in Resources */,
 				0EEADB80228866ED00E40712 /* YouTubeViewController.xib in Resources */,
@@ -1010,6 +1020,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E173194C22959D530006EB2D /* LaunchTableViewDataSource.swift in Sources */,
 				E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */,
 				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
 				0EEADB7F228866ED00E40712 /* YouTubeViewController.swift in Sources */,
@@ -1038,6 +1049,7 @@
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */,
 				E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */,
+				E173194922959CFD0006EB2D /* LaunchTableViewController.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				0E69A6DD2292B55F008DAFB6 /* DateFormatter+Extensions.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
