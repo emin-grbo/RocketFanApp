@@ -1,9 +1,9 @@
 import UIKit
 
 class LaunchCell: UITableViewCell {
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var dateLabel: UILabel!
-    @IBOutlet weak var launchPadLabel: UILabel!
-    @IBOutlet weak var rocketLabel: UILabel!
-    @IBOutlet weak var patchImageView: UIImageView!
+    @IBOutlet private weak var titleLabel: UILabel!
+    @IBOutlet private weak var dateLabel: UILabel!
+    @IBOutlet private weak var launchPadLabel: UILabel!
+    @IBOutlet private weak var rocketLabel: UILabel!
+    @IBOutlet private weak var patchImageView: UIImageView!
 }
