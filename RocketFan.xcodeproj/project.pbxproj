@@ -88,6 +88,7 @@
 		E173194922959CFD0006EB2D /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194722959CFD0006EB2D /* LaunchTableViewController.swift */; };
 		E173194A22959CFD0006EB2D /* LaunchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E173194822959CFD0006EB2D /* LaunchTableViewController.xib */; };
 		E173194C22959D530006EB2D /* LaunchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */; };
+		E173194E22959F760006EB2D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194D22959F760006EB2D /* Reusable.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E1755411223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
@@ -274,6 +275,7 @@
 		E173194722959CFD0006EB2D /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
 		E173194822959CFD0006EB2D /* LaunchTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchTableViewController.xib; sourceTree = "<group>"; };
 		E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewDataSource.swift; sourceTree = "<group>"; };
+		E173194D22959F760006EB2D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1755404223555BA0033C136 /* SpaceXAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -581,6 +583,7 @@
 			children = (
 				E13BA253226061A20068DF72 /* Navigator.swift */,
 				E13BA255226061C80068DF72 /* ViewControllerFactory.swift */,
+				E173194D22959F760006EB2D /* Reusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -1034,6 +1037,7 @@
 				E1F34C64223D565700F22086 /* Company.swift in Sources */,
 				E1F34C5C223D22D000F22086 /* Speed.swift in Sources */,
 				0EEBE92F227B715400B79771 /* LaunchCell.swift in Sources */,
+				E173194E22959F760006EB2D /* Reusable.swift in Sources */,
 				0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */,
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				0E2B86C9223AFF6C005686BB /* JSONDecoder+Extensions.swift in Sources */,
