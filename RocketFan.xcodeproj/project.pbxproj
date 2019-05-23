@@ -51,6 +51,8 @@
 		E11C1D4D22702AED004C3972 /* ContentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */; };
 		E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */; };
 		E11C1D5222702DB3004C3972 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11C1D5022702DB3004C3972 /* LoadingViewController.xib */; };
+		E1352AF62296EB5100378732 /* LaunchCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */; };
+		E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */; };
 		E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C08223E5166000E3E85 /* apiinfo.json */; };
 		E13B0C0B223E529F000E3E85 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0A223E529F000E3E85 /* company.json */; };
 		E13B0C0D223E5538000E3E85 /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0C223E5538000E3E85 /* dragon.json */; };
@@ -238,6 +240,8 @@
 		E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
 		E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		E11C1D5022702DB3004C3972 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellViewModelTests.swift; sourceTree = "<group>"; };
+		E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchCellViewModel.swift; path = RocketFan/Feature/Launches/LaunchCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E13B0C08223E5166000E3E85 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
 		E13B0C0A223E529F000E3E85 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
 		E13B0C0C223E5538000E3E85 /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
@@ -493,6 +497,7 @@
 		0EC36A53228CB6AE009B4059 /* Launches */ = {
 			isa = PBXGroup;
 			children = (
+				E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */,
 				0E69A6DA229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift */,
 			);
 			path = Launches;
@@ -667,6 +672,7 @@
 			children = (
 				0EEBE92D227B715400B79771 /* LaunchCell.swift */,
 				0EEBE92C227B715400B79771 /* LaunchCell.xib */,
+				E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */,
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
 				E173194722959CFD0006EB2D /* LaunchTableViewController.swift */,
 				E173194822959CFD0006EB2D /* LaunchTableViewController.xib */,
@@ -1028,6 +1034,7 @@
 				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
 				0EEADB7F228866ED00E40712 /* YouTubeViewController.swift in Sources */,
 				E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */,
+				E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
 				E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */,
 				E13BA254226061A20068DF72 /* Navigator.swift in Sources */,
@@ -1082,6 +1089,7 @@
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				0E2A2993225E764000A12243 /* SettingsTests.swift in Sources */,
 				0E69A6DB229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift in Sources */,
+				E1352AF62296EB5100378732 /* LaunchCellViewModelTests.swift in Sources */,
 				0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */,
 				E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,

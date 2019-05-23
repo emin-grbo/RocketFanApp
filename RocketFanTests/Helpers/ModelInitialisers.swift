@@ -40,9 +40,38 @@ extension Launch {
     }
 }
 
+extension Launch {
+    init(missionName: String,
+         launchDate: Date? = nil,
+         site: Site,
+         rocket: Rocket) {
+
+        self.init(flightNumber: 0,
+                  isTentative: false,
+                  launchDate: launchDate,
+                  links: Links(),
+                  missionId: [],
+                  missionName: missionName,
+                  rocket: rocket,
+                  ships: [],
+                  site: site,
+                  tentativeMaxPrecision: "")
+    }
+}
+
 extension Launch.Rocket {
     init() {
         self.init(fairings: nil, firstStage: [], id: "", name: "", secondStage: SecondStage(), type: "")
+    }
+
+    init(name: String) {
+
+        self.init(fairings: nil,
+                  firstStage: [],
+                  id: "",
+                  name: name,
+                  secondStage: SecondStage(),
+                  type: "")
     }
 }
 
@@ -55,5 +84,9 @@ extension Launch.Rocket.SecondStage {
 extension Launch.Site {
     init() {
         self.init(id: "", shortName: "")
+    }
+
+    init(shortName: String) {
+        self.init(id: "", shortName: shortName)
     }
 }
