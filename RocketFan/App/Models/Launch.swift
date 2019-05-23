@@ -106,18 +106,6 @@ extension Launch {
             case type = "rocket_type"
         }
 
-        init(from decoder: Decoder) throws {
-            let container = try decoder.container(keyedBy: CodingKeys.self)
-            fairings = try container.decodeIfPresent(Fairings.self, forKey: .fairings)
-            id = try container.decode(String.self, forKey: .id)
-            name = try container.decode(String.self, forKey: .name)
-            secondStage = try container.decode(SecondStage.self, forKey: .secondStage)
-            type = try container.decode(String.self, forKey: .type)
-
-            let firstStageContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .firstStage)
-            firstStage = try firstStageContainer.decode([Core].self, forKey: .cores)
-        }
-
         struct Fairings: Decodable {
             let recovered: Bool?
             let recoveryAttempt: Bool?
@@ -162,5 +150,19 @@ extension Launch {
             let block: Int?
             let payloads: [Payload]
         }
+    }
+}
+
+extension Launch.Rocket {
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        fairings = try container.decodeIfPresent(Fairings.self, forKey: .fairings)
+        id = try container.decode(String.self, forKey: .id)
+        name = try container.decode(String.self, forKey: .name)
+        secondStage = try container.decode(SecondStage.self, forKey: .secondStage)
+        type = try container.decode(String.self, forKey: .type)
+
+        let firstStageContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .firstStage)
+        firstStage = try firstStageContainer.decode([Core].self, forKey: .cores)
     }
 }
