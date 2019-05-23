@@ -40,25 +40,6 @@ extension Launch {
     }
 }
 
-extension Launch {
-    init(missionName: String,
-         launchDate: Date? = nil,
-         site: Site,
-         rocket: Rocket) {
-
-        self.init(flightNumber: 0,
-                  isTentative: false,
-                  launchDate: launchDate,
-                  links: Links(),
-                  missionId: [],
-                  missionName: missionName,
-                  rocket: rocket,
-                  ships: [],
-                  site: site,
-                  tentativeMaxPrecision: "")
-    }
-}
-
 extension Launch.Rocket {
     init() {
         self.init(fairings: nil, firstStage: [], id: "", name: "", secondStage: SecondStage(), type: "")

@@ -46,16 +46,16 @@ class LaunchCellViewModelTests: XCTestCase {
 
 extension LaunchCellViewModelTests {
     private func getLaunch() -> Launch {
-        return Launch(missionName: "GPS SV05",
-                      launchDate: launchDate()!,
-                      site: launchSite(),
-                      rocket: rocket())
+        return Launch(launchDate: launchDate()!,
+                      missionName: "GPS SV05",
+                      rocket: rocket(),
+                      site: launchSite())
     }
 
     private func getLaunchWithNoDate() -> Launch {
         return Launch(missionName: "GPS SV05",
-                      site: launchSite(),
-                      rocket: rocket())
+                      rocket: rocket(),
+                      site: launchSite())
     }
 
     func launchDate() -> Date? {
