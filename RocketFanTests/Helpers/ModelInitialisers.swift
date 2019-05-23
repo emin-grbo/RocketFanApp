@@ -44,6 +44,16 @@ extension Launch.Rocket {
     init() {
         self.init(fairings: nil, firstStage: [], id: "", name: "", secondStage: SecondStage(), type: "")
     }
+
+    init(name: String) {
+
+        self.init(fairings: nil,
+                  firstStage: [],
+                  id: "",
+                  name: name,
+                  secondStage: SecondStage(),
+                  type: "")
+    }
 }
 
 extension Launch.Rocket.SecondStage {
@@ -55,5 +65,9 @@ extension Launch.Rocket.SecondStage {
 extension Launch.Site {
     init() {
         self.init(id: "", shortName: "")
+    }
+
+    init(shortName: String) {
+        self.init(id: "", shortName: shortName)
     }
 }

@@ -51,6 +51,8 @@
 		E11C1D4D22702AED004C3972 /* ContentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */; };
 		E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */; };
 		E11C1D5222702DB3004C3972 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E11C1D5022702DB3004C3972 /* LoadingViewController.xib */; };
+		E1352AF62296EB5100378732 /* LaunchCellViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */; };
+		E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */; };
 		E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C08223E5166000E3E85 /* apiinfo.json */; };
 		E13B0C0B223E529F000E3E85 /* company.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0A223E529F000E3E85 /* company.json */; };
 		E13B0C0D223E5538000E3E85 /* dragon.json in Resources */ = {isa = PBXBuildFile; fileRef = E13B0C0C223E5538000E3E85 /* dragon.json */; };
@@ -85,6 +87,10 @@
 		E16820102236CDC100E1EDDB /* Roadster.swift in Sources */ = {isa = PBXBuildFile; fileRef = E168200F2236CDC100E1EDDB /* Roadster.swift */; };
 		E16820122236CE6D00E1EDDB /* ShipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820112236CE6D00E1EDDB /* ShipsTests.swift */; };
 		E16820152236CEDB00E1EDDB /* Ships.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16820132236CEB000E1EDDB /* Ships.swift */; };
+		E173194922959CFD0006EB2D /* LaunchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194722959CFD0006EB2D /* LaunchTableViewController.swift */; };
+		E173194A22959CFD0006EB2D /* LaunchTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E173194822959CFD0006EB2D /* LaunchTableViewController.xib */; };
+		E173194C22959D530006EB2D /* LaunchTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */; };
+		E173194E22959F760006EB2D /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E173194D22959F760006EB2D /* Reusable.swift */; };
 		E1755405223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
 		E175540C223555BA0033C136 /* SpaceXAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E175540B223555BA0033C136 /* SpaceXAPITests.swift */; };
 		E1755411223555BA0033C136 /* SpaceXAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E17553FC223555BA0033C136 /* SpaceXAPI.framework */; };
@@ -98,6 +104,7 @@
 		E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E12276365400B0C856 /* LaunchesRepository.swift */; };
 		E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */; };
 		E18600E62276378F00B0C856 /* LaunchesViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */; };
+		E18600EA2277408600B0C856 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E18600E92277408600B0C856 /* UIView+Extensions.swift */; };
 		E186CCAC223FF55800F77820 /* PayloadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAB223FF55800F77820 /* PayloadTests.swift */; };
 		E186CCAF223FF5D400F77820 /* Payload.swift in Sources */ = {isa = PBXBuildFile; fileRef = E186CCAE223FF5D400F77820 /* Payload.swift */; };
 		E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */ = {isa = PBXBuildFile; fileRef = E1B1A7BA223FF4E3002A74D8 /* payload.json */; };
@@ -233,6 +240,8 @@
 		E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
 		E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		E11C1D5022702DB3004C3972 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchCellViewModelTests.swift; sourceTree = "<group>"; };
+		E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LaunchCellViewModel.swift; path = RocketFan/Feature/Launches/LaunchCellViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E13B0C08223E5166000E3E85 /* apiinfo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = apiinfo.json; sourceTree = "<group>"; };
 		E13B0C0A223E529F000E3E85 /* company.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = company.json; sourceTree = "<group>"; };
 		E13B0C0C223E5538000E3E85 /* dragon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dragon.json; sourceTree = "<group>"; };
@@ -267,6 +276,10 @@
 		E168200F2236CDC100E1EDDB /* Roadster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadster.swift; sourceTree = "<group>"; };
 		E16820112236CE6D00E1EDDB /* ShipsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShipsTests.swift; sourceTree = "<group>"; };
 		E16820132236CEB000E1EDDB /* Ships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ships.swift; sourceTree = "<group>"; };
+		E173194722959CFD0006EB2D /* LaunchTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewController.swift; sourceTree = "<group>"; };
+		E173194822959CFD0006EB2D /* LaunchTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchTableViewController.xib; sourceTree = "<group>"; };
+		E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTableViewDataSource.swift; sourceTree = "<group>"; };
+		E173194D22959F760006EB2D /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		E17553FC223555BA0033C136 /* SpaceXAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpaceXAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E17553FF223555BA0033C136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1755404223555BA0033C136 /* SpaceXAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpaceXAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -281,6 +294,7 @@
 		E18600E12276365400B0C856 /* LaunchesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRepository.swift; sourceTree = "<group>"; };
 		E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesDependencyContainer.swift; sourceTree = "<group>"; };
 		E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewControllerFactory.swift; sourceTree = "<group>"; };
+		E18600E92277408600B0C856 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 		E186CCAB223FF55800F77820 /* PayloadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayloadTests.swift; sourceTree = "<group>"; };
 		E186CCAE223FF5D400F77820 /* Payload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Payload.swift; sourceTree = "<group>"; };
 		E1B1A7BA223FF4E3002A74D8 /* payload.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = payload.json; sourceTree = "<group>"; };
@@ -483,6 +497,7 @@
 		0EC36A53228CB6AE009B4059 /* Launches */ = {
 			isa = PBXGroup;
 			children = (
+				E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */,
 				0E69A6DA229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift */,
 			);
 			path = Launches;
@@ -573,6 +588,7 @@
 			children = (
 				E13BA253226061A20068DF72 /* Navigator.swift */,
 				E13BA255226061C80068DF72 /* ViewControllerFactory.swift */,
+				E173194D22959F760006EB2D /* Reusable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -656,7 +672,11 @@
 			children = (
 				0EEBE92D227B715400B79771 /* LaunchCell.swift */,
 				0EEBE92C227B715400B79771 /* LaunchCell.xib */,
+				E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */,
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
+				E173194722959CFD0006EB2D /* LaunchTableViewController.swift */,
+				E173194822959CFD0006EB2D /* LaunchTableViewController.xib */,
+				E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */,
 			);
 			path = All;
 			sourceTree = "<group>";
@@ -757,6 +777,7 @@
 				0E2B86C8223AFF6C005686BB /* JSONDecoder+Extensions.swift */,
 				0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */,
 				E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */,
+				E18600E92277408600B0C856 /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -937,6 +958,7 @@
 				E1F34C58223D0B0500F22086 /* roadster.json in Resources */,
 				E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */,
 				E1FFA025223A993B0056BA6B /* ship.json in Resources */,
+				E173194A22959CFD0006EB2D /* LaunchTableViewController.xib in Resources */,
 				0EEBE92E227B715400B79771 /* LaunchCell.xib in Resources */,
 				E13B0C0B223E529F000E3E85 /* company.json in Resources */,
 				0EEADB80228866ED00E40712 /* YouTubeViewController.xib in Resources */,
@@ -1007,10 +1029,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E173194C22959D530006EB2D /* LaunchTableViewDataSource.swift in Sources */,
 				E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */,
 				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
 				0EEADB7F228866ED00E40712 /* YouTubeViewController.swift in Sources */,
 				E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */,
+				E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
 				E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */,
 				E13BA254226061A20068DF72 /* Navigator.swift in Sources */,
@@ -1020,6 +1044,7 @@
 				E1F34C64223D565700F22086 /* Company.swift in Sources */,
 				E1F34C5C223D22D000F22086 /* Speed.swift in Sources */,
 				0EEBE92F227B715400B79771 /* LaunchCell.swift in Sources */,
+				E173194E22959F760006EB2D /* Reusable.swift in Sources */,
 				0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */,
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				0E2B86C9223AFF6C005686BB /* JSONDecoder+Extensions.swift in Sources */,
@@ -1027,6 +1052,7 @@
 				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */,
+				E18600EA2277408600B0C856 /* UIView+Extensions.swift in Sources */,
 				E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
 				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,
@@ -1034,6 +1060,7 @@
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */,
 				E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */,
+				E173194922959CFD0006EB2D /* LaunchTableViewController.swift in Sources */,
 				0E2B86C5223AF64A005686BB /* Core.swift in Sources */,
 				0E69A6DD2292B55F008DAFB6 /* DateFormatter+Extensions.swift in Sources */,
 				E1F34C5A223D0B3D00F22086 /* Roadster.swift in Sources */,
@@ -1062,6 +1089,7 @@
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				0E2A2993225E764000A12243 /* SettingsTests.swift in Sources */,
 				0E69A6DB229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift in Sources */,
+				E1352AF62296EB5100378732 /* LaunchCellViewModelTests.swift in Sources */,
 				0E7B8CB7223D9D7F0036670F /* DragonTests.swift in Sources */,
 				E1F34C62223D53D500F22086 /* CompanyTests.swift in Sources */,
 				0E2B86C7223AF66E005686BB /* CoreTests.swift in Sources */,
