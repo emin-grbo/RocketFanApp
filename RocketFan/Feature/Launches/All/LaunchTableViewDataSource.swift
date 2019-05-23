@@ -14,6 +14,7 @@ extension LaunchTableViewDataSource: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCell(for: indexPath, cellType: LaunchCell.self)
+        return cell
     }
 }
