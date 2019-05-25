@@ -19,7 +19,7 @@ extension LaunchTableViewDataSource: UITableViewDataSource {
         guard let viewModel = launchViewModel(for: indexPath) else { return cell }
 
         cell.configure(with: viewModel)
-        
+
         return cell
     }
 }

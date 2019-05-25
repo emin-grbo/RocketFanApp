@@ -12,4 +12,18 @@ class LaunchTableViewController: UITableViewController {
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setup()
+    }
+}
+
+extension LaunchTableViewController {
+    private func setup() {
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = UITableView.automaticDimension
+        tableView.register(cellType: LaunchCell.self)
+        tableView.dataSource = dataSource
+    }
 }
