@@ -15,12 +15,12 @@ class LaunchTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setup()
+        setupTableView()
     }
 }
 
 extension LaunchTableViewController {
-    private func setup() {
+    private func setupTableView() {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.register(cellType: LaunchCell.self)
