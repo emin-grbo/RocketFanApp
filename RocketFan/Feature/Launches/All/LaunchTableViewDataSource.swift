@@ -4,7 +4,7 @@ class LaunchTableViewDataSource: NSObject {
     private var launches: [Launch]?
     private let dateFormatter = DateFormatter()
 
-    init(with launches: [Launch]) {
+    func update(with launches: [Launch]) {
         self.launches = launches
     }
 }

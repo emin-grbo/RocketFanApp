@@ -1,10 +1,10 @@
 import UIKit
 
 class LaunchTableViewController: UITableViewController {
-    private let dataSource: LaunchTableViewDataSource
+    private let dataSource = LaunchTableViewDataSource()
 
     init(with launches: [Launch]) {
-        dataSource = LaunchTableViewDataSource(with: launches)
+        dataSource.update(with: launches)
 
         super.init(nibName: nil, bundle: nil)
     }
