@@ -17,6 +17,7 @@ class LaunchesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Launches"
         view.backgroundColor = .white
         add(contentStateViewController)
         fetchData()
@@ -37,7 +38,10 @@ extension LaunchesViewController {
         }
     }
 
-    private func handleSuccess(with data: [Launch]) {
-      // Go to LaunchStateVC
+    private func handleSuccess(with launches: [Launch]) {
+        DispatchQueue.main.async { [weak self] in
+            let launchesVC = LaunchTableViewController(with: launches)
+            self?.contentStateViewController.transition(to: .render(launchesVC))
+        }
     }
 }

@@ -2,6 +2,7 @@ import UIKit
 
 class LaunchTableViewDataSource: NSObject {
     private var launches: [Launch]?
+    private let dateFormatter = DateFormatter()
 
     func update(with launches: [Launch]) {
         self.launches = launches
@@ -15,6 +16,18 @@ extension LaunchTableViewDataSource: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: LaunchCell = tableView.dequeueReusableCell(for: indexPath)
+        guard let viewModel = launchViewModel(for: indexPath) else { return cell }
+
+        cell.configure(with: viewModel)
+
         return cell
+    }
+}
+
+extension LaunchTableViewDataSource {
+    private func launchViewModel(for indexPath: IndexPath) -> LaunchCellViewModel? {
+        guard let launch = launches?[indexPath.row] else { return nil }
+
+        return LaunchCellViewModel(with: launch, dateFormatter)
     }
 }

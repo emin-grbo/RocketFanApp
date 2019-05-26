@@ -25,9 +25,11 @@ extension NibLoadable {
     }
 }
 
+// Conforms all UITableViewCells to NibLoadable
+extension UITableViewCell: NibLoadable { }
+
 extension UITableView {
-    func register<T: UITableViewCell>(cellType: T.Type) where T: NibLoadable {
-        print(T.nib, T.reuseIdentifier)
+    func register<T: UITableViewCell>(cellType: T.Type) {
         register(T.nib, forCellReuseIdentifier: T.reuseIdentifier)
     }
 
