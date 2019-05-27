@@ -63,6 +63,11 @@
 		E13BA254226061A20068DF72 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13BA253226061A20068DF72 /* Navigator.swift */; };
 		E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13BA255226061C80068DF72 /* ViewControllerFactory.swift */; };
 		E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13BA2582260D4720068DF72 /* DependencyContainer.swift */; };
+		E144752F229C48A7006D1E82 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */; };
+		E1447531229C6093006D1E82 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1447530229C6093006D1E82 /* Repository.swift */; };
+		E1447533229C6246006D1E82 /* LaunchesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1447532229C6246006D1E82 /* LaunchesRepositoryProtocol.swift */; };
+		E1447536229C6317006D1E82 /* MockLaunchesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1447535229C6317006D1E82 /* MockLaunchesRepository.swift */; };
+		E1447538229C64A7006D1E82 /* LaunchesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1447537229C64A7006D1E82 /* LaunchesViewModelTests.swift */; };
 		E16473A32299928600C67AD9 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16473A22299928600C67AD9 /* SearchEngine.swift */; };
 		E16473A5229992C800C67AD9 /* SearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16473A4229992C800C67AD9 /* SearchEngineTests.swift */; };
 		E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE32236ABE800E1EDDB /* Cores.swift */; };
@@ -254,6 +259,11 @@
 		E13BA253226061A20068DF72 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		E13BA255226061C80068DF72 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		E13BA2582260D4720068DF72 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
+		E1447530229C6093006D1E82 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		E1447532229C6246006D1E82 /* LaunchesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		E1447535229C6317006D1E82 /* MockLaunchesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLaunchesRepository.swift; sourceTree = "<group>"; };
+		E1447537229C64A7006D1E82 /* LaunchesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModelTests.swift; sourceTree = "<group>"; };
 		E16473A22299928600C67AD9 /* SearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
 		E16473A4229992C800C67AD9 /* SearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineTests.swift; sourceTree = "<group>"; };
 		E1681FE32236ABE800E1EDDB /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
@@ -503,6 +513,8 @@
 			children = (
 				E1352AF52296EB5100378732 /* LaunchCellViewModelTests.swift */,
 				0E69A6DA229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift */,
+				E1447537229C64A7006D1E82 /* LaunchesViewModelTests.swift */,
+				E1447534229C62F3006D1E82 /* Mocks */,
 				E16473A4229992C800C67AD9 /* SearchEngineTests.swift */,
 			);
 			path = Launches;
@@ -594,6 +606,7 @@
 				E13BA253226061A20068DF72 /* Navigator.swift */,
 				E13BA255226061C80068DF72 /* ViewControllerFactory.swift */,
 				E173194D22959F760006EB2D /* Reusable.swift */,
+				E1447530229C6093006D1E82 /* Repository.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -604,6 +617,14 @@
 				E13BA2582260D4720068DF72 /* DependencyContainer.swift */,
 			);
 			path = "Dependency Containers";
+			sourceTree = "<group>";
+		};
+		E1447534229C62F3006D1E82 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				E1447535229C6317006D1E82 /* MockLaunchesRepository.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		E17553FD223555BA0033C136 /* SpaceXAPI */ = {
@@ -679,6 +700,7 @@
 				0EEBE92C227B715400B79771 /* LaunchCell.xib */,
 				E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */,
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
+				E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */,
 				E173194722959CFD0006EB2D /* LaunchTableViewController.swift */,
 				E173194822959CFD0006EB2D /* LaunchTableViewController.xib */,
 				E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */,
@@ -693,6 +715,7 @@
 				E18600DD2276321B00B0C856 /* LaunchesCoordinator.swift */,
 				E18600E32276372C00B0C856 /* LaunchesDependencyContainer.swift */,
 				E18600E12276365400B0C856 /* LaunchesRepository.swift */,
+				E1447532229C6246006D1E82 /* LaunchesRepositoryProtocol.swift */,
 				E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */,
 			);
 			path = Shared;
@@ -1042,6 +1065,7 @@
 				E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */,
 				E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
+				E1447531229C6093006D1E82 /* Repository.swift in Sources */,
 				E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */,
 				E13BA254226061A20068DF72 /* Navigator.swift in Sources */,
 				E16473A32299928600C67AD9 /* SearchEngine.swift in Sources */,
@@ -1059,6 +1083,8 @@
 				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */,
+				E144752F229C48A7006D1E82 /* LaunchesViewModel.swift in Sources */,
+				E1447533229C6246006D1E82 /* LaunchesRepositoryProtocol.swift in Sources */,
 				E18600EA2277408600B0C856 /* UIView+Extensions.swift in Sources */,
 				E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
@@ -1095,6 +1121,7 @@
 				E1FFA035223AA37E0056BA6B /* CapsuleTests.swift in Sources */,
 				E1F34C52223CDFE600F22086 /* MissionTests.swift in Sources */,
 				0E2A2993225E764000A12243 /* SettingsTests.swift in Sources */,
+				E1447536229C6317006D1E82 /* MockLaunchesRepository.swift in Sources */,
 				E16473A5229992C800C67AD9 /* SearchEngineTests.swift in Sources */,
 				0E69A6DB229291D4008DAFB6 /* LaunchDetailsViewModelTests.swift in Sources */,
 				E1352AF62296EB5100378732 /* LaunchCellViewModelTests.swift in Sources */,
@@ -1106,6 +1133,7 @@
 				0E2B86CD223B030A005686BB /* HistoryTests.swift in Sources */,
 				0E69A6E02292BEDA008DAFB6 /* DateFormatterExtensionsTests.swift in Sources */,
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
+				E1447538229C64A7006D1E82 /* LaunchesViewModelTests.swift in Sources */,
 				0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */,
 				E1F34C56223CF43100F22086 /* RoadsterTests.swift in Sources */,
 				0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */,

@@ -1,11 +1,19 @@
 import Foundation
 
 class LaunchesDependencyContainer: DependencyContainer, LaunchesViewControllerFactory {
-
     func makeLaunchesViewController() -> LaunchesViewController {
-        let api = makeSpaceXAPI()
-        let repo = LaunchesRepository(with: api)
+        return LaunchesViewController(with: makeViewModel())
+    }
+}
 
-        return LaunchesViewController(with: repo)
+extension LaunchesDependencyContainer {
+    private func makeViewModel() -> LaunchesViewModel {
+        let repo = makeRepository()
+        return LaunchesViewModel(with: repo)
+    }
+
+    private func makeRepository() -> LaunchesRepository {
+        let api = makeSpaceXAPI()
+        return LaunchesRepository(with: api)
     }
 }
