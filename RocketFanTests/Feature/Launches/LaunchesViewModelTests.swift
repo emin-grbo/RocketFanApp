@@ -52,6 +52,57 @@ class LaunchesViewModelTests: XCTestCase {
             XCTAssertTrue(modelErrorCalled)
         }
     }
+
+    func test_GivenSearchTerm_ReturnsResults() {
+        let exp = expectation(description: "Check launchesUpdated called twice")
+        var launchesUpdatedCalledCount = 0
+        var launchesCount = 0
+
+        sut?.launchesUpdated = { launches in
+            launchesUpdatedCalledCount += 1
+
+            if launchesUpdatedCalledCount > 1 {
+                launchesCount = launches.count
+                exp.fulfill()
+            }
+        }
+
+        sut?.findLaunchesMatching("Fal")
+
+        waitForExpectations(timeout: 5) { (error) in
+            if let error = error {
+                XCTFail("waitForExpectationsWithTimeout errored: \(error)")
+            }
+
+            XCTAssertTrue(launchesUpdatedCalledCount == 2)
+            XCTAssertTrue(launchesCount > 1)
+        }
+    }
+
+    func test_GivenEmptySearchTerm_ReturnsResults() {
+        let exp = expectation(description: "Check launchesUpdated returns results")
+        var launchesUpdatedCalledCount = 0
+        var launchesCount = 0
+
+        sut?.launchesUpdated = { launches in
+            launchesUpdatedCalledCount += 1
+
+            if launchesUpdatedCalledCount > 1 {
+                launchesCount = launches.count
+                exp.fulfill()
+            }
+        }
+
+        sut?.findLaunchesMatching("")
+
+        waitForExpectations(timeout: 5) { (error) in
+            if let error = error {
+                XCTFail("waitForExpectationsWithTimeout errored: \(error)")
+            }
+
+            XCTAssertTrue(launchesCount > 1)
+        }
+    }
 }
 
 // Helpers
