@@ -5,6 +5,12 @@ struct LaunchDetailsViewModel {
         return launch.missionName
     }
 
+    var date: String {
+        guard let date = launch.launchDate else { return "TBC" }
+
+        return dateFormatter.string(from: date)
+    }
+
     var flightNumber: String {
         return "Flight #\(launch.flightNumber)"
     }
@@ -14,8 +20,12 @@ struct LaunchDetailsViewModel {
     }
 
     private let launch: Launch
+    private let dateFormatter = DateFormatter()
 
     init(launch: Launch) {
         self.launch = launch
+
+        let precision = DateFormatter.Precision(rawValue: launch.tentativeMaxPrecision)
+        dateFormatter.setPrecision(precision)
     }
 }
