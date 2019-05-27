@@ -23,6 +23,23 @@ extension DateFormatter {
                 return "yyyy"
             }
         }
+
+        init(rawValue: String) {
+            switch rawValue {
+            case "day":
+                self = .day
+            case "month":
+                self = .month
+            case "quarter":
+                self = .quarter
+            case "half":
+                self = .half
+            case "year":
+                self = .year
+            default:
+                self = .hour
+            }
+        }
     }
 
     func setPrecision(_ precision: Precision) {
