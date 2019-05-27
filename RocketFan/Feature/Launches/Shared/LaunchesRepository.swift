@@ -1,8 +1,8 @@
 import Foundation
 import SpaceXAPI
 
-struct LaunchesRepository {
-    private let api: SpaceXAPI
+struct LaunchesRepository: LaunchesRepositoryProtocol {
+    internal let api: SpaceXAPI
     private var sessionTask: URLSessionTask?
 
     init(with api: SpaceXAPI) {
