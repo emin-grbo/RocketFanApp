@@ -2,10 +2,10 @@ import UIKit
 
 class LaunchesViewController: UIViewController {
     private lazy var contentStateViewController = ContentStateViewController()
-    private var repository: LaunchesRepository
+    private let viewModel: LaunchesViewModel
 
-    init(with repository: LaunchesRepository) {
-        self.repository = repository
+    init(with viewModel: LaunchesViewModel) {
+        self.viewModel = viewModel
 
         super.init(nibName: nil, bundle: nil)
     }
@@ -17,24 +17,16 @@ class LaunchesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Launches"
         view.backgroundColor = .white
         add(contentStateViewController)
-        fetchData()
+        bindViewModel()
     }
 }
 
 extension LaunchesViewController {
-    private func fetchData() {
-        repository.allLaunches { [weak self] (result) in
-
-            do {
-                let launches = try result.get()
-                self?.handleSuccess(with: launches)
-
-            } catch {
-                self?.contentStateViewController.transition(to: .failed(error))
-            }
+    private func bindViewModel() {
+        viewModel.launchesUpdated = { [weak self] launches in
+            self?.handleSuccess(with: launches)
         }
     }
 
