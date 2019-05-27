@@ -63,6 +63,7 @@
 		E13BA254226061A20068DF72 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13BA253226061A20068DF72 /* Navigator.swift */; };
 		E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13BA255226061C80068DF72 /* ViewControllerFactory.swift */; };
 		E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E13BA2582260D4720068DF72 /* DependencyContainer.swift */; };
+		E144752F229C48A7006D1E82 /* LaunchesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */; };
 		E16473A32299928600C67AD9 /* SearchEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16473A22299928600C67AD9 /* SearchEngine.swift */; };
 		E16473A5229992C800C67AD9 /* SearchEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16473A4229992C800C67AD9 /* SearchEngineTests.swift */; };
 		E1681FE42236ABE800E1EDDB /* Cores.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1681FE32236ABE800E1EDDB /* Cores.swift */; };
@@ -254,6 +255,7 @@
 		E13BA253226061A20068DF72 /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		E13BA255226061C80068DF72 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		E13BA2582260D4720068DF72 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchesViewModel.swift; sourceTree = "<group>"; };
 		E16473A22299928600C67AD9 /* SearchEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngine.swift; sourceTree = "<group>"; };
 		E16473A4229992C800C67AD9 /* SearchEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEngineTests.swift; sourceTree = "<group>"; };
 		E1681FE32236ABE800E1EDDB /* Cores.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cores.swift; sourceTree = "<group>"; };
@@ -679,6 +681,7 @@
 				0EEBE92C227B715400B79771 /* LaunchCell.xib */,
 				E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */,
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
+				E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */,
 				E173194722959CFD0006EB2D /* LaunchTableViewController.swift */,
 				E173194822959CFD0006EB2D /* LaunchTableViewController.xib */,
 				E173194B22959D530006EB2D /* LaunchTableViewDataSource.swift */,
@@ -1059,6 +1062,7 @@
 				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */,
+				E144752F229C48A7006D1E82 /* LaunchesViewModel.swift in Sources */,
 				E18600EA2277408600B0C856 /* UIView+Extensions.swift in Sources */,
 				E18600DB2276308400B0C856 /* MainTabBarController.swift in Sources */,
 				0E2B86CF223B06A6005686BB /* Links.swift in Sources */,
