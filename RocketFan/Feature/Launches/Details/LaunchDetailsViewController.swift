@@ -35,6 +35,6 @@ class LaunchDetailsViewController: UIViewController {
     }
 
     private func addCustomSpacingBeforeDescriptionLabel() {
-        stackView.setCustomSpacing(50, after: flightNumberLabel)
+        stackView.setCustomSpacing(Constants.viewControllerInteritemSpacing, after: flightNumberLabel)
     }
 }
