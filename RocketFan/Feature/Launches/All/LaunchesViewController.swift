@@ -3,6 +3,7 @@ import UIKit
 class LaunchesViewController: UIViewController {
     private lazy var contentStateViewController = ContentStateViewController()
     private let viewModel: LaunchesViewModel
+    private var tableViewController: LaunchTableViewController?
 
     init(with viewModel: LaunchesViewModel) {
         self.viewModel = viewModel
@@ -30,7 +31,12 @@ extension LaunchesViewController {
     }
     private func handleSuccess(with launches: [Launch]) {
         DispatchQueue.main.async { [weak self] in
-            self?.setupLoadedState(with: launches)
+            guard let tableViewController = self?.tableViewController else {
+                self?.setupLoadedState(with: launches)
+                return
+            }
+
+            tableViewController.update(with: launches)
         }
     }
 
@@ -38,8 +44,8 @@ extension LaunchesViewController {
         title = "Launches"
         setupeNavigationBar()
 
-        let launchesVC = LaunchTableViewController(with: launches)
-        contentStateViewController.transition(to: .render(launchesVC))
+        tableViewController = LaunchTableViewController(with: launches)
+        contentStateViewController.transition(to: .render(tableViewController!))
     }
 
     private func setupeNavigationBar() {
@@ -67,10 +73,16 @@ extension LaunchesViewController {
 
 extension LaunchesViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
+        guard let searchTerm = searchController.searchBar.text else { return }
+
+        viewModel.findLaunchesMatching(searchTerm)
     }
 }
 
 extension LaunchesViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
+        let filter: LaunchesViewModel.Filter = selectedScope == 0 ? .past : .upcoming
+
+        viewModel.filterLaunches(by: filter)
     }
 }

@@ -103,6 +103,31 @@ class LaunchesViewModelTests: XCTestCase {
             XCTAssertTrue(launchesCount > 1)
         }
     }
+
+    func test_SelectingFilter_ReturnsResults() {
+        let exp = expectation(description: "Check launchesUpdated returns results when filter selected")
+        var launchesUpdatedCalledCount = 0
+        var launchesCount = 0
+
+        sut?.launchesUpdated = { launches in
+            launchesUpdatedCalledCount += 1
+
+            if launchesUpdatedCalledCount > 1 {
+                launchesCount = launches.count
+                exp.fulfill()
+            }
+        }
+
+        sut?.filterLaunches(by: .past)
+
+        waitForExpectations(timeout: 5) { (error) in
+            if let error = error {
+                XCTFail("waitForExpectationsWithTimeout errored: \(error)")
+            }
+
+            XCTAssertTrue(launchesCount > 1)
+        }
+    }
 }
 
 // Helpers

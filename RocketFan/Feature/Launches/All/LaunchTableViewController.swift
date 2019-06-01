@@ -17,6 +17,11 @@ class LaunchTableViewController: UITableViewController {
         super.viewDidLoad()
         setupTableView()
     }
+
+    func update(with launches: [Launch]) {
+        dataSource.update(with: launches)
+        tableView.reloadData()
+    }
 }
 
 extension LaunchTableViewController {
