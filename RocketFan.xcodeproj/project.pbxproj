@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0E10D7CD229D23B20041FDB4 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10D7CB229D23B20041FDB4 /* LaunchDetailsViewController.swift */; };
 		0E10D7CE229D23B20041FDB4 /* LaunchDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E10D7CC229D23B20041FDB4 /* LaunchDetailsViewController.xib */; };
+		0E10D7D2229E95D30041FDB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10D7D1229E95D30041FDB4 /* Constants.swift */; };
 		0E2A2990225E762000A12243 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A298F225E762000A12243 /* Settings.swift */; };
 		0E2A2993225E764000A12243 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2992225E764000A12243 /* SettingsTests.swift */; };
 		0E2B86C5223AF64A005686BB /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86C4223AF64A005686BB /* Core.swift */; };
@@ -199,6 +200,7 @@
 /* Begin PBXFileReference section */
 		0E10D7CB229D23B20041FDB4 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewController.swift; sourceTree = "<group>"; };
 		0E10D7CC229D23B20041FDB4 /* LaunchDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchDetailsViewController.xib; sourceTree = "<group>"; };
+		0E10D7D1229E95D30041FDB4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		0E2A298F225E762000A12243 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0E2A2992225E764000A12243 /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
 		0E2B86C4223AF64A005686BB /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
@@ -751,6 +753,7 @@
 		E1FFA02C223A99CD0056BA6B /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0E10D7D1229E95D30041FDB4 /* Constants.swift */,
 				E1FFA030223A9ADF0056BA6B /* JSONLoader.swift */,
 				0E2A298F225E762000A12243 /* Settings.swift */,
 			);
@@ -1072,6 +1075,7 @@
 				E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */,
 				E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
+				0E10D7D2229E95D30041FDB4 /* Constants.swift in Sources */,
 				E1447531229C6093006D1E82 /* Repository.swift in Sources */,
 				0E10D7CD229D23B20041FDB4 /* LaunchDetailsViewController.swift in Sources */,
 				E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */,
