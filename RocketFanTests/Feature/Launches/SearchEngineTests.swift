@@ -24,6 +24,20 @@ class SearchEngineTests: XCTestCase {
         XCTAssertTrue(all(launches!, areBefore: date), "All launches must be before referenceDate")
     }
 
+    func test_GivenReferenceDateAndSearchTerm_ReturnsPastLaunches() {
+        let date = referenceDate()
+        let launches = sut?.launches(before: date, withMissionName: "Fal")
+
+        XCTAssertTrue(all(launches!, areBefore: date), "All launches must be before referenceDate")
+    }
+
+    func test_GivenReferenceDateAndSearchTerm_ReturnsFutureLaunches() {
+        let date = referenceDate()
+        let launches = sut?.launches(after: date, withMissionName: "GPS")
+
+        XCTAssertTrue(all(launches!, areAfter: date), "All launches must be after referenceDate")
+    }
+
     func test_GivenReferenceDate_ReturnsFutureLaunches() {
         let date = referenceDate()
         let upcomingLaunches = sut?.launches(after: date)
@@ -83,6 +97,8 @@ extension SearchEngineTests {
     }
 
     private func all(_ launaches: [Launch], areBefore date: Date) -> Bool {
+        guard launaches.isEmpty == false else { return false }
+
         let todaysDate = Date()
 
         for launch in launaches {
@@ -97,6 +113,8 @@ extension SearchEngineTests {
     }
 
     private func all(_ launaches: [Launch], areAfter date: Date) -> Bool {
+        guard launaches.isEmpty == false else { return false }
+
         let todaysDate = Date()
 
         for launch in launaches {
@@ -111,9 +129,6 @@ extension SearchEngineTests {
     }
 
     private func referenceDate() -> Date {
-        let formatter = ISO8601DateFormatter()
-        formatter.formatOptions = [.withFractionalSeconds]
-
-        return formatter.date(from: "2019-05-25T00:00:00.000Z")!
+        return Date(timeIntervalSince1970: 1559374462)
     }
 }

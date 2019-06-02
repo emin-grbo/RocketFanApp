@@ -15,6 +15,18 @@ class LaunchesViewModel {
 }
 
 extension LaunchesViewModel {
+    func findLaunchesMatching(_ searchTerm: String) {
+        guard searchTerm.isEmpty == false else {
+            loadPastLaunches()
+            return
+        }
+
+        let results = searchEngine?.launchesWhere(missionNameContains: searchTerm)
+        launchesUpdated?(results ?? [])
+    }
+}
+
+extension LaunchesViewModel {
     private func fetchAllLaunches() {
         repository?.allLaunches { [weak self] (result) in
 
