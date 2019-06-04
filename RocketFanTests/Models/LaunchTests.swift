@@ -77,4 +77,14 @@ class LaunchTests: XCTestCase {
         let flightClub = URL(string: "https://www.flightclub.io/results/?code=OG22")!
         XCTAssertEqual(launch?.flightClub, flightClub)
     }
+
+    func test_CanCompare_UsingComparable() {
+        let firstLaunch = (launches?.first(where: { $0.flightNumber == 1 })!)!
+        let secondLaunch = (launches?.first(where: { $0.flightNumber == 25 })!)!
+        let unSortedLaunches = [secondLaunch, firstLaunch]
+
+        let sorted = unSortedLaunches.sorted(by: <)
+
+        XCTAssertEqual(sorted.first, firstLaunch)
+    }
 }
