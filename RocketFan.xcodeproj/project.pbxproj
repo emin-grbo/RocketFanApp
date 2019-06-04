@@ -10,6 +10,7 @@
 		0E10D7CD229D23B20041FDB4 /* LaunchDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10D7CB229D23B20041FDB4 /* LaunchDetailsViewController.swift */; };
 		0E10D7CE229D23B20041FDB4 /* LaunchDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E10D7CC229D23B20041FDB4 /* LaunchDetailsViewController.xib */; };
 		0E10D7D2229E95D30041FDB4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10D7D1229E95D30041FDB4 /* Constants.swift */; };
+		0E10D813229EFD6D0041FDB4 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E10D812229EFD6D0041FDB4 /* RoundedButton.swift */; };
 		0E2A2990225E762000A12243 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A298F225E762000A12243 /* Settings.swift */; };
 		0E2A2993225E764000A12243 /* SettingsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2A2992225E764000A12243 /* SettingsTests.swift */; };
 		0E2B86C5223AF64A005686BB /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86C4223AF64A005686BB /* Core.swift */; };
@@ -201,6 +202,7 @@
 		0E10D7CB229D23B20041FDB4 /* LaunchDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewController.swift; sourceTree = "<group>"; };
 		0E10D7CC229D23B20041FDB4 /* LaunchDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchDetailsViewController.xib; sourceTree = "<group>"; };
 		0E10D7D1229E95D30041FDB4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0E10D812229EFD6D0041FDB4 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		0E2A298F225E762000A12243 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		0E2A2992225E764000A12243 /* SettingsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTests.swift; sourceTree = "<group>"; };
 		0E2B86C4223AF64A005686BB /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
@@ -387,6 +389,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E10D811229EFD5B0041FDB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0E10D812229EFD6D0041FDB4 /* RoundedButton.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		0E2A2991225E762F00A12243 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -576,6 +586,7 @@
 			isa = PBXGroup;
 			children = (
 				E11C1D4E22702D90004C3972 /* ViewControllers */,
+				0E10D811229EFD5B0041FDB4 /* Views */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -1069,6 +1080,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E173194C22959D530006EB2D /* LaunchTableViewDataSource.swift in Sources */,
+				0E10D813229EFD6D0041FDB4 /* RoundedButton.swift in Sources */,
 				E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */,
 				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
 				0EEADB7F228866ED00E40712 /* YouTubeViewController.swift in Sources */,
