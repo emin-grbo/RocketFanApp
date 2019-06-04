@@ -50,12 +50,18 @@ extension LaunchesViewModel {
         var launches: [Launch]
 
         if filter == .past {
-            launches = searchEngine?.launches(before: Date(), withMissionName: missionName) ?? []
+            let unSortedLaunches = searchEngine?.launches(before: Date(), withMissionName: missionName) ?? []
+            launches = sort(unSortedLaunches, by: .descending)
         } else {
-            launches = searchEngine?.launches(after: Date(), withMissionName: missionName) ?? []
+           let unSortedLaunches = searchEngine?.launches(after: Date(), withMissionName: missionName) ?? []
+            launches = sort(unSortedLaunches, by: .ascending)
         }
 
         launchesUpdated?(launches)
+    }
+
+    private func sort(_ launches: [Launch], by sortOrder: SortOrder) -> [Launch] {
+        return sortOrder == .descending ? launches.sorted(by: >) : launches.sorted(by: <)
     }
 }
 
@@ -63,5 +69,10 @@ extension LaunchesViewModel {
     enum Filter {
         case past
         case upcoming
+    }
+
+    private enum SortOrder {
+        case descending
+        case ascending
     }
 }

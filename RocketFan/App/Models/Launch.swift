@@ -166,3 +166,19 @@ extension Launch.Rocket {
         firstStage = try firstStageContainer.decode([Core].self, forKey: .cores)
     }
 }
+
+extension Launch: Comparable {
+    static func < (lhs: Launch, rhs: Launch) -> Bool {
+        guard let lhsDate = lhs.launchDate else { return false }
+        guard let rhsDate = rhs.launchDate else { return false }
+
+        return lhsDate < rhsDate
+    }
+
+    static func == (lhs: Launch, rhs: Launch) -> Bool {
+        guard let lhsDate = lhs.launchDate else { return false }
+        guard let rhsDate = rhs.launchDate else { return false }
+
+        return lhsDate == rhsDate
+    }
+}
