@@ -78,7 +78,7 @@ class LaunchTests: XCTestCase {
         XCTAssertEqual(launch?.flightClub, flightClub)
     }
 
-    func test_CanCompara_UsingComparable() {
+    func test_CanCompare_UsingComparable() {
         let firstLaunch = (launches?.first(where: { $0.flightNumber == 1 })!)!
         let secondLaunch = (launches?.first(where: { $0.flightNumber == 25 })!)!
         let unSortedLaunches = [secondLaunch, firstLaunch]
