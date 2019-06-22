@@ -1,9 +1,10 @@
 import UIKit
+import SwiftUI
 
 class LaunchesViewController: UIViewController {
     private lazy var contentStateViewController = ContentStateViewController()
     private let viewModel: LaunchesViewModel
-    private var tableViewController: LaunchTableViewController?
+    private var listHostingController: UIHostingController<LaunchesListView>?
 
     init(with viewModel: LaunchesViewModel) {
         self.viewModel = viewModel
@@ -31,12 +32,12 @@ extension LaunchesViewController {
     }
     private func handleSuccess(with launches: [Launch]) {
         DispatchQueue.main.async { [weak self] in
-            guard let tableViewController = self?.tableViewController else {
+            guard let listHostingController = self?.listHostingController else {
                 self?.setupLoadedState(with: launches)
                 return
             }
 
-            tableViewController.update(with: launches)
+//            tableViewController.update(with: launches)
         }
     }
 
@@ -44,8 +45,10 @@ extension LaunchesViewController {
         title = "Launches"
         setupeNavigationBar()
 
-        tableViewController = LaunchTableViewController(with: launches)
-        contentStateViewController.transition(to: .render(tableViewController!))
+        let listView = LaunchesListView(launches: launches)
+        listHostingController = UIHostingController(rootView: listView)
+        
+        contentStateViewController.transition(to: .render(listHostingController!))
     }
 
     private func setupeNavigationBar() {
