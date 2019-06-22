@@ -139,6 +139,9 @@
 		E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA036223AA39C0056BA6B /* Capsule.swift */; };
 		E1FFA03A223AA6320056BA6B /* Codable+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA039223AA6320056BA6B /* Codable+Extensions.swift */; };
 		E1FFA03C223AA70E0056BA6B /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1FFA03B223AA70E0056BA6B /* Data+Extensions.swift */; };
+		E54B44D022BE7D0B006833BA /* LaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B44CE22BE7D0B006833BA /* LaunchesListView.swift */; };
+		E54B44D122BE7D0B006833BA /* LaunchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B44CF22BE7D0B006833BA /* LaunchRow.swift */; };
+		E54B44D322BE7D1F006833BA /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B44D222BE7D1F006833BA /* TestData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -335,6 +338,9 @@
 		E1FFA036223AA39C0056BA6B /* Capsule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Capsule.swift; sourceTree = "<group>"; };
 		E1FFA039223AA6320056BA6B /* Codable+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Codable+Extensions.swift"; sourceTree = "<group>"; };
 		E1FFA03B223AA70E0056BA6B /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
+		E54B44CE22BE7D0B006833BA /* LaunchesListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchesListView.swift; sourceTree = "<group>"; };
+		E54B44CF22BE7D0B006833BA /* LaunchRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchRow.swift; sourceTree = "<group>"; };
+		E54B44D222BE7D1F006833BA /* TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -492,8 +498,9 @@
 		0EBCA1D622330D6C00E8903F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				E1FFA013223A97BF0056BA6B /* Data */,
 				0EBCA1AE22330CF600E8903F /* Assets.xcassets */,
+				E1FFA013223A97BF0056BA6B /* Data */,
+				E54B44D222BE7D1F006833BA /* TestData.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -706,8 +713,10 @@
 			isa = PBXGroup;
 			children = (
 				E1352AF72296ED9300378732 /* LaunchCellViewModel.swift */,
+				E54B44CE22BE7D0B006833BA /* LaunchesListView.swift */,
 				E17B0F1B2270EBBC002B550A /* LaunchesViewController.swift */,
 				E144752E229C48A7006D1E82 /* LaunchesViewModel.swift */,
+				E54B44CF22BE7D0B006833BA /* LaunchRow.swift */,
 				E16473A22299928600C67AD9 /* SearchEngine.swift */,
 			);
 			path = All;
@@ -1072,6 +1081,7 @@
 				0E10D7D2229E95D30041FDB4 /* Constants.swift in Sources */,
 				E1447531229C6093006D1E82 /* Repository.swift in Sources */,
 				0E10D7CD229D23B20041FDB4 /* LaunchDetailsViewController.swift in Sources */,
+				E54B44D122BE7D0B006833BA /* LaunchRow.swift in Sources */,
 				E17B0F1C2270EBBC002B550A /* LaunchesViewController.swift in Sources */,
 				E13BA254226061A20068DF72 /* Navigator.swift in Sources */,
 				E16473A32299928600C67AD9 /* SearchEngine.swift in Sources */,
@@ -1085,6 +1095,7 @@
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
 				0E2B86C9223AFF6C005686BB /* JSONDecoder+Extensions.swift in Sources */,
 				E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */,
+				E54B44D022BE7D0B006833BA /* LaunchesListView.swift in Sources */,
 				E18600DE2276321B00B0C856 /* LaunchesCoordinator.swift in Sources */,
 				E1FFA037223AA39C0056BA6B /* Capsule.swift in Sources */,
 				E18600E22276365400B0C856 /* LaunchesRepository.swift in Sources */,
@@ -1105,6 +1116,7 @@
 				E11C1D48227029E4004C3972 /* UIViewController+Extensions.swift in Sources */,
 				E11C1D4D22702AED004C3972 /* ContentStateViewController.swift in Sources */,
 				0EBF2F9E22416758002742B8 /* Launch.swift in Sources */,
+				E54B44D322BE7D1F006833BA /* TestData.swift in Sources */,
 				E186CCAF223FF5D400F77820 /* Payload.swift in Sources */,
 				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
