@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct LaunchesListView: View {
-    let launches: [Launch]
+    @ObjectBinding var model: LaunchesViewModel
     private let dateFormatter = DateFormatter()
 
     var body: some View {
-        List(launches.identified(by: \.missionId)) { launch in
+        List(model.launches.identified(by: \.missionId)) { launch in
             LaunchRow(viewModel: self.launchViewModel(with: launch))
         }
     }
@@ -15,10 +15,10 @@ struct LaunchesListView: View {
     }
 }
 
-#if DEBUG
-struct LaunchesListView_Previews: PreviewProvider {
-    static var previews: some View {
-        LaunchesListView(launches: launchesTestData)
-    }
-}
-#endif
+//#if DEBUG
+//struct LaunchesListView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        LaunchesListView(launches: launchesTestData)
+//    }
+//}
+//#endif
