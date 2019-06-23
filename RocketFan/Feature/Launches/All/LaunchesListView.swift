@@ -5,7 +5,7 @@ struct LaunchesListView: View {
     private let dateFormatter = DateFormatter()
 
     var body: some View {
-        List(model.launches.identified(by: \.missionId)) { launch in
+        List(model.launches.identified(by: \.flightNumber)) { launch in
             LaunchRow(viewModel: self.launchViewModel(with: launch))
         }
     }
