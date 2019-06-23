@@ -15,7 +15,7 @@ class LaunchesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         add(contentStateViewController)
         bindViewModel()
     }

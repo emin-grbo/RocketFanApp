@@ -1,11 +1,12 @@
 import UIKit
 
 class LoadingViewController: UIViewController {
-    @IBOutlet private weak var activityIndivator: UIActivityIndicatorView!
+    @IBOutlet private weak var activityIndicator: UIActivityIndicatorView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .clear
-        activityIndivator.startAnimating()
+        activityIndicator.color = .gray
+        activityIndicator.startAnimating()
     }
 }
