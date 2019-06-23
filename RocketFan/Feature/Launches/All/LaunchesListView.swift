@@ -14,11 +14,3 @@ struct LaunchesListView: View {
         return LaunchCellViewModel(with: launch, dateFormatter)
     }
 }
-
-//#if DEBUG
-//struct LaunchesListView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        LaunchesListView(launches: launchesTestData)
-//    }
-//}
-//#endif
