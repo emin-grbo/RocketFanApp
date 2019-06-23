@@ -182,9 +182,3 @@ extension Launch: Comparable {
         return lhsDate == rhsDate
     }
 }
-
-extension Launch: Hashable {
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(missionId)
-    }
-}
