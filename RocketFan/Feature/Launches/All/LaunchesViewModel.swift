@@ -1,32 +1,37 @@
 import Foundation
+import Combine
+import SwiftUI
 
-class LaunchesViewModel {
+class LaunchesViewModel: BindableObject {
+    var modelError: ((_ error: Error) -> Void)?
+    var didFinishLoading: ((_ loaded: Bool) -> Void)?
+    let didChange = PassthroughSubject<Void, Never>()
+
     private var repository: LaunchesRepositoryProtocol?
     private var searchEngine: SearchEngine?
-    private var selectedFilter: Filter = .past
-    private var currentSearchTerm = ""
+    private(set) var launches: [Launch] = [] { didSet { didChange.send() } }
 
-    var modelError: ((_ error: Error) -> Void)?
-    var launchesUpdated: ((_ launches: [Launch]) -> Void)? {
-        didSet { fetchAllLaunches() }
+    private var currentSearchTerm = "" {
+        didSet { loadLaunches(with: selectedFilter, withMissionName: currentSearchTerm) }
+    }
+
+    private var selectedFilter: Filter = .past {
+        didSet { loadLaunches(with: selectedFilter, withMissionName: currentSearchTerm) }
     }
 
     init(with repo: LaunchesRepositoryProtocol) {
         repository = repo
+        fetchAllLaunches()
     }
 }
 
 extension LaunchesViewModel {
     func findLaunchesMatching(_ searchTerm: String) {
         currentSearchTerm = searchTerm
-
-        loadLaunches(with: selectedFilter, withMissionName: currentSearchTerm)
     }
 
     func filterLaunches(by filter: Filter) {
         selectedFilter = filter
-
-        loadLaunches(with: selectedFilter, withMissionName: currentSearchTerm)
     }
 }
 
@@ -38,6 +43,7 @@ extension LaunchesViewModel {
                 let launches = try result.get()
                 self?.searchEngine = SearchEngine(with: launches)
                 let filter = self?.selectedFilter ?? .past
+                self?.didFinishLoading?(true)
                 self?.loadLaunches(with: filter)
 
             } catch {
@@ -47,8 +53,6 @@ extension LaunchesViewModel {
     }
 
     private func loadLaunches(with filter: Filter, withMissionName missionName: String = "") {
-        var launches: [Launch]
-
         if filter == .past {
             let unSortedLaunches = searchEngine?.launches(before: Date(), withMissionName: missionName) ?? []
             launches = sort(unSortedLaunches, by: .descending)
@@ -56,8 +60,6 @@ extension LaunchesViewModel {
            let unSortedLaunches = searchEngine?.launches(after: Date(), withMissionName: missionName) ?? []
             launches = sort(unSortedLaunches, by: .ascending)
         }
-
-        launchesUpdated?(launches)
     }
 
     private func sort(_ launches: [Launch], by sortOrder: SortOrder) -> [Launch] {

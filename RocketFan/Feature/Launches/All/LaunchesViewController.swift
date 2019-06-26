@@ -1,13 +1,11 @@
-import UIKit
+import SwiftUI
 
 class LaunchesViewController: UIViewController {
     private lazy var contentStateViewController = ContentStateViewController()
     private let viewModel: LaunchesViewModel
-    private var tableViewController: LaunchTableViewController?
 
     init(with viewModel: LaunchesViewModel) {
         self.viewModel = viewModel
-
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -17,7 +15,7 @@ class LaunchesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .systemBackground
         add(contentStateViewController)
         bindViewModel()
     }
@@ -25,27 +23,23 @@ class LaunchesViewController: UIViewController {
 
 extension LaunchesViewController {
     private func bindViewModel() {
-        viewModel.launchesUpdated = { [weak self] launches in
-            self?.handleSuccess(with: launches)
-        }
-    }
-    private func handleSuccess(with launches: [Launch]) {
-        DispatchQueue.main.async { [weak self] in
-            guard let tableViewController = self?.tableViewController else {
-                self?.setupLoadedState(with: launches)
-                return
+        viewModel.didFinishLoading = { [weak self] loaded in
+            if loaded == false { return }
+
+            DispatchQueue.main.async { [weak self] in
+                self?.setupLoadedState()
             }
-
-            tableViewController.update(with: launches)
         }
     }
 
-    private func setupLoadedState(with launches: [Launch]) {
+    private func setupLoadedState() {
         title = "Launches"
         setupeNavigationBar()
 
-        tableViewController = LaunchTableViewController(with: launches)
-        contentStateViewController.transition(to: .render(tableViewController!))
+        let listView = LaunchesListView(model: viewModel)
+        let hostingVC = UIHostingController(rootView: listView)
+
+        contentStateViewController.transition(to: .render(hostingVC))
     }
 
     private func setupeNavigationBar() {
