@@ -2,22 +2,22 @@ import SwiftUI
 
 struct LaunchRow: View {
     let viewModel: LaunchCellViewModel
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
             Text(viewModel.missionName)
                 .font(.headline)
                 .foregroundColor(.primary)
-            
+
             Spacer().fixedSize()
             ImageWithText(imageName: "calendar",
                           text: viewModel.launchDate,
                           font: .subheadline)
-            
+
             ImageWithText(imageName: "map",
                           text: viewModel.siteShortName,
                           font: .subheadline)
-            
+
             ImageWithText(imageName: "airplane",
                           text: viewModel.rocketName,
                           font: .subheadline)
@@ -29,13 +29,13 @@ private struct ImageWithText: View {
     let imageName: String
     let text: String
     let font: Font
-    
+
     var body: some View {
         HStack {
             Image(systemName: imageName)
                 .font(.caption)
                 .foregroundColor(.secondary)
-            
+
             Text(text)
                 .font(font)
                 .foregroundColor(.secondary)

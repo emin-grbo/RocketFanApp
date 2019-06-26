@@ -40,10 +40,10 @@ extension Launch {
         /// Nested
         case flightClub = "flight_club"
     }
-    
+
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+
         details = try container.decodeIfPresent(String.self, forKey: .details)
         failureDetails = try container.decodeIfPresent(FailureDetails.self, forKey: .failureDetails)
         flightNumber = try container.decode(Int.self, forKey: .flightNumber)
@@ -59,7 +59,7 @@ extension Launch {
         staticFireDate = try container.decodeIfPresent(Date.self, forKey: .staticFireDate)
         tentativeMaxPrecision = try container.decode(String.self, forKey: .tentativeMaxPrecision)
         timeline = try container.decodeIfPresent([String: Int?].self, forKey: .timeline)
-        
+
         let telemetry = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .telemetry)
         flightClub = try telemetry.decodeIfPresent(URL.self, forKey: .flightClub)
     }
@@ -79,7 +79,7 @@ extension Launch {
     struct Site: Decodable {
         let id: String
         let shortName: String
-        
+
         enum CodingKeys: String, CodingKey {
             case id = "site_id"
             case shortName = "site_name"
@@ -95,7 +95,7 @@ extension Launch {
         let name: String
         let secondStage: SecondStage
         let type: String
-        
+
         enum CodingKeys: String, CodingKey {
             case cores
             case fairings
@@ -105,13 +105,13 @@ extension Launch {
             case secondStage = "second_stage"
             case type = "rocket_type"
         }
-        
+
         struct Fairings: Decodable {
             let recovered: Bool?
             let recoveryAttempt: Bool?
             let reused: Bool
             let ship: String?
-            
+
             enum Keys: String, CodingKey {
                 case recovered
                 case recoveryAttempt = "recovery_attempt"
@@ -119,7 +119,7 @@ extension Launch {
                 case ship
             }
         }
-        
+
         struct Core: Decodable {
             let block: Int?
             let flight: Int?
@@ -131,7 +131,7 @@ extension Launch {
             let legs: Bool?
             let reused: Bool?
             let serial: String?
-            
+
             enum Keys: String, CodingKey {
                 case block
                 case flight
@@ -145,7 +145,7 @@ extension Launch {
                 case serial
             }
         }
-        
+
         struct SecondStage: Decodable {
             let block: Int?
             let payloads: [Payload]
@@ -161,7 +161,7 @@ extension Launch.Rocket {
         name = try container.decode(String.self, forKey: .name)
         secondStage = try container.decode(SecondStage.self, forKey: .secondStage)
         type = try container.decode(String.self, forKey: .type)
-        
+
         let firstStageContainer = try container.nestedContainer(keyedBy: CodingKeys.self, forKey: .firstStage)
         firstStage = try firstStageContainer.decode([Core].self, forKey: .cores)
     }
@@ -171,14 +171,14 @@ extension Launch: Comparable {
     static func < (lhs: Launch, rhs: Launch) -> Bool {
         guard let lhsDate = lhs.launchDate else { return false }
         guard let rhsDate = rhs.launchDate else { return false }
-        
+
         return lhsDate < rhsDate
     }
-    
+
     static func == (lhs: Launch, rhs: Launch) -> Bool {
         guard let lhsDate = lhs.launchDate else { return false }
         guard let rhsDate = rhs.launchDate else { return false }
-        
+
         return lhsDate == rhsDate
     }
 }
