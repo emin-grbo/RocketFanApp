@@ -10,6 +10,9 @@ opt_in_rules:
   - legacy_nsgeometry_functions
   - operator_usage_whitespace
 
+disabled_rules:
+  - type_name # flags up SwiftUI preview names
+
 type_body_length:
   warning: 300
   error: 400
