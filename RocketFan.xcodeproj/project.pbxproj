@@ -44,8 +44,6 @@
 		0EBF1B27223C480100194F5D /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landing.swift */; };
 		0EBF2F9E22416758002742B8 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2F9D22416758002742B8 /* Launch.swift */; };
 		0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF2F9F22416768002742B8 /* LaunchTests.swift */; };
-		0EEADB7F228866ED00E40712 /* YouTubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EEADB7D228866ED00E40712 /* YouTubeViewController.swift */; };
-		0EEADB80228866ED00E40712 /* YouTubeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0EEADB7E228866ED00E40712 /* YouTubeViewController.xib */; };
 		0EEADBC5228870EC00E40712 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEADBC4228870EC00E40712 /* WebKit.framework */; };
 		0EF7291922959B5D00632563 /* ModelInitialisers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7291822959B5C00632563 /* ModelInitialisers.swift */; };
 		0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */; };
@@ -242,8 +240,6 @@
 		0EBF2F9D22416758002742B8 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
 		0EBF2F9F22416768002742B8 /* LaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchTests.swift; sourceTree = "<group>"; };
 		0ED556972235130E0039BC44 /* User.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = User.xcconfig; sourceTree = "<group>"; };
-		0EEADB7D228866ED00E40712 /* YouTubeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeViewController.swift; sourceTree = "<group>"; };
-		0EEADB7E228866ED00E40712 /* YouTubeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YouTubeViewController.xib; sourceTree = "<group>"; };
 		0EEADBC4228870EC00E40712 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0EF7291822959B5C00632563 /* ModelInitialisers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInitialisers.swift; sourceTree = "<group>"; };
 		0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extensions.swift"; sourceTree = "<group>"; };
@@ -548,8 +544,6 @@
 				0E10D7CB229D23B20041FDB4 /* LaunchDetailsViewController.swift */,
 				0E10D7CC229D23B20041FDB4 /* LaunchDetailsViewController.xib */,
 				0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */,
-				0EEADB7D228866ED00E40712 /* YouTubeViewController.swift */,
-				0EEADB7E228866ED00E40712 /* YouTubeViewController.xib */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -1002,7 +996,6 @@
 				E13B0C09223E5166000E3E85 /* apiinfo.json in Resources */,
 				E1FFA025223A993B0056BA6B /* ship.json in Resources */,
 				E13B0C0B223E529F000E3E85 /* company.json in Resources */,
-				0EEADB80228866ED00E40712 /* YouTubeViewController.xib in Resources */,
 				E1FFA024223A993B0056BA6B /* core.json in Resources */,
 				E1FFA026223A993B0056BA6B /* history.json in Resources */,
 				E13B0C11223E629A000E3E85 /* launchpad.json in Resources */,
@@ -1074,7 +1067,6 @@
 				0E10D813229EFD6D0041FDB4 /* RoundedButton.swift in Sources */,
 				E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */,
 				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
-				0EEADB7F228866ED00E40712 /* YouTubeViewController.swift in Sources */,
 				E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */,
 				E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
