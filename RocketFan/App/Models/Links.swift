@@ -8,6 +8,7 @@ struct Links: Decodable {
     let twitter: URL?
     let website: URL?
     let wikipedia: URL?
+    let youtubeId: String?
 
     init(article: URL? = nil,
          reddit: URL? = nil,
@@ -15,7 +16,8 @@ struct Links: Decodable {
          twitter: URL? = nil,
          website: URL? = nil,
          flickr: URL? = nil,
-         elonTwitter: URL? = nil) {
+         elonTwitter: URL? = nil,
+         youtubeId: String? = nil) {
 
         self.article = article
         self.reddit = reddit
@@ -24,6 +26,7 @@ struct Links: Decodable {
         self.website = website
         self.flickr = flickr
         self.elonTwitter = elonTwitter
+        self.youtubeId = youtubeId
     }
 }
 
@@ -36,5 +39,6 @@ extension Links {
         case website
         case wikipedia
         case elonTwitter
+        case youtubeId = "youtube_id"
     }
 }
