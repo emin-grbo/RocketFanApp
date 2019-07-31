@@ -2,7 +2,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-class LaunchesViewModel: BindableObject {
+class LaunchesViewModel: ObservableObject {
     var modelError: ((_ error: Error) -> Void)?
     var didFinishLoading: ((_ loaded: Bool) -> Void)?
     let didChange = PassthroughSubject<Void, Never>()

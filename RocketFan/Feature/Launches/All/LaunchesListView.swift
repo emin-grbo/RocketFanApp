@@ -1,11 +1,11 @@
 import SwiftUI
 
 struct LaunchesListView: View {
-    @ObjectBinding var model: LaunchesViewModel
+    @ObservedObject var model: LaunchesViewModel
     private let dateFormatter = DateFormatter()
 
     var body: some View {
-        List(model.launches.identified(by: \.flightNumber)) { launch in
+        List(model.launches, id: \.flightNumber) { launch in
             LaunchRow(viewModel: self.launchViewModel(with: launch))
         }
     }
