@@ -23,6 +23,7 @@
 		0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86D0223B0E1E005686BB /* LandingPad.swift */; };
 		0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86D2223B0E30005686BB /* LandingPadTests.swift */; };
 		0E2B86D5223B1089005686BB /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E2B86D4223B1089005686BB /* Location.swift */; };
+		0E5A282222F4E9EF0014251B /* LaunchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A282122F4E9EF0014251B /* LaunchDetailsHeaderView.swift */; };
 		0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C10223312BE00F85DAB /* RocketFanTests.swift */; };
 		0E611C13223312C800F85DAB /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C12223312C800F85DAB /* RocketFanUITests.swift */; };
 		0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */; };
@@ -213,6 +214,7 @@
 		0E2B86D2223B0E30005686BB /* LandingPadTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPadTests.swift; sourceTree = "<group>"; };
 		0E2B86D4223B1089005686BB /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0E2EA408223519D600A7D350 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		0E5A282122F4E9EF0014251B /* LaunchDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsHeaderView.swift; sourceTree = "<group>"; };
 		0E611C10223312BE00F85DAB /* RocketFanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
 		0E611C12223312C800F85DAB /* RocketFanUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
 		0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -543,6 +545,7 @@
 		0EEADB78228861DC00E40712 /* Details */ = {
 			isa = PBXGroup;
 			children = (
+				0E5A282122F4E9EF0014251B /* LaunchDetailsHeaderView.swift */,
 				0E10D7CB229D23B20041FDB4 /* LaunchDetailsViewController.swift */,
 				0E10D7CC229D23B20041FDB4 /* LaunchDetailsViewController.xib */,
 				0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */,
@@ -1120,6 +1123,7 @@
 				E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */,
 				E18600E62276378F00B0C856 /* LaunchesViewControllerFactory.swift in Sources */,
 				E1FFA03C223AA70E0056BA6B /* Data+Extensions.swift in Sources */,
+				0E5A282222F4E9EF0014251B /* LaunchDetailsHeaderView.swift in Sources */,
 				0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
