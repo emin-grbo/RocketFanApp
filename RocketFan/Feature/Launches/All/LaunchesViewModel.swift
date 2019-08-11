@@ -5,11 +5,11 @@ import SwiftUI
 class LaunchesViewModel: ObservableObject {
     var modelError: ((_ error: Error) -> Void)?
     var didFinishLoading: ((_ loaded: Bool) -> Void)?
-    let didChange = PassthroughSubject<Void, Never>()
 
     private var repository: LaunchesRepositoryProtocol?
     private var searchEngine: SearchEngine?
-    private(set) var launches: [Launch] = [] { didSet { didChange.send() } }
+
+    @Published private(set) var launches: [Launch] = []
 
     private var currentSearchTerm = "" {
         didSet { loadLaunches(with: selectedFilter, withMissionName: currentSearchTerm) }
