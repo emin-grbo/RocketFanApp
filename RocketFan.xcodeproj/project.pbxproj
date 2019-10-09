@@ -42,7 +42,6 @@
 		0E911FF82236F64A00CBE217 /* XCTestCase+assert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF72236F64A00CBE217 /* XCTestCase+assert.swift */; };
 		0E911FFA2237BBD600CBE217 /* SpaceXAPI+Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */; };
 		0E911FFC2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E911FFB2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift */; };
-		0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBCA1A722330CF500E8903F /* AppDelegate.swift */; };
 		0EBCA1AF22330CF600E8903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1AE22330CF600E8903F /* Assets.xcassets */; };
 		0EBCA1B222330CF600E8903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EBCA1B022330CF600E8903F /* LaunchScreen.storyboard */; };
 		0EBF1B27223C480100194F5D /* Landing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBF1B26223C480100194F5D /* Landing.swift */; };
@@ -51,6 +50,8 @@
 		0EEADBC5228870EC00E40712 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EEADBC4228870EC00E40712 /* WebKit.framework */; };
 		0EF7291922959B5D00632563 /* ModelInitialisers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF7291822959B5C00632563 /* ModelInitialisers.swift */; };
 		0EFA71D3223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */; };
+		139F8E7B234DE3C0007CC3C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F8E7A234DE3C0007CC3C7 /* SceneDelegate.swift */; };
+		139F8E7F234E0913007CC3C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F8E7E234E0913007CC3C7 /* AppDelegate.swift */; };
 		E11C1D48227029E4004C3972 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */; };
 		E11C1D4D22702AED004C3972 /* ContentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */; };
 		E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */; };
@@ -236,7 +237,6 @@
 		0E911FF92237BBD600CBE217 /* SpaceXAPI+Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpaceXAPI+Options.swift"; sourceTree = "<group>"; };
 		0E911FFB2237BBEE00CBE217 /* SpaceXAPIOptionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceXAPIOptionsTests.swift; sourceTree = "<group>"; };
 		0EBCA1A422330CF500E8903F /* RocketFan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketFan.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0EBCA1A722330CF500E8903F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EBCA1AE22330CF600E8903F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EBCA1B122330CF600E8903F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EBCA1B322330CF600E8903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -251,6 +251,8 @@
 		0EEADBC4228870EC00E40712 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		0EF7291822959B5C00632563 /* ModelInitialisers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelInitialisers.swift; sourceTree = "<group>"; };
 		0EFA71D2223EE744006DC0F4 /* KeyedDecodingContainer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+Extensions.swift"; sourceTree = "<group>"; };
+		139F8E7A234DE3C0007CC3C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		139F8E7E234E0913007CC3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
 		E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -507,7 +509,8 @@
 		0EBCA1D522330D5F00E8903F /* App */ = {
 			isa = PBXGroup;
 			children = (
-				0EBCA1A722330CF500E8903F /* AppDelegate.swift */,
+				139F8E7E234E0913007CC3C7 /* AppDelegate.swift */,
+				139F8E7A234DE3C0007CC3C7 /* SceneDelegate.swift */,
 				0EBCA1B322330CF600E8903F /* Info.plist */,
 				E18600DA2276308400B0C856 /* MainTabBarController.swift */,
 				E1FFA032223AA2F10056BA6B /* Models */,
@@ -1096,7 +1099,9 @@
 				E13BA2592260D4720068DF72 /* DependencyContainer.swift in Sources */,
 				0EBF1B27223C480100194F5D /* Landing.swift in Sources */,
 				E13BA256226061C80068DF72 /* ViewControllerFactory.swift in Sources */,
+				139F8E7F234E0913007CC3C7 /* AppDelegate.swift in Sources */,
 				E1352AF82296ED9300378732 /* LaunchCellViewModel.swift in Sources */,
+				139F8E7B234DE3C0007CC3C7 /* SceneDelegate.swift in Sources */,
 				0E2B86CB223B02F9005686BB /* History.swift in Sources */,
 				0E10D7D2229E95D30041FDB4 /* Constants.swift in Sources */,
 				E1447531229C6093006D1E82 /* Repository.swift in Sources */,
@@ -1140,7 +1145,6 @@
 				0EBF2F9E22416758002742B8 /* Launch.swift in Sources */,
 				E54B44D322BE7D1F006833BA /* TestData.swift in Sources */,
 				E186CCAF223FF5D400F77820 /* Payload.swift in Sources */,
-				0EBCA1A822330CF500E8903F /* AppDelegate.swift in Sources */,
 				0E8AF223223AF0B200FB3369 /* MissionFragment.swift in Sources */,
 				0E2B86D5223B1089005686BB /* Location.swift in Sources */,
 				E18600E42276372C00B0C856 /* LaunchesDependencyContainer.swift in Sources */,
