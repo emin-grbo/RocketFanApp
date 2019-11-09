@@ -4,7 +4,6 @@ import XCTest
 import RocketFan
 
 class SettingsTests: XCTestCase {
-
     var userDefaults: UserDefaults!
     var settings: Settings!
 
@@ -21,28 +20,27 @@ class SettingsTests: XCTestCase {
         userDefaults.removePersistentDomain(forName: #file)
     }
 
-    func test_CanStore_UsesMetricSystemSetting() {
-        XCTAssertNil(userDefaults.object(forKey: Settings.Keys.usesMetricSystem.rawValue))
+    func test_WeightUnitDisplayName_CorrectWhenMetric() {
+        settings.weightUnit = .metric
 
-        settings.usesMetricSystem = true
-
-        XCTAssertTrue(userDefaults.bool(forKey: Settings.Keys.usesMetricSystem.rawValue))
+        XCTAssertEqual(settings.weightUnitDisplayName, "kg")
     }
 
-    func test_CanRead_UsesMetricSystemSetting() {
-        XCTAssertNil(userDefaults.object(forKey: Settings.Keys.usesMetricSystem.rawValue))
-        userDefaults.set(true, forKey: Settings.Keys.usesMetricSystem.rawValue)
+    func test_WeightUnitDisplayName_CorrectWhenImperial() {
+        settings.weightUnit = .imperial
 
-        XCTAssertEqual(settings.usesMetricSystem, true)
+         XCTAssertEqual(settings.weightUnitDisplayName, "lb")
+     }
+
+    func test_DistanceUnitDisplayName_CorrectWhenMetric() {
+        settings.distanceUnit = .metric
+
+        XCTAssertEqual(settings.distanceUnitDisplayName, "km")
     }
 
-    func test_CanPrepopulateDefaults_UsingLocale() {
-        XCTAssertNil(userDefaults.object(forKey: Settings.Keys.usesMetricSystem.rawValue))
-        let locale = Locale(identifier: "en_GB")
+    func test_DistanceUnitDisplayName_CorrectWhenImperial() {
+        settings.weightUnit = .imperial
 
-        settings.setupDefaultValues(using: locale)
-
-        XCTAssertEqual(userDefaults.bool(forKey: Settings.Keys.usesMetricSystem.rawValue), locale.usesMetricSystem)
-    }
-
+         XCTAssertEqual(settings.distanceUnitDisplayName, "mi")
+     }
 }
