@@ -1,7 +1,5 @@
 import XCTest
-
-@testable
-import RocketFan
+@testable import RocketFan
 
 class SettingsTests: XCTestCase {
     var userDefaults: UserDefaults!
@@ -9,7 +7,6 @@ class SettingsTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-
         userDefaults = UserDefaults(suiteName: #file)
         settings = Settings(with: userDefaults)
     }

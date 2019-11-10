@@ -16,7 +16,7 @@ extension Settings {
             let key = defaults.integer(forKey: Keys.weight.rawValue)
             return MeasurementSystem(rawValue: key) ?? .metric
         }
-        
+
         set { defaults.set(newValue.rawValue, forKey: Keys.weight.rawValue) }
     }
 
