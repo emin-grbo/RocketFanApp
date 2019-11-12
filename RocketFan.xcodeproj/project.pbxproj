@@ -25,6 +25,7 @@
 		0E3C842D22FD7B9800EC7EA6 /* RoundedButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C842C22FD7B9800EC7EA6 /* RoundedButtonStyle.swift */; };
 		0E3C842F22FD7B9F00EC7EA6 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3C842E22FD7B9F00EC7EA6 /* PrimaryButton.swift */; };
 		0E5A282222F4E9EF0014251B /* LaunchDetailsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5A282122F4E9EF0014251B /* LaunchDetailsHeaderView.swift */; };
+		0E5F3C34237AD88D008583C9 /* NavigationLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5F3C33237AD88D008583C9 /* NavigationLinkView.swift */; };
 		0E611C11223312BE00F85DAB /* RocketFanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C10223312BE00F85DAB /* RocketFanTests.swift */; };
 		0E611C13223312C800F85DAB /* RocketFanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E611C12223312C800F85DAB /* RocketFanUITests.swift */; };
 		0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */; };
@@ -224,6 +225,7 @@
 		0E3C842C22FD7B9800EC7EA6 /* RoundedButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonStyle.swift; sourceTree = "<group>"; };
 		0E3C842E22FD7B9F00EC7EA6 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		0E5A282122F4E9EF0014251B /* LaunchDetailsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsHeaderView.swift; sourceTree = "<group>"; };
+		0E5F3C33237AD88D008583C9 /* NavigationLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationLinkView.swift; sourceTree = "<group>"; };
 		0E611C10223312BE00F85DAB /* RocketFanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanTests.swift; sourceTree = "<group>"; };
 		0E611C12223312C800F85DAB /* RocketFanUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketFanUITests.swift; sourceTree = "<group>"; };
 		0E69A6D8229291B8008DAFB6 /* LaunchDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDetailsViewModel.swift; sourceTree = "<group>"; };
@@ -605,7 +607,6 @@
 		13271488236739C600E90023 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				1327148923673A4000E90023 /* SettingsView.swift */,
 				1327148D23674F1C00E90023 /* Settings.swift */,
 			);
 			path = Settings;
@@ -790,6 +791,7 @@
 				E18600E12276365400B0C856 /* LaunchesRepository.swift */,
 				E1447532229C6246006D1E82 /* LaunchesRepositoryProtocol.swift */,
 				E18600E52276378F00B0C856 /* LaunchesViewControllerFactory.swift */,
+				0E5F3C33237AD88D008583C9 /* NavigationLinkView.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -1167,6 +1169,7 @@
 				E1BA53C52242DC3E00601E5C /* Rocket.swift in Sources */,
 				0E3C842D22FD7B9800EC7EA6 /* RoundedButtonStyle.swift in Sources */,
 				E1F34C54223CE05C00F22086 /* Mission.swift in Sources */,
+				0E5F3C34237AD88D008583C9 /* NavigationLinkView.swift in Sources */,
 				E1F34C60223D4B2200F22086 /* Units.swift in Sources */,
 				0E69A6D9229291B8008DAFB6 /* LaunchDetailsViewModel.swift in Sources */,
 				E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */,
