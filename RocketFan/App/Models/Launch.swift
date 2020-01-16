@@ -109,7 +109,7 @@ extension Launch {
         struct Fairings: Decodable {
             let recovered: Bool?
             let recoveryAttempt: Bool?
-            let reused: Bool
+            let reused: Bool?
             let ship: String?
 
             enum Keys: String, CodingKey {
