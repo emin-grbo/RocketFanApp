@@ -25,7 +25,7 @@ struct LaunchDetailsViewModel {
     init(launch: Launch) {
         self.launch = launch
 
-        let precision = DateFormatter.Precision(rawValue: launch.tentativeMaxPrecision)
+        let precision = DateFormatter.Precision(rawValue: launch.tentativeMaxPrecision ?? "hour")
         dateFormatter.setPrecision(precision)
     }
 }
