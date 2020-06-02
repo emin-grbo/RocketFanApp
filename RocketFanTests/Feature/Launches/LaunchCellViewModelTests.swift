@@ -35,6 +35,10 @@ class LaunchCellViewModelTests: XCTestCase {
         XCTAssertEqual(sut?.rocketName, launch?.rocket.name)
     }
 
+    func test_GivenLaunch_ReturnsSmallMissionOatchURL() {
+        XCTAssertEqual(sut?.missingPatchSmallURL, launch?.links.missingPatchSmall)
+    }
+    
     func test_GivenLaunchWithNoDate_ReturnsTBC() {
         let launch = getLaunchWithNoDate()
 
