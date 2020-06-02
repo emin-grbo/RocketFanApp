@@ -1,26 +1,35 @@
 import SwiftUI
+import KingfisherSwiftUI
 
 struct LaunchRow: View {
     let viewModel: LaunchCellViewModel
-
+    
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text(viewModel.missionName)
-                .font(.headline)
-                .foregroundColor(.primary)
-
-            Spacer().fixedSize()
-            ImageWithText(imageName: "calendar",
-                          text: viewModel.launchDate,
-                          font: .subheadline)
-
-            ImageWithText(imageName: "map",
-                          text: viewModel.siteShortName,
-                          font: .subheadline)
-
-            ImageWithText(imageName: "airplane",
-                          text: viewModel.rocketName,
-                          font: .subheadline)
+        HStack {
+            VStack(alignment: .leading, spacing: 0) {
+                Text(viewModel.missionName)
+                    .font(.headline)
+                    .foregroundColor(.primary)
+                
+                Spacer().fixedSize()
+                ImageWithText(imageName: "calendar",
+                              text: viewModel.launchDate,
+                              font: .subheadline)
+                
+                ImageWithText(imageName: "map",
+                              text: viewModel.siteShortName,
+                              font: .subheadline)
+                
+                ImageWithText(imageName: "airplane",
+                              text: viewModel.rocketName,
+                              font: .subheadline)
+            }
+            
+            Spacer()
+            KFImage(viewModel.missingPatchSmallURL)
+                .resizable()
+                .frame(width: 60, height: 60, alignment: .center)
+            
         }
     }
 }
@@ -29,13 +38,13 @@ private struct ImageWithText: View {
     let imageName: String
     let text: String
     let font: Font
-
+    
     var body: some View {
         HStack {
             Image(systemName: imageName)
                 .font(.caption)
                 .foregroundColor(.secondary)
-
+            
             Text(text)
                 .font(font)
                 .foregroundColor(.secondary)
