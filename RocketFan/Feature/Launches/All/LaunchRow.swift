@@ -24,12 +24,11 @@ struct LaunchRow: View {
                               text: viewModel.rocketName,
                               font: .subheadline)
             }
-            
+
             Spacer()
             KFImage(viewModel.missingPatchSmallURL)
                 .resizable()
                 .frame(width: 60, height: 60, alignment: .center)
-            
         }
     }
 }
@@ -38,13 +37,13 @@ private struct ImageWithText: View {
     let imageName: String
     let text: String
     let font: Font
-    
+
     var body: some View {
         HStack {
             Image(systemName: imageName)
                 .font(.caption)
                 .foregroundColor(.secondary)
-            
+
             Text(text)
                 .font(font)
                 .foregroundColor(.secondary)
