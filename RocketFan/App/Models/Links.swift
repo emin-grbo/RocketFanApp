@@ -9,6 +9,7 @@ struct Links: Decodable {
     let website: URL?
     let wikipedia: URL?
     let youtubeId: String?
+    let missionPatchSmall: URL?
 
     init(article: URL? = nil,
          reddit: URL? = nil,
@@ -17,7 +18,8 @@ struct Links: Decodable {
          website: URL? = nil,
          flickr: URL? = nil,
          elonTwitter: URL? = nil,
-         youtubeId: String? = nil) {
+         youtubeId: String? = nil,
+         missingPatchSmall: URL? = nil) {
 
         self.article = article
         self.reddit = reddit
@@ -27,6 +29,7 @@ struct Links: Decodable {
         self.flickr = flickr
         self.elonTwitter = elonTwitter
         self.youtubeId = youtubeId
+        self.missionPatchSmall = missingPatchSmall
     }
 }
 
@@ -40,5 +43,6 @@ extension Links {
         case wikipedia
         case elonTwitter
         case youtubeId = "youtube_id"
+        case missionPatchSmall = "mission_patch_small"
     }
 }

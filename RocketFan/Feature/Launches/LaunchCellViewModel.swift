@@ -31,4 +31,8 @@ extension LaunchCellViewModel {
     var rocketName: String {
         return launch.rocket.name
     }
+
+    var missionPatchSmallURL: URL? {
+        launch.links.missionPatchSmall
+    }
 }

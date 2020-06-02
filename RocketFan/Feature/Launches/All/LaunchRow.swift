@@ -1,26 +1,34 @@
 import SwiftUI
+import KingfisherSwiftUI
 
 struct LaunchRow: View {
     let viewModel: LaunchCellViewModel
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 0) {
-            Text(viewModel.missionName)
-                .font(.headline)
-                .foregroundColor(.primary)
+        HStack {
+            VStack(alignment: .leading, spacing: 0) {
+                Text(viewModel.missionName)
+                    .font(.headline)
+                    .foregroundColor(.primary)
 
-            Spacer().fixedSize()
-            ImageWithText(imageName: "calendar",
-                          text: viewModel.launchDate,
-                          font: .subheadline)
+                Spacer().fixedSize()
+                ImageWithText(imageName: "calendar",
+                              text: viewModel.launchDate,
+                              font: .subheadline)
 
-            ImageWithText(imageName: "map",
-                          text: viewModel.siteShortName,
-                          font: .subheadline)
+                ImageWithText(imageName: "map",
+                              text: viewModel.siteShortName,
+                              font: .subheadline)
 
-            ImageWithText(imageName: "airplane",
-                          text: viewModel.rocketName,
-                          font: .subheadline)
+                ImageWithText(imageName: "airplane",
+                              text: viewModel.rocketName,
+                              font: .subheadline)
+            }
+
+            Spacer()
+            KFImage(viewModel.missionPatchSmallURL)
+                .resizable()
+                .frame(width: 60, height: 60, alignment: .center)
         }
     }
 }
