@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -151,6 +151,8 @@
 		E54B44D022BE7D0B006833BA /* LaunchesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B44CE22BE7D0B006833BA /* LaunchesListView.swift */; };
 		E54B44D122BE7D0B006833BA /* LaunchRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B44CF22BE7D0B006833BA /* LaunchRow.swift */; };
 		E54B44D322BE7D1F006833BA /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E54B44D222BE7D1F006833BA /* TestData.swift */; };
+		E5F962612486B1DB000CD2BE /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = E5F962602486B1DB000CD2BE /* Kingfisher */; };
+		E5F962632486B1DB000CD2BE /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = E5F962622486B1DB000CD2BE /* KingfisherSwiftUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -363,7 +365,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E5F962612486B1DB000CD2BE /* Kingfisher in Frameworks */,
 				0EEADBC5228870EC00E40712 /* WebKit.framework in Frameworks */,
+				E5F962632486B1DB000CD2BE /* KingfisherSwiftUI in Frameworks */,
 				E1755411223555BA0033C136 /* SpaceXAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -915,6 +919,10 @@
 				E1755410223555BA0033C136 /* PBXTargetDependency */,
 			);
 			name = RocketFan;
+			packageProductDependencies = (
+				E5F962602486B1DB000CD2BE /* Kingfisher */,
+				E5F962622486B1DB000CD2BE /* KingfisherSwiftUI */,
+			);
 			productName = RocketFan;
 			productReference = 0EBCA1A422330CF500E8903F /* RocketFan.app */;
 			productType = "com.apple.product-type.application";
@@ -1036,6 +1044,9 @@
 				Base,
 			);
 			mainGroup = 0EBCA19B22330CF500E8903F;
+			packageReferences = (
+				E5F9625F2486B1DB000CD2BE /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0EBCA1A522330CF500E8903F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1715,6 +1726,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E5F9625F2486B1DB000CD2BE /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.14.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E5F962602486B1DB000CD2BE /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5F9625F2486B1DB000CD2BE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		E5F962622486B1DB000CD2BE /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E5F9625F2486B1DB000CD2BE /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0EBCA19C22330CF500E8903F /* Project object */;
 }
