@@ -9,9 +9,9 @@
 import SwiftUI
 
 enum Theme {
-    var background:     Color {     Color("background") }
-    var darkVariant:    Color {     Color("darkVariant") }
-    var lightVariant:   Color {     Color("lightVariant") }
-    var primary:        Color {     Color("primary") }
-    var secondary:      Color {     Color("secondary") }
+    static var background:     Color {     Color("background") }
+    static var darkVariant:    Color {     Color("darkVariant") }
+    static var lightVariant:   Color {     Color("lightVariant") }
+    static var primary:        Color {     Color("primary") }
+    static var secondary:      Color {     Color("secondary") }
 }
