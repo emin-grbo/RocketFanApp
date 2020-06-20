@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum RFIcons: String, CaseIterable {
+enum RFIcons: String {
     
     // Mission detail icons
     case apoapsis
@@ -33,3 +33,6 @@ enum RFIcons: String, CaseIterable {
         return Image(self.rawValue).foregroundColor(Theme.secondary)
     }
 }
+
+// conforming to CaseIterable for testing
+extension RFIcons: CaseIterable { }
