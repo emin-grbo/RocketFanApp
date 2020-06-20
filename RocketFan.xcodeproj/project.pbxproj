@@ -58,8 +58,11 @@
 		13A1ABEC23774B58003E6334 /* Persistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327148B23674ECF00E90023 /* Persistable.swift */; };
 		13A1ABEF2377503C003E6334 /* MeasurementUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1ABEE2377503C003E6334 /* MeasurementUnit.swift */; };
 		13A1ABF02377558D003E6334 /* MeasurementUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13A1ABEE2377503C003E6334 /* MeasurementUnit.swift */; };
+		D723560C249D617C00A3D6F1 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D723560B249D617C00A3D6F1 /* Icons.xcassets */; };
+		D723560E249D636400A3D6F1 /* RFIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723560D249D636400A3D6F1 /* RFIcons.swift */; };
 		D793F86E249AAD420071994F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D793F86D249AAD420071994F /* Colors.xcassets */; };
 		D793F872249AB8C80071994F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793F871249AB8C80071994F /* Theme.swift */; };
+		D7E20ACA249E098C00994A36 /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E20AC9249E098C00994A36 /* ImageTests.swift */; };
 		E11C1D48227029E4004C3972 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */; };
 		E11C1D4D22702AED004C3972 /* ContentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */; };
 		E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */; };
@@ -266,8 +269,11 @@
 		139F8E7A234DE3C0007CC3C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		139F8E7E234E0913007CC3C7 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13A1ABEE2377503C003E6334 /* MeasurementUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementUnit.swift; sourceTree = "<group>"; };
+		D723560B249D617C00A3D6F1 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		D723560D249D636400A3D6F1 /* RFIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFIcons.swift; sourceTree = "<group>"; };
 		D793F86D249AAD420071994F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D793F871249AB8C80071994F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D7E20AC9249E098C00994A36 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
 		E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -411,6 +417,7 @@
 		0E10D811229EFD5B0041FDB4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D723560D249D636400A3D6F1 /* RFIcons.swift */,
 				0E10D812229EFD6D0041FDB4 /* RoundedButton.swift */,
 			);
 			path = Views;
@@ -541,6 +548,7 @@
 			children = (
 				0EBCA1AE22330CF600E8903F /* Assets.xcassets */,
 				D793F86D249AAD420071994F /* Colors.xcassets */,
+				D723560B249D617C00A3D6F1 /* Icons.xcassets */,
 				E1FFA013223A97BF0056BA6B /* Data */,
 				E54B44D222BE7D1F006833BA /* TestData.swift */,
 			);
@@ -878,6 +886,7 @@
 				E1F34C55223CF43100F22086 /* RoadsterTests.swift */,
 				E1BA53C22242DC1A00601E5C /* RocketTests.swift */,
 				E1F34C49223BEB7000F22086 /* ShipTests.swift */,
+				D7E20AC9249E098C00994A36 /* ImageTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1085,6 +1094,7 @@
 				E13B0C11223E629A000E3E85 /* launchpad.json in Resources */,
 				D793F86E249AAD420071994F /* Colors.xcassets in Resources */,
 				E13B0C0D223E5538000E3E85 /* dragon.json in Resources */,
+				D723560C249D617C00A3D6F1 /* Icons.xcassets in Resources */,
 				E13B0C15223E6529000E3E85 /* landpad.json in Resources */,
 				E13B0C0F223E595B000E3E85 /* capsule.json in Resources */,
 				E1B1A7BB223FF4E3002A74D8 /* payload.json in Resources */,
@@ -1173,6 +1183,7 @@
 				13A1ABEF2377503C003E6334 /* MeasurementUnit.swift in Sources */,
 				0E2B86D1223B0E1E005686BB /* LandingPad.swift in Sources */,
 				E1FFA031223A9ADF0056BA6B /* JSONLoader.swift in Sources */,
+				D723560E249D636400A3D6F1 /* RFIcons.swift in Sources */,
 				0E2B86C9223AFF6C005686BB /* JSONDecoder+Extensions.swift in Sources */,
 				E1F34C4C223BEC3400F22086 /* Ship.swift in Sources */,
 				E54B44D022BE7D0B006833BA /* LaunchesListView.swift in Sources */,
@@ -1237,6 +1248,7 @@
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
 				E1447538229C64A7006D1E82 /* LaunchesViewModelTests.swift in Sources */,
 				13A1ABEC23774B58003E6334 /* Persistable.swift in Sources */,
+				D7E20ACA249E098C00994A36 /* ImageTests.swift in Sources */,
 				13A1ABEB23774A51003E6334 /* Settings.swift in Sources */,
 				0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */,
 				13A1ABF02377558D003E6334 /* MeasurementUnit.swift in Sources */,
