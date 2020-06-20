@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum Theme {
+enum Theme: CaseIterable {
     static var background: Color { Color("background") }
     static var darkVariant: Color { Color("darkVariant") }
     static var lightVariant: Color { Color("lightVariant") }

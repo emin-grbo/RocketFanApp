@@ -62,6 +62,7 @@
 		D723560E249D636400A3D6F1 /* RFIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D723560D249D636400A3D6F1 /* RFIcons.swift */; };
 		D793F86E249AAD420071994F /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D793F86D249AAD420071994F /* Colors.xcassets */; };
 		D793F872249AB8C80071994F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D793F871249AB8C80071994F /* Theme.swift */; };
+		D7E20ACA249E098C00994A36 /* ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E20AC9249E098C00994A36 /* ImageTests.swift */; };
 		E11C1D48227029E4004C3972 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */; };
 		E11C1D4D22702AED004C3972 /* ContentStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */; };
 		E11C1D5122702DB3004C3972 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */; };
@@ -272,6 +273,7 @@
 		D723560D249D636400A3D6F1 /* RFIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RFIcons.swift; sourceTree = "<group>"; };
 		D793F86D249AAD420071994F /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		D793F871249AB8C80071994F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		D7E20AC9249E098C00994A36 /* ImageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTests.swift; sourceTree = "<group>"; };
 		E11C1D47227029E4004C3972 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		E11C1D4C22702AED004C3972 /* ContentStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentStateViewController.swift; sourceTree = "<group>"; };
 		E11C1D4F22702DB3004C3972 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -884,6 +886,7 @@
 				E1F34C55223CF43100F22086 /* RoadsterTests.swift */,
 				E1BA53C22242DC1A00601E5C /* RocketTests.swift */,
 				E1F34C49223BEB7000F22086 /* ShipTests.swift */,
+				D7E20AC9249E098C00994A36 /* ImageTests.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -1245,6 +1248,7 @@
 				0E2B86D3223B0E30005686BB /* LandingPadTests.swift in Sources */,
 				E1447538229C64A7006D1E82 /* LaunchesViewModelTests.swift in Sources */,
 				13A1ABEC23774B58003E6334 /* Persistable.swift in Sources */,
+				D7E20ACA249E098C00994A36 /* ImageTests.swift in Sources */,
 				13A1ABEB23774A51003E6334 /* Settings.swift in Sources */,
 				0EBF2FA022416768002742B8 /* LaunchTests.swift in Sources */,
 				13A1ABF02377558D003E6334 /* MeasurementUnit.swift in Sources */,

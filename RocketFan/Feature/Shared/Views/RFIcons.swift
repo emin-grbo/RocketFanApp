@@ -1,6 +1,6 @@
 import SwiftUI
 
-enum RFIcons: String {
+enum RFIcons: String, CaseIterable {
     
     // Mission detail icons
     case apoapsis
