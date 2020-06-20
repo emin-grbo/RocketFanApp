@@ -1,6 +1,8 @@
 import SwiftUI
 
 enum RFIcons: String {
+    
+    // Mission detail icons
     case apoapsis
     case block
     case customers
@@ -20,6 +22,11 @@ enum RFIcons: String {
     case serial
     case type
     case watchVideo
+    
+    // Missions list icons
+    case date
+    case launchPad
+    case rocket
     
     var icon: some View {
         // Defining tint instead of having it in initially setup in case we'd want to adapt the color based on the theme light/dark
